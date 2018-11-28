@@ -1,5 +1,5 @@
 
-# 팀원 소개
+# E5 팀원 소개
 ### 김우경
 * Mail: mj9926@naver.com
 * ID: kwk2696
