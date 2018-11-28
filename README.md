@@ -1,3 +1,39 @@
+
+# 팀원 소개
+### 김우경
+* Mail: mj9926@naver.com
+* ID: kwk2696
+* SID: 2017312637
+* Role: 팀장, 위키관리, Machine Learning
+***
+### 박관종
+* Mail: dbfltkfkd01@naver.com
+* ID: parkgwanjong
+* SID: 2017312108
+* Role: Machine Learning
+***
+### 서성윤
+* Mail: rudobco0825@gmail.com
+* ID: Pleiadex
+* SID: 2017310794
+* Role: Math
+***
+### 오승진
+* Mail: oiu7934@naver.com
+* ID: OhSeungJin
+* SID: 2017314628
+* Role: Data Structure 
+***
+### 허종원
+* Mail: whddnjs588@naver.com
+* ID: HeoJongWon
+* SID: 2017313150
+* Role: Sorting Algorithms
+***
+* Project URL: https://github.com/TheAlgorithms/Python
+* Group Docs: https://drive.google.com/open?id=15VQQI6trnJVe29v_ixXwmIa30OwJnN0j
+
+
 # The Algorithms - Python <!-- [![Build Status](https://travis-ci.org/TheAlgorithms/Python.svg)](https://travis-ci.org/TheAlgorithms/Python) -->
 
 ### All algorithms implemented in Python (for education)
