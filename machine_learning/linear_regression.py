@@ -52,17 +52,16 @@ def run_steep_gradient_descent(data_x, data_y,
 
 
 def sum_of_square_error(data_x, data_y, len_data, theta):
-    """ Return sum of square error for error calculation
+    """ Return sum of square error for error calculation by vectorized computation
     :param data_x    : contains our dataset
     :param data_y    : contains the output (result vector)
     :param len_data  : len of the dataset
     :param theta     : contains the feature vector
     :return          : sum of square error computed from given feature's
     """
-    prod = np.dot(theta, data_x.transpose())
-    prod -= data_y.transpose()
-    sum_elem = np.sum(np.square(prod))
-    error = sum_elem / (2 * len_data)
+    hypothesis = np.dot(theta, data_x.transpose())
+    error = np.mean(np.square(hypothesis - data_y.transpose())) / 2
+    
     return error
 
 
