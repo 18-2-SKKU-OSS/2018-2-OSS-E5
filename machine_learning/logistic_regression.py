@@ -1,26 +1,30 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# get_ipython().run_line_magic('matplotlib', 'inline')
-
 from sklearn import datasets
 
-
-# In[67]:
-
-# sigmoid function or logistic function is used as a hypothesis function in classification problems
-
 def sigmoid_function(z):
+    """ sigmoid 함수
+    :return : sigmoind 함수 반환값
+    """
     return 1 / (1 + np.exp(-z))
 
 
 def cost_function(h, y):
+    """ cost 함수
+    :param h : 예측 값
+    :param y : 실제(target) 값
+    :return  : error 값
+    """
     return (-y * np.log(h) - (1 - y) * np.log(1 - h)).mean()
 
-
-# here alpha is the learning rate, X is the feature matrix,y is the target matrix
-
 def logistic_reg(alpha, X, y, max_iterations=70000,):
+    """ 로지스틱 회귀 실행
+    : param alpha : 학습률
+    : param X     : 데이터 셋
+    : param y     : 결과(target) 값
+    : return      : 업데이트된 weights(theta)
+    """
     converged = False
     iterations = 0
     theta = np.zeros(X.shape[1])
@@ -35,7 +39,7 @@ def logistic_reg(alpha, X, y, max_iterations=70000,):
         h = sigmoid_function(z)
         J = cost_function(h, y)
 
-        iterations += 1  # update iterations
+        iterations += 1
 
         if iterations == max_iterations:
             print ('Maximum iterations exceeded!')
@@ -43,9 +47,6 @@ def logistic_reg(alpha, X, y, max_iterations=70000,):
             converged = True
 
     return theta
-
-
-# In[68]:
 
 if __name__ == '__main__':
     iris = datasets.load_iris()
@@ -58,7 +59,10 @@ if __name__ == '__main__':
 
 
     def predict_prob(X):
-        return sigmoid_function(np.dot(X, theta))  # predicting the value of probability from the logistic regression algorithm
+        """ 계산한 theta를 바탕으로 예측
+        : return : 예측값
+        """
+        return sigmoid_function(np.dot(X, theta))  
 
 
     plt.figure(figsize=(10, 6))
@@ -70,13 +74,5 @@ if __name__ == '__main__':
                              np.linspace(x2_min, x2_max))
     grid = np.c_[xx1.ravel(), xx2.ravel()]
     probs = predict_prob(grid).reshape(xx1.shape)
-    plt.contour(
-        xx1,
-        xx2,
-        probs,
-        [0.5],
-        linewidths=1,
-        colors='black',
-        )
-
+    plt.contour(xx1, xx2, probs, [0.5], linewidths=1, colors='black',)
     plt.legend()
