@@ -38,7 +38,7 @@ def run_steep_gradient_descent(data_x, data_y,
     :param alpha    : 학습률 (Learning rate)
     :param theta    : weigths
     ;param return   : 업데이트된 weights(theta)
-                      features - alpha * gradient(w.r.t. feature)
+                      θ - α * 1/n sigma(( y - theta*x) * x)
     """
     n = len_data
 
