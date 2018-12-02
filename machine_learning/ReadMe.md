@@ -1,45 +1,16 @@
-# ML assignment 1
+# Linear Regression
 
-### Assignment file info.
-- `YourAnswer.py`
-	- A collection of skeleton function. You need to complete it by following `.ipynb` files.
-- `2018_SKKU_ML_HW1_(n).ipynb`
-	- A notebook file for HW1_1 and HW1_2. It contains sequential instruction for assignment.
-    - HW1_1: Linear regression
-    - HW1_2: Perceptron, logistic regression
-- `ex1data(n).txt`
-	- Data file.
-- `utils.py`
-	- A function for a plot.
+### Part 1: Gradient Descent
 
+- In this part you will fit the linear regression parameters θ to our dataset using gradient descent.
+- The objective of linear regression is to minimize the cost function
 
+	![codecogseqn](https://user-images.githubusercontent.com/38908132/49338989-beeef680-f66d-11e8-8b51-a9865da43f0c.gif)
 
-### What you need to submit.
-- 201xxxxxxx.zip
-    - `YourAnswer.py`
+- where the hypothesis h(x) is given by the linear model
 
-Do not upload single `YourAnswer.py` file. Instead, upload `201xxxxxxx.zip` file that contains `YourAnswer.py`.
-Do not upload any other files.
-Do not change the name of `YourAnswer.py` file.
+	![h theata](https://user-images.githubusercontent.com/38908132/49339027-7dab1680-f66e-11e8-91f4-0352437d0935.gif)
 
+- Recall that the parameters of your model are the θj values. These are the values you will adjust to minimize cost  J(θ) . One way to do this is to use the batch gradient descent algorithm. In batch gradient descent, each iteration performs the update
 
-
-
-### Due date
-18.10.05(Fri) 23:59
-
-
-### Office hour
-18.10.01 (TBD)
-
-
-### Grading
-We will run your `YourAnswer.py` code on a different dataset.
-Keep in mind that the dimension of our dataset can be different from `ex1data(n).txt`.
-
-#### Important
-- Your code should be in `YOUR CODE HERE` box.
-- Complete the code by using given parameters.
-- Do not change any other things out of `YOUR CODE HERE` box.
-- If you do, our grading system will make errors.
-- Codes with error will not be graded.
+	![3](https://user-images.githubusercontent.com/38908132/49339052-104bb580-f66f-11e8-9068-016b9c7ef3ba.gif)
