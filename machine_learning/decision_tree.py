@@ -1,7 +1,7 @@
 """
-Implementation of a basic regression decision tree.
-Input data set: The input data set must be 1-dimensional with continuous labels.
-Output: The decision tree maps a real number input to a real number output. 
+기본 회귀 탐색 트리의 구현
+입력데이터 : 입력 데이터 셋은 연속된 라벨로 구성된 1차원의 형태를 띠어야만 합니다.
+출력데이터 : 탐색트리는 실수 입력값을 실수 출력값으로 맵핑합니다.
 """
 from __future__ import print_function
 
@@ -19,9 +19,9 @@ class Decision_Tree:
     def mean_squared_error(self, labels, prediction):
         """
         mean_squared_error:
-        @param labels: a one dimensional numpy array 
-        @param prediction: a floating point value
-        return value: mean_squared_error calculates the error if prediction is used to estimate the labels
+        @인자 라벨 : 1차원 numpy 배열
+        @인자 예측 : float형 값
+        반환 값 : 예측값과 라벨값에 대한 mse를 계산한 오차
         """
         if labels.ndim != 1:
             print("Error: Input labels must be one dimensional")
@@ -31,15 +31,12 @@ class Decision_Tree:
     def train(self, X, y):
         """
         train:
-        @param X: a one dimensional numpy array
-        @param y: a one dimensional numpy array. 
-        The contents of y are the labels for the corresponding X values
-
-        train does not have a return value
+        @인자 X: 1차원 numpy 배열
+        @인자 y: 1차원 numpy 배열
+        y는 해당되는 X값에 대한 라벨들로 구성되어있다
         """
-
         """
-        this section is to check that the inputs conform to our dimensionality constraints
+        이 부분은 입력값들이 차원적으로 문제가 없는지 체크하는 부분이다
         """
         if X.ndim != 1:
             print("Error: Input data set must be one dimensional")
@@ -64,9 +61,8 @@ class Decision_Tree:
 
 
         """
-        loop over all possible splits for the decision tree. find the best split.
-        if no split exists that is less than 2 * error for the entire array
-        then the data set is not split and the average for the entire array is used as the predictor
+        쪼개진 모든 부분집합들을 검사하여 최적의 decision tree를 위한 부분을 찾아낸다.
+        만약 전체 배열의 2 * error 보다 적은 부분이 존재하지 않는 경우 데이터 셋이 split하지 않은 것이고 배열 전체가 predictor로서 사용된다.
         """
         for i in range(len(X)):
             if len(X[:i]) < self.min_leaf_size:
@@ -100,9 +96,8 @@ class Decision_Tree:
     def predict(self, x):
         """
         predict:
-        @param x: a floating point value to predict the label of
-        the prediction function works by recursively calling the predict function
-        of the appropriate subtrees based on the tree's decision boundary
+        @인자 x: 트리의 decision boundary를 기초로 한 적절한 부분트리들의 예측 함수를 반복적으로 부름으로서 
+        prediction function이 작동하는 라벨들을 예측하는 float형 값이다.
         """
         if self.prediction is not None:
             return self.prediction
@@ -117,9 +112,9 @@ class Decision_Tree:
 
 def main():
     """
-    In this demonstration we're generating a sample data set from the sin function in numpy.
-    We then train a decision tree on the data set and use the decision tree to predict the
-    label of 10 different test values. Then the mean squared error over this test is displayed.
+    이 설명에서 우리는 numpy의 sin 함수로부터 샘플 데이터들을 참조한다.
+    우리는 그 데이터들로부터 decision tree를 훈련시키고 10개의 다른 test label 로부터 예측하는데 사용한다.
+    또한 mean_squared error을 보여준다.
     """
     X = np.arange(-1., 1., 0.005)
     y = np.sin(X)
