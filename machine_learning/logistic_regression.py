@@ -1,17 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
-## Logistic Regression from scratch
-
-# In[62]:
-
-# In[63]:
-
-# importing all the required libraries
-
-''' Implementing logistic regression for classification problem 
-     Helpful resources : 1.Coursera ML course    2.https://medium.com/@martinpella/logistic-regression-from-scratch-in-python-124c5636b8ac'''
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -34,12 +20,7 @@ def cost_function(h, y):
 
 # here alpha is the learning rate, X is the feature matrix,y is the target matrix
 
-def logistic_reg(
-    alpha,
-    X,
-    y,
-    max_iterations=70000,
-    ):
+def logistic_reg(alpha, X, y, max_iterations=70000,):
     converged = False
     iterations = 0
     theta = np.zeros(X.shape[1])
