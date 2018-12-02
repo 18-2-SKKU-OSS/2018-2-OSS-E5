@@ -14,7 +14,7 @@ import numpy as np
 def collect_dataset():
     """ CSGO 데이터 셋 수집
     선수의 ADR vs Rating 정보를 가지고 있는 데이터 셋
-    :retrun : 행렬화 된 데이터 셋
+    ;retrun : 행렬화 된 데이터 셋
     """
     response = requests.get('https://raw.githubusercontent.com/yashLadha/' +
                             'The_Math_of_Intelligence/master/Week1/ADRvs' +
@@ -32,13 +32,12 @@ def collect_dataset():
 def run_steep_gradient_descent(data_x, data_y,
                                len_data, alpha, theta):
     """ Gradient Descent 방법을 이용해 theta를 업데이트하는 함수
-    :param data_x   : 데이터 셋 저장
-    :param data_y   : 결과(output)값 저장
+    :param data_x   : 데이터 셋
+    :param data_y   : 결과(output)값
     :param len_data : feature의 개수
     :param alpha    : 학습률 (Learning rate)
     :param theta    : weigths
-    ;param return   : 업데이트된 weights(theta)
-                      θ - α * 1/n sigma(( y - theta*x) * x)
+    ;return         : 업데이트된 weights(theta)
     """
     n = len_data
 
@@ -51,11 +50,11 @@ def run_steep_gradient_descent(data_x, data_y,
 
 def sum_of_square_error(data_x, data_y, len_data, theta):
     """ 에러값 (sum of square error) 값을 반환하는 함수
-    :param data_x    : 데이터셋 저장
-    :param data_y    : 결과값 저장
+    :param data_x    : 데이터셋
+    :param data_y    : 결과값
     :param len_data  : feature의 개수
     :param theta     : weights
-    :return          : 에러값
+    ;return          : 에러값
     """
     hypothesis = np.dot(theta, data_x.transpose())
     error = np.mean(np.square(hypothesis - data_y.transpose())) / 2
@@ -65,9 +64,9 @@ def sum_of_square_error(data_x, data_y, len_data, theta):
 
 def run_linear_regression(data_x, data_y):
     """ 선형회귀를 시행하는 함수
-    :param data_x  : 데이터 셋 저장
-    :param data_y  : 결과값 저장
-    :return        : 가장 예측을 잘하는 weights 값 반환
+    :param data_x  : 데이터 셋
+    :param data_y  : 결과값 
+    ;return        : 가장 예측을 잘하는 weights
     """
     iterations = 100000
     alpha = 0.0001550
