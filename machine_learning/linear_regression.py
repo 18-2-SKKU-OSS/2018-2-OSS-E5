@@ -1,8 +1,8 @@
 """
 선형 회귀 분석은 예측 분석에 있어서 가장 기본적이고 일반적인 회귀 분석방법 입니다.
-이 아이디어는 매우 간단합니다. 우선 우리는 데이터 셋과 feature를 가지고 있습니다.
-이 features는 우리의 모델의 성능을 좌우하기 때문에 반드시 신중히 선택되어야 합니다.
-우리는 매 itertaion을 통해 feature weigths를 업데이트를 하고, 가장 예측을 잘하는
+이 아이디어는 매우 간단합니다. 우선 우리는 데이터 셋과 weights(theta)를 가지고 있습니다.
+이 weitghs는 우리의 모델의 성능을 좌우하기 때문에 반드시 신중히 선택되어야 합니다.
+우리는 매 itertaion을 통해 weigths를 업데이트를 하고, 가장 예측을 잘하는
 weights를 선정하게 됩니다. 밑에 코드에서는, CSGO 데이터 셋을 사용했습니다. 
 """
 from __future__ import print_function
@@ -12,9 +12,9 @@ import numpy as np
 
 
 def collect_dataset():
-    """ Collect dataset of CSGO
-    The dataset contains ADR vs Rating of a Player
-    :return : dataset obtained from the link, as matrix
+    """ CSGO 데이터 셋 수집
+    선수의 ADR vs Rating 정보를 가지고 있는 데이터 셋
+    :retrun : 행렬화 된 데이터 셋
     """
     response = requests.get('https://raw.githubusercontent.com/yashLadha/' +
                             'The_Math_of_Intelligence/master/Week1/ADRvs' +
@@ -24,21 +24,21 @@ def collect_dataset():
     for item in lines:
         item = item.split(',')
         data.append(item)
-    data.pop(0)  # This is for removing the labels from the list
+    data.pop(0)  # 리스트에서 레이블을 빼내는 과정
     dataset = np.matrix(data)
     return dataset
 
 
 def run_steep_gradient_descent(data_x, data_y,
                                len_data, alpha, theta):
-    """ Run steep gradient descent and updates the Feature vector accordingly_
-    :param data_x   : contains the dataset
-    :param data_y   : contains the output associated with each data-entry
-    :param len_data : length of the data_
-    :param alpha    : Learning rate of the model
-    :param theta    : Feature vector (weight's for our model)
-    ;param return    : Updated Feature's, using
-                       curr_features - alpha_ * gradient(w.r.t. feature)
+    """ Gradient Descent 방법을 이용해 theta를 업데이트하는 함수
+    :param data_x   : 데이터 셋 저장
+    :param data_y   : 결과(output)값 저장
+    :param len_data : feature의 개수
+    :param alpha    : 학습률 (Learning rate)
+    :param theta    : weigths
+    ;param return   : 업데이트된 weights(theta)
+                      features - alpha * gradient(w.r.t. feature)
     """
     n = len_data
 
@@ -50,12 +50,12 @@ def run_steep_gradient_descent(data_x, data_y,
 
 
 def sum_of_square_error(data_x, data_y, len_data, theta):
-    """ Return sum of square error for error calculation by vectorized computation
-    :param data_x    : contains our dataset
-    :param data_y    : contains the output (result vector)
-    :param len_data  : len of the dataset
-    :param theta     : contains the feature vector
-    :return          : sum of square error computed from given feature's
+    """ 에러값 (sum of square error) 값을 반환하는 함수
+    :param data_x    : 데이터셋 저장
+    :param data_y    : 결과값 저장
+    :param len_data  : feature의 개수
+    :param theta     : weights
+    :return          : 에러값
     """
     hypothesis = np.dot(theta, data_x.transpose())
     error = np.mean(np.square(hypothesis - data_y.transpose())) / 2
@@ -64,10 +64,10 @@ def sum_of_square_error(data_x, data_y, len_data, theta):
 
 
 def run_linear_regression(data_x, data_y):
-    """ Implement Linear regression over the dataset
-    :param data_x  : contains our dataset
-    :param data_y  : contains the output (result vector)
-    :return        : feature for line of best fit (Feature vector)
+    """ 선형회귀를 시행하는 함수
+    :param data_x  : 데이터 셋 저장
+    :param data_y  : 결과값 저장
+    :return        : 가장 예측을 잘하는 weights 값 반환
     """
     iterations = 100000
     alpha = 0.0001550
@@ -87,7 +87,7 @@ def run_linear_regression(data_x, data_y):
 
 
 def main():
-    """ Driver function """
+    """ 메인 함수 """
     data = collect_dataset()
 
     len_data = data.shape[0]
