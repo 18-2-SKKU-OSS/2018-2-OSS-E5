@@ -20,7 +20,7 @@
 
 
 # 2. Logistic Regression
--In this part of the exercise, you will implement the cost and gradient for logistic regression.
+- In this part of the exercise, you will implement the cost and gradient for logistic regression.
 
 ### Part 1: Hypothesis Model
 - Before you start with the actual cost function, recall that the logistic regression hypothesis is defined as:
