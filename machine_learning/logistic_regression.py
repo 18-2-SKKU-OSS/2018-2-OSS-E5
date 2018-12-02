@@ -14,16 +14,16 @@ def cost_function(h, y):
     """ cost 함수
     :param h : 예측 값
     :param y : 실제(target) 값
-    :return  : error 값
+    ;return  : error 값
     """
     return (-y * np.log(h) - (1 - y) * np.log(1 - h)).mean()
 
 def logistic_reg(alpha, X, y, max_iterations=70000,):
     """ 로지스틱 회귀 실행
-    : param alpha : 학습률
-    : param X     : 데이터 셋
-    : param y     : 결과(target) 값
-    : return      : 업데이트된 weights(theta)
+    :param alpha : 학습률
+    :param X     : 데이터 셋
+    :param y     : 결과(target) 값
+    ;return      : 업데이트된 weights(theta)
     """
     converged = False
     iterations = 0
@@ -60,7 +60,7 @@ if __name__ == '__main__':
 
     def predict_prob(X):
         """ 계산한 theta를 바탕으로 예측
-        : return : 예측값
+        ;return : 예측값
         """
         return sigmoid_function(np.dot(X, theta))  
 
