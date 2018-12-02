@@ -1,3 +1,10 @@
+"""
+로지스틱 회귀 분석은 Classification(분류) 문제에 있어서 가장 기본적인 회귀분석 방법입니다.
+로지스틱 모형의 결과값은 조건부확률(P(y|x))이며, 여기에서는 연결함수로 sigmoid 함수를 
+사용하였습니다. sigmoid 함수는 결과값이 항상 [0,1]사이에 있게 하며, 값이 1에 가까울 수록
+target 값이 1일 확률이 높다는걸 나타냅니다.
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
