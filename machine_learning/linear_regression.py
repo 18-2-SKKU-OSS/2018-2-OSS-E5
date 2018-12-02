@@ -1,11 +1,9 @@
 """
-Linear regression is the most basic type of regression commonly used for
-predictive analysis. The idea is preety simple, we have a dataset and we have
-a feature's associated with it. The Features should be choose very cautiously
-as they determine, how much our model will be able to make future predictions.
-We try to set these Feature weights, over many iterations, so that they best
-fits our dataset. In this particular code, i had used a CSGO dataset (ADR vs
-Rating). We try to best fit a line through dataset and estimate the parameters.
+선형 회귀 분석은 예측 분석에 있어서 가장 기본적이고 일반적인 회귀 분석방법 입니다.
+이 아이디어는 매우 간단합니다. 우선 우리는 데이터 셋과 feature를 가지고 있습니다.
+이 features는 우리의 모델의 성능을 좌우하기 때문에 반드시 신중히 선택되어야 합니다.
+우리는 매 itertaion을 통해 feature weigths를 업데이트를 하고, 가장 예측을 잘하는
+weights를 선정하게 됩니다. 밑에 코드에서는, CSGO 데이터 셋을 사용했습니다. 
 """
 from __future__ import print_function
 
