@@ -31,6 +31,7 @@
 * Role: Sorting Algorithms
 ***
 * Project URL: https://github.com/TheAlgorithms/Python
+* Group Activites: https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/wiki/Activites
 * Group Docs: https://drive.google.com/open?id=15VQQI6trnJVe29v_ixXwmIa30OwJnN0j
 
 
