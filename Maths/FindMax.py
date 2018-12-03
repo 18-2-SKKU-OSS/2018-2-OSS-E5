@@ -1,4 +1,4 @@
-# NguyenU
+# 가장 큰 (Max) 숫자를 찾는 함수
 
 def find_max(nums):
     max = nums[0]
