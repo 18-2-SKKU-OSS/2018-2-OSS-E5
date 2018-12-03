@@ -40,11 +40,11 @@ def run_steep_gradient_descent(data_x, data_y,
     ;return         : 업데이트된 weights(theta)
     """
     n = len_data
-
-    prod = np.dot(theta, data_x.transpose())
-    prod -= data_y.transpose()
-    sum_grad = np.dot(prod, data_x)
-    theta = theta - (alpha / n) * sum_grad
+    
+    hypothesis = np.dot(theta, data_x.transpose())
+    gradient = np.dot(hypothesis-data_y.transpose(),data_x)/n
+    theta = theta - alpha * gradient
+    
     return theta
 
 
