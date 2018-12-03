@@ -1,18 +1,14 @@
-import numpy as np
-
-""" Here I implemented the scoring functions.
-    MAE, MSE, RMSE, RMSLE are included.
-
-    Those are used for calculating differences between
-    predicted values and actual values.
-
-    Metrics are slightly differentiated. Sometimes squared, rooted,
-    even log is used.
-
-    Using log and roots can be perceived as tools for penalizing big
-    erors. However, using appropriate metrics depends on the situations,
-    and types of data
 """
+score function
+MAE(평균절대값오차), MSE (평균제곱오차)
+RMSE (루트평균제곱오차), RMSLE(로그루트평균제곱오차)
+
+이 4가지 함수들은 예측한값과 실제값의 차이를 계산하는데 쓰인다.
+각각 제곱, 루트, 로그등 다양하게 에러를 구한 방법이다.
+: param predict : 예측 값
+: param actual  : 실제 값
+"""
+import numpy as np
 
 #Mean Absolute Error
 def mae(predict, actual):
