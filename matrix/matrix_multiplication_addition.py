@@ -1,3 +1,9 @@
+"""
+행렬의 덧셈과 곱셈, naive한 계산방법을 이용한 구현.
+덧셈함수 이용시에 두 행렬의 행의 수, 열의 수가 같아야 한다.
+또한 곱셈함수 이용시 첫번째 인자배열의 열과 두번째 인자배열의 행의 차원이 서로 같아야 한다.
+"""
+
 def add(matrix_a, matrix_b):
     rows = len(matrix_a)
     columns = len(matrix_a[0])
@@ -9,11 +15,6 @@ def add(matrix_a, matrix_b):
             list_1.append(val)
         matrix_c.append(list_1)
     return matrix_c
-"""
-행렬의 덧셈과 곱셈, naive한 계산방법을 이용한 구현.
-덧셈함수 이용시에 두 행렬의 행의 수, 열의 수가 같아야 한다.
-또한 곱셈함수 이용시 첫번째 인자배열의 열과 두번째 인자배열의 행의 차원이 서로 같아야 한다.
-"""
 
 def multiply(matrix_a, matrix_b):
     matrix_c = []
