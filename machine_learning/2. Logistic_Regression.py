@@ -38,12 +38,12 @@ def logistic_reg(alpha, X, y, max_iterations=70000,):
 
     while not converged:
         z = np.dot(X, theta)
-        h = sigmoid_function(z)
+        hypothesis = sigmoid_function(z)
         gradient = np.dot(X.T, h - y) / y.size
         theta = theta - alpha * gradient
 
         z = np.dot(X, theta)
-        h = sigmoid_function(z)
+        hypothesis = sigmoid_function(z)
         J = cost_function(h, y)
 
         iterations += 1
