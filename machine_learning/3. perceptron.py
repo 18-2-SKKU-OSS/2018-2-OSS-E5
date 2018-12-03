@@ -1,13 +1,8 @@
 '''
-
-	Perceptron
-	w = w + N * (d(k) - y) * x(k)
-
-	Using perceptron network for oil analysis,
-	with Measuring of 3 parameters that represent chemical characteristics we can classify the oil, in p1 or p2
-	p1 = -1
-	p2 = 1
-
+퍼셉트론(Perceptron)
+가장 오래된 인공신경망중 한 종류이다. 퍼셉트론은 각 노드의 가중치와 입력값을 곱한 것을 모두 합한 값이
+활성화함수에 의해 판단이 된다. 그 값이 임게치보다 크면 결과값이 1이며, 크지 않으면 결과값으로 -1을 
+출력한다. 밑에 예제에서는 석유에 관련된 3개의 변수를 가지고, 석유를 p1(-1)과 p1(1)로 분류를 한다.
 '''
 from __future__ import print_function
 
