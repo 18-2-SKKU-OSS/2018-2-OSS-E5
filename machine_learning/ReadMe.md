@@ -1,4 +1,6 @@
-# 1. Linear Regression
+# Machine Learning GuideLine
+
+## 1. Linear Regression
 
 - In this part of exercise you will fit the linear regression parameters θ to our dataset using gradient descent.
 
@@ -19,7 +21,7 @@
 	![3](https://user-images.githubusercontent.com/38908132/49339052-104bb580-f66f-11e8-9068-016b9c7ef3ba.gif)
 
 
-# 2. Logistic Regression
+## 2. Logistic Regression
 - In this part of the exercise, you will implement the cost and gradient for logistic regression.
 
 ### Part 1: Hypothesis Model
