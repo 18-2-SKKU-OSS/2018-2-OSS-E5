@@ -2,7 +2,9 @@
 퍼셉트론(Perceptron)
 가장 오래된 인공신경망중 한 종류이다. 퍼셉트론은 각 노드의 가중치와 입력값을 곱한 것을 모두 합한 값이
 활성화함수에 의해 판단이 된다. 그 값이 임게치보다 크면 결과값이 1이며, 크지 않으면 결과값으로 -1을 
-출력한다. 밑에 예제에서는 석유에 관련된 3개의 변수를 가지고, 석유를 p1(-1)과 p1(1)로 분류를 한다.
+출력한다. 밑에 예제에서는 석유에 관련된 3개의 변수를 가지고, 석유를 p1(-1)과 p2(1)로 분류를 한다.
+
+실행시 값을 입력받게 된다. 3개의 변수를 입력하면 p1인지 p2인제 분류를 해준다. 
 '''
 from __future__ import print_function
 
@@ -11,6 +13,13 @@ import random
 
 class Perceptron:
     def __init__(self, sample, exit, learn_rate=0.01, epoch_number=1000, bias=-1):
+        """
+        :param sample : 데이터 셋
+        :param exit   : 결과 값
+        :param learning_rate : 학습률 (초기화 = 0.01)
+        :param epoch_number  : 세대   (초기화 = 1000)
+        :param biase  : 보정 값 (초기화 = -1)
+        """
         self.sample = sample
         self.exit = exit
         self.learn_rate = learn_rate
@@ -53,6 +62,7 @@ class Perceptron:
             #if epoch_count > self.epoch_number or not erro:
                 break
 
+    #셈플값을 p1과 p2로 정렬해주는 함수
     def sort(self, sample):
         sample.insert(0, self.bias)
         u = 0
