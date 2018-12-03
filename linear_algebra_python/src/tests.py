@@ -19,6 +19,11 @@ class Test(unittest.TestCase):
         x = Vector([1,2,3])
         self.assertEqual(x.component(0),1)
         self.assertEqual(x.component(2),3)
+        """
+        x = Vector([1,2,3])에 대해
+        component가 일치하는 함수가 제대로 동작하는 지를 확인.
+        x.component(0)=1, x.component(2)=3
+        """
         try:
             y = Vector()
             self.assertTrue(False)
@@ -30,18 +35,32 @@ class Test(unittest.TestCase):
         """
         x = Vector([0,0,0,0,0,1])
         self.assertEqual(str(x),"(0,0,0,0,0,1)")
+        """
+        x = Vector([0,0,0,0,0,1])에 대해
+        "(0,0,0,0,0,1)"과 같은 요소들로 이루어져 있는지를 확인.
+        str(x) = (0,0,0,0,0,1)
+        """
     def test_size(self):
         """
             test for size()-method
         """
         x = Vector([1,2,3,4])
         self.assertEqual(len(x),4)
+        """
+        x = Vector([1,2,3,4])에 대해
+        len(x)==4 라는 명령을 제대로 수행하는지를 확인.
+        len(x)=4   (x가 갖는 원소들의 갯수)
+        """
     def test_euclidLength(self):
         """
             test for the eulidean length
         """
         x = Vector([1,2])
         self.assertAlmostEqual(x.eulidLength(),2.236,3)
+        """
+        유클리드 거리 함수가 제대로 작동하는지를 확인
+        
+        """
     def test_add(self):
         """
             test for + operator
