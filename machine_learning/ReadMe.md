@@ -40,9 +40,29 @@
 	
 	![6](https://user-images.githubusercontent.com/38908132/49339154-fad78b00-f670-11e8-8aa4-bd5e2ff23b9a.gif)
 
-## Part 4: Gradient Descent
+### Part 4: Gradient Descent
 - The gradient of the cost is a vector of the same length as θ where the jth element (for j = 0,1,...,d) is defined as follows:
 
 	![7](https://user-images.githubusercontent.com/38908132/49339182-64f03000-f671-11e8-9309-95809ff07230.gif)
+
+## 3. Perceptorn
+- In this part, you will implement the perceptron. 
+
+### Part 1: Hypothes Model
+- The perceptron is defined as:
+
+	![default](https://user-images.githubusercontent.com/38908132/49377601-f2a14d80-f74d-11e8-8228-5eb90681b0a7.PNG)
+
+### Part 2: Cost Function
+- Now you will implement the cost function and update rule for perceptron. The cost function in perceptron is
+
+	![codecogseqn](https://user-images.githubusercontent.com/38908132/49377749-54fa4e00-f74e-11e8-8338-e65da50baec6.gif)
+
+### Part 3: Gradient Descent
+- and the gradient of perceptron is a vector of the same length as θ where the jth element (for j = 0,1,...,d) is defined as follows:
+
+	![codecogseqn](https://user-images.githubusercontent.com/38908132/49377879-a1de2480-f74e-11e8-81d6-7af83c435bb5.gif)
 	
+- Note that while this gradient looks identical to the linear regression gra- dient, the formula is actually different because linear and logistic regression have different definitions of hθ(x).
+
 url: https://www.codecogs.com/latex/eqneditor.php
