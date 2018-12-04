@@ -16,9 +16,9 @@ from __future__ import print_function
 
 def twoSum(nums, target):
     """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
+    인자형: List[int]
+    목표값의 형: int
+    반환형: List[int]
     """
     chk_map = {}
     for index, val in enumerate(nums):
