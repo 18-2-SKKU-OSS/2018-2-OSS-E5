@@ -1,5 +1,5 @@
 from __future__ import print_function
-
+#버블소트
 
 def bubble_sort(collection):
     """Pure implementation of bubble sort algorithm in Python
