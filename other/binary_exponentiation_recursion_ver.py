@@ -1,13 +1,14 @@
 """
-* Binary Exponentiation with Multiplication
-* This is a method to find a*b in a time complexity of O(log b)
-* This is one of the most commonly used methods of finding result of multiplication.
-* Also useful in cases where solution to (a*b)%c is required,
-* where a,b,c can be numbers over the computers calculation limits.
-* Done using iteration, can also be done using recursion
-
+* 지수 계산의 binary exponentiation
+* 이것은 O(log b)의 시간 복잡성에서 a^b를 찾는 방법이다.
+* 이것은 지수 계산 시 가장 일반적으로 사용되는 방법 중 하나입니다.
+* (a ^ b) % c에 대한 해결책이 필요한 경우에도 유용합니다.
+* 여기서 a, b, c는 컴퓨터 계산 한도의 숫자 일 수 있습니다.
+* 반복을 사용하여 완료, 재귀를 사용하여 완료 할 수도 있습니다.
+* 현재 버전은 재귀를 이용한 구현법입니다.
 * @author chinmoy159
 * @version 1.0 dated 10/08/2017
+* korean comment updated 12/04/2018
 """
 
 
@@ -36,15 +37,14 @@ def b_expo_mod(a, b, c):
 
 
 """
-* Wondering how this method works !
-* It's pretty simple.
-* Let's say you need to calculate a ^ b
-* RULE 1 : a * b = (a+a) * (b/2) ---- example : 4 * 4 = (4+4) * (4/2) = 8 * 2
-* RULE 2 : IF b is ODD, then ---- a * b = a + (a * (b - 1)) :: where (b - 1) is even.
-* Once b is even, repeat the process to get a * b
-* Repeat the process till b = 1 OR b = 0, because a*1 = a AND a*0 = 0
-*
-* As far as the modulo is concerned,
-* the fact : (a+b) % c = ((a%c) + (b%c)) % c
-* Now apply RULE 1 OR 2, whichever is required.
+* 이 방법이 어떻게 작동하지에 대한 설명.
+* 꽤 간단합니다.
+* a ^ b를 계산해야한다고 가정 해 봅시다.
+* 규칙 1 : a ^ b = (a * a) ^ (b / 2) ---- 예 : 4 ^ 4 = (4 * 4) ^ (4/2) = 16 ^ 2
+* 규칙 2 : b가 홀수 인 경우 ---- a ^ b = a * (a ^ (b - 1)) :: 여기서 (b - 1)은 짝수입니다.
+* b가 짝수이면, 과정을 반복하여 a ^ b를 얻으십시오.
+* a ^ 1 = a AND a ^ 0 = 1이기 때문에 b = 1 또는 b = 0이 될 때까지 프로세스를 반복하십시오.
+* 모듈러스에 관한 한,
+* 절대식 : (a * b) % c = ((a % c) * (b % c)) % c
+* 이제 RULE 1 또는 2를 적용하십시오.
 """
