@@ -1,24 +1,16 @@
 """
-This is a pure python implementation of the selection sort algorithm
-
-For doctests run following command:
-python -m doctest -v selection_sort.py
-or
-python3 -m doctest -v selection_sort.py
-
-For manual testing run:
-python selection_sort.py
+파이썬으로 selection sort를 구현한 코드입니다
+함수 selection_sort:
+	선택정렬이라고 불리며
+	1.주어진 리스트 중 최소값을 찾는다
+	2. 그 값을 맨 앞에 위치한 값과 교체한다
+	3.맨처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체한다.
 """
 from __future__ import print_function
 
 
 def selection_sort(collection):
-    """Pure implementation of the selection sort algorithm in Python
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-
-
+    """
     Examples:
     >>> selection_sort([0, 5, 3, 2, 2])
     [0, 2, 2, 3, 5]
