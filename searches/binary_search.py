@@ -1,13 +1,10 @@
 """
-This is pure python implementation of binary search algorithm
-
-For doctests run following command:
-python -m doctest -v binary_search.py
-or
-python3 -m doctest -v binary_search.py
-
-For manual testing run:
-python binary_search.py
+이진 탐색 (Binary Search)
+정렬된 리스트에서 특정 값의 위치를 찾는 알고리즘. 처음 중간의 값을 임의의 값으로 선택하여, 
+그 값과 찾고자 하는 값의 크고 작음을 비교하는 방식을 채택하고 있다. 
+처음 선택한 중앙값이 만약 찾는 값보다 크면 그 값은 새로운 최댓값이 되며, 작으면 그 값은 새로운 최솟값이 된다. 
+검색 원리상 정렬된 리스트에만 사용할 수 있다는 단점이 있지만, 
+검색이 반복될 때마다 목표값을 찾을 확률은 두 배가 되므로 속도가 빠르다는 장점이 있다.
 """
 from __future__ import print_function
 import bisect
@@ -17,21 +14,19 @@ try:
 except NameError:
     raw_input = input  # Python 3
 
-
+#이진탐색알고리즘
 def binary_search(sorted_collection, item):
-    """Pure implementation of binary search algorithm in Python
-
-    Be careful collection must be sorted, otherwise result will be
-    unpredictable
-
-    :param sorted_collection: some sorted collection with comparable items
-    :param item: item value to search
-    :return: index of found item or None if item is not found
-
-    Examples:
+    """
+    input값은 반드시 정렬 된 채로 주어져야 합니다.
+    그러지 않으면 원하지 않는 결과값이 나올 수 있습니다.
+    :param sorted_collection : 탐색을 진행할 배열
+    :param item : 탐색을 진행할 키(key) 값
+    :return : 키 값이 있는 위치(index), 없을 경우 None
+    
+    예시:
     >>> binary_search([0, 5, 7, 10, 15], 0)
     0
-
+    
     >>> binary_search([0, 5, 7, 10, 15], 15)
     4
 
@@ -41,6 +36,7 @@ def binary_search(sorted_collection, item):
     >>> binary_search([0, 5, 7, 10, 15], 6)
 
     """
+    
     left = 0
     right = len(sorted_collection) - 1
 
@@ -56,59 +52,20 @@ def binary_search(sorted_collection, item):
                 left = midpoint + 1
     return None
 
-
+#라이브러리 내장함수를 이용한 이진탐색
 def binary_search_std_lib(sorted_collection, item):
-    """Pure implementation of binary search algorithm in Python using stdlib
-
-    Be careful collection must be sorted, otherwise result will be
-    unpredictable
-
-    :param sorted_collection: some sorted collection with comparable items
-    :param item: item value to search
-    :return: index of found item or None if item is not found
-
-    Examples:
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 0)
-    0
-
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 15)
-    4
-
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 5)
-    1
-
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 6)
-
-    """
+    
     index = bisect.bisect_left(sorted_collection, item)
     if index != len(sorted_collection) and sorted_collection[index] == item:
         return index
     return None
 
+#재귀를 이용한 이진탐색
 def binary_search_by_recursion(sorted_collection, item, left, right):
-
-    """Pure implementation of binary search algorithm in Python by recursion
-
-    Be careful collection must be sorted, otherwise result will be
-    unpredictable
-    First recursion should be started with left=0 and right=(len(sorted_collection)-1)
-
-    :param sorted_collection: some sorted collection with comparable items
-    :param item: item value to search
-    :return: index of found item or None if item is not found
-
-    Examples:
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 0)
-    0
-
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 15)
-    4
-
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 5)
-    1
-
-    >>> binary_search_std_lib([0, 5, 7, 10, 15], 6)
-
+    """
+    가장 처음 재귀는 left = 0, right=(len(sorted_collection)-1)을 초기값으로 줘야합니다.
+    :param left : 탐색 범위의 시작
+    :param right : 탐색 범위의 끝 
     """
     if (right < left):
         return None
@@ -121,24 +78,22 @@ def binary_search_by_recursion(sorted_collection, item, left, right):
         return binary_search_by_recursion(sorted_collection, item, left, midpoint-1)
     else:
         return binary_search_by_recursion(sorted_collection, item, midpoint+1, right)
-      
+
+#입력값이 정렬이 됬는지 확인 해주는 함수
 def __assert_sorted(collection):
-    """Check if collection is sorted, if not - raises :py:class:`ValueError`
+    """
+    :param collection : 입력 값
+    ;return : 정렬이 되어있으면 True값 반환, 아니면 error 발생
 
-    :param collection: collection
-    :return: True if collection is sorted
-    :raise: :py:class:`ValueError` if collection is not sorted
-
-    Examples:
+    예시:
     >>> __assert_sorted([0, 1, 2, 4])
     True
 
     >>> __assert_sorted([10, -1, 5])
-    Traceback (most recent call last):
-    ...
-    ValueError: Collection must be sorted
+    error: Collection must be sorted!
     """
     if collection != sorted(collection):
+        print('error: Collection must be sorted')
         raise ValueError('Collection must be sorted')
     return True
 
