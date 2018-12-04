@@ -14,7 +14,7 @@ try:
 except NameError:
     raw_input = input  # Python 3
 
-#이진탐색알고리즘
+#이진탐색
 def binary_search(sorted_collection, item):
     """
     input값은 반드시 정렬 된 채로 주어져야 합니다.
