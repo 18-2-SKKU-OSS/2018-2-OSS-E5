@@ -109,8 +109,24 @@ if __name__ == '__main__':
 
     target_input = raw_input('Enter a single number to be found in the list:\n')
     target = int(target_input)
+    
+    #binary_search 함수 사용
     result = binary_search(collection, target)
     if result is not None:
-        print('{} found at positions: {}'.format(target, result))
+        print('{} binart search found at positions: {}'.format(target, result))
+    else:
+        print('Not found')
+    
+    #binary_search_std_lib 함수 사용
+    result = binary_search_std_lib(collection, target)
+    if result is not None:
+        print('{} binart search by library found at positions: {}'.format(target, result))
+    else:
+        print('Not found')
+    
+    #binary_search_by_recursion 함수 사용
+    result = binary_search_by_recursion(collection, target, 0, len(collection)-1)
+    if result is not None:
+        print('{} binary search by recursion found at positions: {}'.format(target, result))
     else:
         print('Not found')
