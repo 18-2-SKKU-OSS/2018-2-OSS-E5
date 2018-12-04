@@ -9,7 +9,8 @@
 ## Project
 기존 프로젝트 URL
 > [python/Algorithms](https://drive.google.com/open?id=15VQQI6trnJVe29v_ixXwmIa30OwJnN0j)
-The Project is about algorithms implemented by python
+
+The Project is about algorithms implemented by python (for education) 
 
 ## Activites
 
