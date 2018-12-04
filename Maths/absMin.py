@@ -10,7 +10,7 @@ def absMin(x):
     for i in x:
         if absVal(i) < j: #if absolute value of x[i] is smaller than j, swap them
             j = i
-    return j
+    return j #finally, return the smallest absolute value in array X
 
 def main():
     a = [1,2,-11]
