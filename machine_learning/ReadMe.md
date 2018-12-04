@@ -1,8 +1,7 @@
 ## Machine Learning GuideLine
 
 ### 1. Linear Regression
-
-- In this part of exercise you will fit the linear regression parameters θ to our dataset using gradient descent.
+In this part of exercise you will fit the linear regression parameters θ to our dataset using gradient descent.
 
 __Hypothesis Model__
 - The hypothesis h(x) is given by the linear model
@@ -22,7 +21,7 @@ __Gradient Descent__
 
 
 ### 2. Logistic Regression
-- In this part of the exercise, you will implement the cost and gradient for logistic regression.
+In this part of the exercise, you will implement the cost and gradient for logistic regression.
 
 __Hypothesis Model__
 - Before you start with the actual cost function, recall that the logistic regression hypothesis is defined as:
@@ -46,7 +45,7 @@ __Gradient Descent__
 	![7](https://user-images.githubusercontent.com/38908132/49339182-64f03000-f671-11e8-9309-95809ff07230.gif)
 
 ### 3. Perceptorn
-- In this part, you will implement the perceptron. 
+In this part, you will implement the perceptron. 
 
 __Hypothes Model__
 - The perceptron is defined as:
