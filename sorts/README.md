@@ -1,8 +1,14 @@
+# The Algorithms - Python <!-- [![Build Status](https://travis-ci.org/TheAlgorithms/Python.svg)](https://travis-ci.org/TheAlgorithms/Python) -->
+
+### All algorithms implemented in Python (for education)
+
+These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
+
 ## Sorting Algorithms
 
 
 ### Bubble Sort
-![alt text][bubble-image]
+![bubble-sort-in-c](https://user-images.githubusercontent.com/37110949/49448033-534a8c00-f81b-11e8-8b6a-78c83907ef7d.jpg)
 
 From [Wikipedia][bubble-wiki]: **Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
 
