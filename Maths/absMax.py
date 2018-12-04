@@ -9,7 +9,7 @@ def absMax(x):
     j = x[0]#compare from the first element to the last one
 
     for i in x:
-        if absVal(i) < j:#if absolute value of x[i] is smaller than absolute Max value, swap them
+        if absVal(i) > j:#if absolute value of x[i] is smaller than absolute Max value, swap them
             j = i
     return j
     #BUG: i is apparently a list, TypeError: '<' not supported between instances of 'list' and 'int' in absVal
@@ -17,7 +17,7 @@ def absMax(x):
 
 def main():
     a = [1,2,-11]
-    print(absMax(a)) #
+    print(absMax(a)) #find max absolue value
 
 if __name__ == '__main__':
     main()
