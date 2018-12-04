@@ -2,7 +2,7 @@ def main():
     def findMin(x):
         minNum = x[0]
         for i in x:
-            if minNum > i:
+            if minNum > i: #comparison 
                 minNum = i
         return minNum
 
