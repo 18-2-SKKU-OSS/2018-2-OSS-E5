@@ -7,6 +7,7 @@ def absMax(x):
     -10
     """
     j = x[0]#compare from the first element to the last one
+
     for i in x:
         if absVal(i) < j:#if absolute value of x[i] is smaller than absolute Max value, swap them
             j = i
@@ -16,7 +17,7 @@ def absMax(x):
 
 def main():
     a = [1,2,-11]
-    print(absVal(a)) # = -11
+    print(absMax(a)) #
 
 if __name__ == '__main__':
     main()

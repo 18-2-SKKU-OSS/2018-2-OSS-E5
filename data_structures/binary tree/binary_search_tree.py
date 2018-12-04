@@ -1,5 +1,6 @@
 '''
 A binary search Tree
+이진 탐색 트리입니다.
 '''
 from __future__ import print_function
 class Node:
