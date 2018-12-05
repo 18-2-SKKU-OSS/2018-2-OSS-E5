@@ -1,4 +1,5 @@
-#2018-12-5
+#2018-12-5 
+#this fuction provide you a max value in array
 
 def find_max(nums):
     max = nums[0]  
