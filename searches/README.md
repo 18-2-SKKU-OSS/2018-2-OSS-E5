@@ -3,8 +3,9 @@
 ### 1. Linear Search
 ![1 linear_search](https://user-images.githubusercontent.com/38908132/49446326-4cba1580-f817-11e8-9397-102eebbdfb0e.gif)
 
-From [Wikipedia][linear-wiki]: **Linear search** or *sequential search* is a method for finding an element in a list. It sequentially checks each element of the list until a match is found or all the elements have been searched.
+**Linear search** or *sequential search* is a method for finding an element in a list. It sequentially checks each element of the list until a match is found or all the elements have been searched.
 
+###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Linear_search)
 __Properties__
 * Worst case performance	O(n)
 * Best case performance	O(1)
@@ -14,7 +15,7 @@ __Properties__
 ### 2. Binary Search
 ![2 binary_search](https://user-images.githubusercontent.com/38908132/49446327-4cba1580-f817-11e8-8efa-032610735e42.png)
 
-From [Wikipedia][binary-wiki]: **Binary search**, also known as *half-interval search* or *logarithmic search*, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
+**Binary search**, also known as *half-interval search* or *logarithmic search*, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
 
 __Properties__
 * Worst case performance	O(log n)
@@ -22,14 +23,17 @@ __Properties__
 * Average case performance	O(log n)
 * Worst case space complexity	O(1)
 
+###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+
 ## 3. Interpolation Search
-Interpolation search is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys (key values). It was first described by W. W. Peterson in 1957. Interpolation search resembles the method by which people search a telephone directory for a name (the key value by which the book's entries are ordered): in each step the algorithm calculates where in the remaining search space the sought item might be, based on the key values at the bounds of the search space and the value of the sought key, usually via a linear interpolation. The key value actually found at this estimated position is then compared to the key value being sought. If it is not equal, then depending on the comparison, the remaining search space is reduced to the part before or after the estimated position. This method will only work if calculations on the size of differences between key values are sensible.
+**Interpolation search** is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys (key values). It was first described by W. W. Peterson in 1957. Interpolation search resembles the method by which people search a telephone directory for a name (the key value by which the book's entries are ordered): in each step the algorithm calculates where in the remaining search space the sought item might be, based on the key values at the bounds of the search space and the value of the sought key, usually via a linear interpolation. The key value actually found at this estimated position is then compared to the key value being sought. If it is not equal, then depending on the comparison, the remaining search space is reduced to the part before or after the estimated position. This method will only work if calculations on the size of differences between key values are sensible.
 
 By comparison, binary search always chooses the middle of the remaining search space, discarding one half or the other, depending on the comparison between the key found at the estimated position and the key sought — it does not require numerical values for the keys, just a total order on them. The remaining search space is reduced to the part before or after the estimated position. The linear search uses equality only as it compares elements one-by-one from the start, ignoring any sorting.
 
-On average the interpolation search makes about log(log(n)) comparisons (if the elements are uniformly distributed), where n is the number of elements to be searched. In the worst case (for instance where the numerical values of the keys increase exponentially) it can make up to O(n) comparisons.
+__Properties__
+* Worst case performance	O(n)
+* Average case performance	O(log log n)
 
-In interpolation-sequential search, interpolation is used to find an item near the one being searched for, then linear search is used to find the exact item.
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Interpolation_search)
 
 ## 4. Jump Search
@@ -39,6 +43,13 @@ In computer science, a jump search or block search refers to a search algorithm 
 The optimal value of m is √n, where n is the length of the list L. Because both steps of the algorithm look at, at most, √n items the algorithm runs in O(√n) time. This is better than a linear search, but worse than a binary search. The advantage over the latter is that a jump search only needs to jump backwards once, while a binary can jump backwards up to log n times. This can be important if a jumping backwards takes significantly more time than jumping forward.
 
 The algorithm can be modified by performing multiple levels of jump search on the sublists, before finally performing the linear search. For an k-level jump search the optimum block size m<sub>l</sub> for the l<sup>th</sup> level (counting from 1) is n<sup>(k-l)/k</sup>. The modified algorithm will perform *k* backward jumps and runs in O(kn<sup>1/(k+1)</sup>) time.
+
+__Properties__
+* Worst case performance	O(sqrt n)
+* Best case performance	O(1)
+* Average case performance	O(sqrt n)
+* Space complexity O(1)
+
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Jump_search)
 
 ## 5. Quick Select Search
@@ -48,6 +59,7 @@ In computer science, quickselect is a selection algorithm to find the kth smalle
 Quickselect uses the same overall approach as quicksort, choosing one element as a pivot and partitioning the data in two based on the pivot, accordingly as less than or greater than the pivot. However, instead of recursing into both sides, as in quicksort, quickselect only recurses into one side – the side with the element it is searching for. This reduces the average complexity from O(n log n) to O(n), with a worst case of O(n<sup>2</sup>).
 
 As with quicksort, quickselect is generally implemented as an in-place algorithm, and beyond selecting the k'th element, it also partially sorts the data. See selection algorithm for further discussion of the connection with sorting.
+
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Quickselect)
 
 ## 6. Tabu Search
