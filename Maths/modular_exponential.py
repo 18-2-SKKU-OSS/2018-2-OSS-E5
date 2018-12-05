@@ -15,7 +15,12 @@ def modularExponential(base, power, mod):
 
 
 def main():
-	print(modularExponential(3, 200, 13))
+	
+	base = int(input("input base"))
+	power = int(input("input power"))
+	mod = int(input("input mod"))
+	
+	print(modularExponential(base, power, mod))
 
 
 if __name__ == '__main__':
