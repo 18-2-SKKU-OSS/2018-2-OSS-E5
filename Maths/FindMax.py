@@ -1,7 +1,7 @@
-# 가장 큰 (Max) 숫자를 찾는 함수
+#2018-12-5
 
 def find_max(nums):
-    max = nums[0]
+    max = nums[0]  
     for x in nums:
       if x > max:
         max = x
