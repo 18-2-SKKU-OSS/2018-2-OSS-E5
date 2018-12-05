@@ -1,3 +1,5 @@
+#implementation modular exponentation
+#this fuction calculate value of base^power % mod
 def modularExponential(base, power, mod):
 	if power < 0:
 		return -1
