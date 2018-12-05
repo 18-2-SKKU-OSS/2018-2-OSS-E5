@@ -12,21 +12,21 @@ except NameError:
     raw_input = input  # Python 3
     
 #점프탐색
-def jump_search(arr, x):
-    n = len(arr)
+def jump_search(collection, item):
+    n = len(collection)
     step = int(math.floor(math.sqrt(n)))
     prev = 0
-    while arr[min(step, n)-1] < x:
+    while collection[min(step, n)-1] < item:
         prev = step
         step += int(math.floor(math.sqrt(n)))
         if prev >= n:
             return -1
 
-    while arr[prev] < x:
+    while collection[prev] < item:
         prev = prev + 1
         if prev == min(step, n):
             return -1
-    if arr[prev] == x:
+    if collection[prev] == item:
         return prev
     return -1
 
