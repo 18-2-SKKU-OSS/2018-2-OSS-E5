@@ -24,12 +24,12 @@ def bubble_sort(collection):
     """
     length = len(collection)
     for i in range(length-1):
-        swapped = False
+        swapped = False 
         for j in range(length-1-i):
             if collection[j] > collection[j+1]:
-                swapped = True
+                swapped = True #인접한 원소를 비교후 배열에서 왼쪽의 원소가 더작을 경우 True 만들어준다
                 collection[j], collection[j+1] = collection[j+1], collection[j]
-        if not swapped: break  # Stop iteration if the collection is sorted.
+        if not swapped: break  # 원소들이 이미 정렬되어있다면 종료한다.
     return collection
 
 
@@ -38,6 +38,6 @@ if __name__ == '__main__':
         raw_input          # Python 2
     except NameError:
         raw_input = input  # Python 3
-    user_input = raw_input('Enter numbers separated by a comma:').strip()
+    user_input = raw_input('Enter numbers separated by a comma:').strip() #콤마로 원소들을 구분한다.
     unsorted = [int(item) for item in user_input.split(',')]
     print(*bubble_sort(unsorted), sep=',')
