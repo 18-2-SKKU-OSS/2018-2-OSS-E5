@@ -4,7 +4,8 @@ def recur_fibo(n):
     if n <= 1:
         return n #finish condition
     else:
-        (recur_fibo(n-1) + recur_fibo(n-2)) #call recur_fibo recursivly
+	return (recur_fibo(n-1) + recur_fibo(n-2)) #call recur_fibo recursivly
+
 
 def isPositiveInteger(limit): #restrict that input is always positive
     return limit >= 0
