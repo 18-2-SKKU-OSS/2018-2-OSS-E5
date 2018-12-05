@@ -1,8 +1,8 @@
 def main():
     def findMin(x):
-        minNum = x[0]
-        for i in x:
-            if minNum > i:
+        minNum = x[0] #compare from the first element
+        for i in x: #iterate i which travels 0 ~ max index
+            if minNum > i: #if minNum is larger than x[i], swap them
                 minNum = i
         return minNum
 
