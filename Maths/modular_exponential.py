@@ -1,5 +1,3 @@
-#implement power function in math library
-
 def modularExponential(base, power, mod):
 	if power < 0:
 		return -1
@@ -16,9 +14,9 @@ def modularExponential(base, power, mod):
 
 def main():
 	
-	base = int(input("input base"))
-	power = int(input("input power"))
-	mod = int(input("input mod"))
+	base = int(input("input base: "))
+	power = int(input("input power: "))
+	mod = int(input("input mod: "))
 	
 	print(modularExponential(base, power, mod))
 
