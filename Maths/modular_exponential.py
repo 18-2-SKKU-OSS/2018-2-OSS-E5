@@ -1,3 +1,5 @@
+#implement power function in math library
+
 def modularExponential(base, power, mod):
 	if power < 0:
 		return -1
