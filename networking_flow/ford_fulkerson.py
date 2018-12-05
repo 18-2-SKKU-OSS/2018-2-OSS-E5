@@ -1,12 +1,17 @@
-# Ford-Fulkerson Algorithm for Maximum Flow Problem
+# Ford-Fulkerson Algorithm
 """
-Description:
-    (1) Start with initial flow as 0;
-    (2) Choose augmenting path from source to sink and add path to flow;
+Ford-Fulkerson 방법 또는 Ford-Fulkerson 알고리즘 (FFA)은 
+흐름 네트워크에서 최대 흐름을 계산하는 greedy 알고리즘입니다. 
+이는 잔여 그래프에서 증가 경로를 찾는 접근법이 완전히 지정되지 않았거나
+다른 실행 시간을 가진 여러 구현에서 지정되기 때문에 "알고리즘"대신 "방법"이라고도 합니다.
+
+기술:
+     (1) 초기 흐름을 0으로 시작합니다.
+     (2) 소스에서 싱크까지 증가 경로를 선택하고 흐름 경로를 추가하십시오.
 """
     
 def BFS(graph, s, t, parent):
-    # Return True if there is node that has not iterated.
+    # 반복되지 않은 노드가 있으면 True를 반환합니다.
     visited = [False]*len(graph)
     queue=[]
     queue.append(s)
@@ -23,7 +28,7 @@ def BFS(graph, s, t, parent):
     return True if visited[t] else False
      
 def FordFulkerson(graph, source, sink):
-    # This array is filled by BFS and to store path
+    #이 배열은 BFS로써 인덱스를 쌓아가며 저장소 경로로서 채워집니다.
     parent = [-1]*(len(graph))
     max_flow = 0 
     while BFS(graph, source, sink, parent) :
@@ -31,7 +36,7 @@ def FordFulkerson(graph, source, sink):
         s = sink
 
         while(s !=  source):
-            # Find the minimum value in select path
+            # 선택 경로에서 최소값 찾기
             path_flow = min (path_flow, graph[parent[s]][s])
             s = parent[s]
 

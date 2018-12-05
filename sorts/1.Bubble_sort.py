@@ -1,13 +1,14 @@
+"""
+파이썬으로 bubble sort를 구현한 코드입니다.
+함수 bubble_sort:
+    버블 소트라고 불리며
+    두 인접한 원소를 검사하며 정렬하는 방법입니다.
+    코드가 단순하기 때문에 자주 사용 됩니다.
+"""    
 from __future__ import print_function
-#버블소트
 
 def bubble_sort(collection):
-    """Pure implementation of bubble sort algorithm in Python
-
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-
+    """
     Examples:
     >>> bubble_sort([0, 5, 4, 2, 2])
     [0, 2, 2, 4, 5]
