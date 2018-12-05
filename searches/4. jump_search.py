@@ -13,6 +13,11 @@ except NameError:
     
 #점프탐색
 def jump_search(collection, item):
+    """
+    :param collection : 탐색을 진행할 배열
+    :param item : 탐색을 진행할 키(key) 값
+    ;return : 키 값이 있는 위치(index), 없을 경우 None
+    """
     n = len(collection)
     step = int(math.floor(math.sqrt(n)))
     prev = 0
@@ -20,15 +25,15 @@ def jump_search(collection, item):
         prev = step
         step += int(math.floor(math.sqrt(n)))
         if prev >= n:
-            return -1
+            return None
 
     while collection[prev] < item:
         prev = prev + 1
         if prev == min(step, n):
-            return -1
+            return None
     if collection[prev] == item:
         return prev
-    return -1
+    return None
 
 
 #입력값이 정렬이 됬는지 확인 해주는 함수
