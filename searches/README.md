@@ -41,7 +41,7 @@ The optimal value of m is √n, where n is the length of the list L. Because bot
 The algorithm can be modified by performing multiple levels of jump search on the sublists, before finally performing the linear search. For an k-level jump search the optimum block size m<sub>l</sub> for the l<sup>th</sup> level (counting from 1) is n<sup>(k-l)/k</sup>. The modified algorithm will perform *k* backward jumps and runs in O(kn<sup>1/(k+1)</sup>) time.
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Jump_search)
 
-## 5. Quick Select
+## 5. Quick Select Search
 ![5 quick_search](https://user-images.githubusercontent.com/38908132/49446329-4d52ac00-f817-11e8-8cb8-64c716fc6732.gif)
 In computer science, quickselect is a selection algorithm to find the kth smallest element in an unordered list. It is related to the quicksort sorting algorithm. Like quicksort, it was developed by Tony Hoare, and thus is also known as Hoare's selection algorithm. Like quicksort, it is efficient in practice and has good average-case performance, but has poor worst-case performance. Quickselect and its variants are the selection algorithms most often used in efficient real-world implementations.
 
