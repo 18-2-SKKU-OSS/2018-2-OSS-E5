@@ -13,7 +13,8 @@ def main():
     limit = int(input("How many terms to include in fibonacci series: "))
     if isPositiveInteger(limit):
         print("The first {limit} terms of the fibonacci series are as follows:")
-        print([recur_fibo(n) for n in range(limit)])
+        for n in range(limit){
+		print(recur_fibo(n))
     else:
         print("Please enter a positive integer: ")
 
