@@ -1,16 +1,17 @@
 """
 점프 탐색 (Jump Search) 
 이진 탐색과 마찬가지로 정렬된 배열을 대상으로 하는 탐색 알고리즘이다. 타겟 값보다 큰 값이 나올 때까지 
-순차적으로 배열요소에 접근을 하게 된다. 그리고
+순차적으로 배열요소에 접근을 하게 된다. 그리고 부분 배열에서 타겟 값을 찾게 된다. 
 """
 from __future__ import print_function
+import math
 
 try:
     raw_input          # Python 2
 except NameError:
     raw_input = input  # Python 3
     
-import math
+#점프탐색
 def jump_search(arr, x):
     n = len(arr)
     step = int(math.floor(math.sqrt(n)))
