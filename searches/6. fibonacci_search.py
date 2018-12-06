@@ -51,13 +51,26 @@ def fibonacci_search(arr, x, n):
     if(fibMMm1 and arr[offset+1]==x):
         return offset+1; 
   
-    return -1; 
+    return None; 
+
+#입력값이 정렬이 됬는지 확인 해주는 함수
+def __assert_sorted(collection):
+    if collection != sorted(collection):
+        print('error: Collection must be sorted')
+        raise ValueError('Collection must be sorted')
+        
+    return True
 
 if __name__ == '__main__':
     import sys
     user_input = raw_input('Enter numbers separated by comma:\n').strip()
     collection = [int(item) for item in user_input.split(',')]
     
+    try:
+        __assert_sorted(collection)
+    except ValueError:
+        sys.exit('Sequence must be sorted to apply binary search')
+   
     target_input = raw_input('Enter a single number to be found in the list:\n')
     target = int(target_input)
     
