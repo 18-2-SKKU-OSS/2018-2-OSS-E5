@@ -43,7 +43,7 @@ __Properties__
 ###### View the algorithm in [action][insertion-toptal]
 
 ### 3.Merge Sort
-![merge](https://user-images.githubusercontent.com/37110949/49570196-5e1b3300-f979-11e8-8a10-ac6e8da985cf.png)
+![how merge sort algorithm works in java](https://user-images.githubusercontent.com/37110949/49570490-19dc6280-f97a-11e8-9d26-10540d5dcd88.png)
 
 From [Wikipedia](https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC): **Merge sort** (also commonly spelled *mergesort*) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means the order of equal items is the same in the input and output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
 
