@@ -1,4 +1,4 @@
-# Finding longest distance in Directed Acyclic Graph using KahnsAlgorithm
+# Kahn의 알고리즘을 사용하여 지시 된 비주기 곡선에서 최장 거리 찾기
 def longestDistance(l):
     indegree = [0] * len(l)
     queue = []
@@ -24,7 +24,6 @@ def longestDistance(l):
                 queue.append(x)
 
     print(max(longDist))
-
-# Adjacency list of Graph
+# 인접 그래프 목록
 l = {0:[2,3,4], 1:[2,7], 2:[5], 3:[5,7], 4:[7], 5:[6], 6:[7], 7:[]}
 longestDistance(l)
