@@ -1,11 +1,11 @@
-class Node:
+class Node: # 노드 클래스
     def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
 
 
-def depth_of_tree(tree):
+def depth_of_tree(tree):#트리의 깊이를 반환하는 함수
     if tree is None:
         return 0
     else:
@@ -17,7 +17,7 @@ def depth_of_tree(tree):
             return 1 + depth_r_tree
 
 
-def is_full_binary_tree(tree):
+def is_full_binary_tree(tree):#완전이진트리인지 판단해주는 함수
     if tree is None:
         return True
     if (tree.left is None) and (tree.right is None):
