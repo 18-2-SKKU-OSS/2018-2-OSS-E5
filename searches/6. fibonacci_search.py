@@ -20,38 +20,38 @@ def fibonacci_search(arr, x, n):
     :param item : 탐색을 진행할 키(key) 값
     :return : 키 값이 있는 위치(index), 없을 경우 None
     """
-    fibMMm2 = 0;   # (m-2)'th Fibonacci No. 
-    fibMMm1 = 1;   # (m-1)'th Fibonacci No. 
-    fibM = fibMMm2 + fibMMm1;  # m'th Fibonacci
+    fibMMm2 = 0  # (m-2)'th Fibonacci No. 
+    fibMMm1 = 1   # (m-1)'th Fibonacci No. 
+    fibM = fibMMm2 + fibMMm1  # m'th Fibonacci
 
     while (fibM < n): 
-        fibMMm2 = fibMMm1; 
-        fibMMm1 = fibM; 
-        fibM  = fibMMm2 + fibMMm1; 
+        fibMMm2 = fibMMm1
+        fibMMm1 = fibM
+        fibM  = fibMMm2 + fibMMm1
   
-    offset = -1; 
+    offset = -1
   
  
     while (fibM > 1):
-        i = min(offset+fibMMm2, n-1); 
+        i = min(offset+fibMMm2, n-1)
   
         if (arr[i] < x):
-            fibM  = fibMMm1; 
-            fibMMm1 = fibMMm2; 
-            fibMMm2 = fibM - fibMMm1; 
-            offset = i; 
+            fibM  = fibMMm1
+            fibMMm1 = fibMMm2 
+            fibMMm2 = fibM - fibMMm1
+            offset = i
         elif (arr[i] > x):
-            fibM  = fibMMm2; 
-            fibMMm1 = fibMMm1 - fibMMm2; 
-            fibMMm2 = fibM - fibMMm1; 
+            fibM  = fibMMm2
+            fibMMm1 = fibMMm1 - fibMMm2
+            fibMMm2 = fibM - fibMMm1
         else:
-            return i; 
+            return i
   
 
     if(fibMMm1 and arr[offset+1]==x):
-        return offset+1; 
+        return offset+1
   
-    return None; 
+    return None
 
 #입력값이 정렬이 됬는지 확인 해주는 함수
 def __assert_sorted(collection):
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     target = int(target_input)
     
     n = len(collection)
-    x = 85; 
+    x = 85
     print("Found at index:", 
-            fibonacci_search(collection, target, n)); 
+            fibonacci_search(collection, target, n))
 
