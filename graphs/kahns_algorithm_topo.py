@@ -1,4 +1,4 @@
-# Kahn's Algorithm is used to find Topological ordering of Directed Acyclic Graph using BFS
+# 칸의 알고리즘은 BFS를 사용하여 지시 된 비주기 그래프의 위상 적 순서를 찾는 데 사용됩니다
 def topologicalSort(l):
     indegree = [0] * len(l)
     queue = []
@@ -27,6 +27,6 @@ def topologicalSort(l):
     else:
         print(topo)
 
-# Adjacency List of Graph
+# 인접 그래프 목록
 l = {0:[1,2], 1:[3], 2:[3], 3:[4,5], 4:[], 5:[]}
 topologicalSort(l)
