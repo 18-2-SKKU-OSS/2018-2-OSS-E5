@@ -7,9 +7,9 @@ def absVal(num):
     0
     """
     if num < 0:
-        return -num
+        return -num #if the input number is negative, convert to positive
     else:
-        return num
+        return num #if the input number is positive, don't need to convert
 
 def main():
     print(absVal(-34)) # = 34

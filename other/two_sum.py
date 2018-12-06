@@ -1,21 +1,24 @@
 """
-Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+주어진 정수 배열을 이용하여 두 숫자의 인덱스를 반환하여 특정 대상에 합산합니다.
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+각 입력에는 정확히 하나의 솔루션이 있다고 가정 할 수 있으며 동일한 요소를 두 번 사용할 수 없습니다.
 
-Example:
-Given nums = [2, 7, 11, 15], target = 9,
+즉 여러 솔루션을 갖는 인자배열과 목표값을 사용하면 안됩니다.
 
-Because nums[0] + nums[1] = 2 + 7 = 9,
+예시:
+인자 = [2, 7, 11, 15], 목표값 = 9,
+
+nums[0] + nums[1] = 2 + 7 = 9 이므로,
 return [0, 1].
 """
+
 from __future__ import print_function
 
 def twoSum(nums, target):
     """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
+    인자형: List[int]
+    목표값의 형: int
+    반환형: List[int]
     """
     chk_map = {}
     for index, val in enumerate(nums):
