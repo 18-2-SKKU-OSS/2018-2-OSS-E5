@@ -17,8 +17,9 @@ def fibonacci_search(arr, x, n):
     input값은 반드시 정렬 된 채로 주어져야 합니다.
     그러지 않으면 원하지 않는 결과값이 나올 수 있습니다.
     :param arr : 탐색을 진행할 배열
-    :param item : 탐색을 진행할 키(key) 값
-    :return : 키 값이 있는 위치(index), 없을 경우 None
+    :param x : 탐색을 진행할 키(key) 값
+    :param n : 배열의 크기
+    ;return : 키 값이 있는 위치(index), 없을 경우 None
     """
     fibMMm2 = 0  # (m-2)'th Fibonacci No. 
     fibMMm1 = 1   # (m-1)'th Fibonacci No. 
@@ -75,7 +76,6 @@ if __name__ == '__main__':
     target = int(target_input)
     
     n = len(collection)
-    x = 85
     print("Found at index:", 
             fibonacci_search(collection, target, n))
 
