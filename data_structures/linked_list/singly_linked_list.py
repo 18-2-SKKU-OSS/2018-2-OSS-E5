@@ -1,23 +1,23 @@
 from __future__ import print_function
 
 
-class Node:  # create a Node
-    def __init__(self, data):
+class Node:  # create a Node # 노드 클래스
+    def __init__(self, data):#(생성자)
         self.data = data  # given data
         self.next = None  # given next to None
 
 
 class Linked_List:
     def __init__(self):
-        self.Head = None    # Initialize Head to None
+        self.Head = None    # Initialize Head to None #헤드가 가르키는 곳을 None으로 초기화
         
     def insert_tail(self, data):
-        if(self.Head is None): self.insert_head(data)    #If this is first node, call insert_head
+        if(self.Head is None): self.insert_head(data)    #If this is first node, call insert_head # 만약 첫번째 노드라면 헤드에 넣는다.
         else:
             temp = self.Head
-            while(temp.next != None):    #traverse to last node
+            while(temp.next != None):    #traverse to last node # 마지막 노드까지 순회
                 temp = temp.next
-            temp.next = Node(data)    #create node & link to tail
+            temp.next = Node(data)    #create node & link to tail # 새로운 노드를 만들고 꼬리에 연결
 
     def insert_head(self, data):
         newNod = Node(data)    # create a new node
