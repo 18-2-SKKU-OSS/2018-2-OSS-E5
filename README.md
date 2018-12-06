@@ -5,10 +5,10 @@
 > [2018-2-OSS-E5 Wiki 페이지](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/wiki)
 ## Group Docs
 그룹 Docs를 한 곳에 모아둔 저장소입니다.
-> [2018-2-OSS-E5 docs 사이트](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/wiki/Activites)
+> [2018-2-OSS-E5 docs 사이트](https://drive.google.com/open?id=15VQQI6trnJVe29v_ixXwmIa30OwJnN0j)
 ## Project
 기존 프로젝트 URL
-> [python/Algorithms](https://drive.google.com/open?id=15VQQI6trnJVe29v_ixXwmIa30OwJnN0j)
+> [python/Algorithms](https://github.com/TheAlgorithms/Python)
 
 The Project is about algorithms implemented by python (for education) 
 
