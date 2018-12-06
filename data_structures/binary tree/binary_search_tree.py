@@ -9,7 +9,7 @@ class Node:
         self.label = label
         self.left = None
         self.right = None
-        #Added in order to delete a node easier
+        # 노드를 쉽게 삭제하기 위해 추가됨
         self.parent = parent
 
     def getLabel(self):
@@ -42,73 +42,73 @@ class BinarySearchTree:
         self.root = None
 
     def insert(self, label):
-        # Create a new Node
+        # 새 노드 생성
         new_node = Node(label, None)
-        # If Tree is empty
+        # 만약 트리가 비었다면 
         if self.empty():
             self.root = new_node
         else:
-            #If Tree is not empty
+            # 만약 트리가 비어있지 않다면
             curr_node = self.root
-            #While we don't get to a leaf
+            # 모든 자식노드를 다 돌 때까지 
             while curr_node is not None:
-                #We keep reference of the parent node
+                # 부모노드의 참조를 유지한다.
                 parent_node = curr_node
-                #If node label is less than current node
+                # 라벨에 있는 값이 현재 노드보다 작다면
                 if new_node.getLabel() < curr_node.getLabel():
-                #We go left
+                # 왼쪽 자식 노드로 이동한다.
                     curr_node = curr_node.getLeft()
                 else:
-                    #Else we go right
+                    # 그렇지 않은 경우 오른쪽 자식 노드로 이동한다.
                     curr_node = curr_node.getRight()
-            #We insert the new node in a leaf
+            # 자식 노드로서 새 노드를 삽입해야 하는 경우
             if new_node.getLabel() < parent_node.getLabel():
                 parent_node.setLeft(new_node)
             else:
                 parent_node.setRight(new_node)
-            #Set parent to the new node
+            # 새 노드에 부모 노드로서 지정
             new_node.setParent(parent_node)      
     
     def delete(self, label):
         if (not self.empty()):
-            #Look for the node with that label
+            # 라벨값을 갖고 있는 노드를 찾기
             node = self.getNode(label)
-            #If the node exists
+            # 만약 노드가 존재한다면
             if(node is not None):
-                #If it has no children
+                # 만약 자식 노드가 없다면
                 if(node.getLeft() is None and node.getRight() is None):
                     self.__reassignNodes(node, None)
                     node = None
-                #Has only right children
+                # 만약 오른쪽 자식 노드만 있다면
                 elif(node.getLeft() is None and node.getRight() is not None):
                     self.__reassignNodes(node, node.getRight())
-                #Has only left children
+                # 만약 왼쪽 자식 노드만 있다면
                 elif(node.getLeft() is not None and node.getRight() is None):
                     self.__reassignNodes(node, node.getLeft())
-                #Has two children
+                # 만약 양쪽 자식 노드가 있다면
                 else:
-                    #Gets the max value of the left branch
+                    # 그 라벨보다 작은 값들 중에 가장 큰 값을 찾아낸다.
                     tmpNode = self.getMax(node.getLeft())
-                    #Deletes the tmpNode
+                    # tempnode를 지운다.
                     self.delete(tmpNode.getLabel())
-                    #Assigns the value to the node to delete and keesp tree structure
+                    # 트리 구조를 유지하기 위해 temp노드의 라벨에 대해 setlabel 을 수행
                     node.setLabel(tmpNode.getLabel())
     
     def getNode(self, label):
         curr_node = None
-        #If the tree is not empty
+        # 만약 트리가 비어 있지 않다면
         if(not self.empty()):
-            #Get tree root
+            # 루트 노드를 가져와서
             curr_node = self.getRoot()
-            #While we don't find the node we look for
-            #I am using lazy evaluation here to avoid NoneType Attribute error
+            # 우리가 찾아내야 하는 노드를 찾을 수 없을 때 까지
+            # NoneType Attribute error가 안나게 하기 위해 lazy computation을 수행
             while curr_node is not None and curr_node.getLabel() is not label:
-                #If node label is less than current node
+                # 만약 라벨값이 현재 노드보다 작다면
                 if label < curr_node.getLabel():
-                    #We go left
+                    # 왼쪽 자식 노드로 이동
                     curr_node = curr_node.getLeft()
                 else:
-                    #Else we go right
+                    # 그렇지 않은 경우 오른쪽 자식 노드로 이동
                     curr_node = curr_node.getRight()
         return curr_node
 
@@ -116,7 +116,7 @@ class BinarySearchTree:
         if(root is not None):
             curr_node = root
         else:
-            #We go deep on the right branch
+            # 오른쪽 가지로 깊게 진행
             curr_node = self.getRoot()
         if(not self.empty()):
             while(curr_node.getRight() is not None):
@@ -127,7 +127,7 @@ class BinarySearchTree:
         if(root is not None):
             curr_node = root
         else:
-            #We go deep on the left branch
+            # 왼쪽 가지고 깊게 진행
             curr_node = self.getRoot()
         if(not self.empty()):
             curr_node = self.getRoot()
@@ -160,26 +160,26 @@ class BinarySearchTree:
         if(newChildren is not None):
             newChildren.setParent(node.getParent())
         if(node.getParent() is not None):
-            #If it is the Right Children
+            # 만약 이것이 오른쪽 자식 노드면
             if(self.__isRightChildren(node)):
                 node.getParent().setRight(newChildren)
             else:
-                #Else it is the left children
+                # 만약 이것이 왼쪽 자식 노드면
                 node.getParent().setLeft(newChildren)
 
-    #This function traversal the tree. By default it returns an
-    #In order traversal list. You can pass a function to traversal
-    #The tree as needed by client code
+    # 이 함수는 트리를 서치하는 함수입니다. 초기값은
+    # inorder 순회입니다. 순회 함수로 전달할 수 있으며
+    # client 코드로서 필요한 트리
     def traversalTree(self, traversalFunction = None, root = None):
         if(traversalFunction is None):
-            #Returns a list of nodes in preOrder by default
+            # 디폴트 값으로 preorder 트리의 내역을 출력
             return self.__InOrderTraversal(self.root)
         else:
-            #Returns a list of nodes in the order that the users wants to
+            # 사용가 원하는 방식으로 트리의 내력을 출력
             return traversalFunction(self.root)
 
-    #Returns an string of all the nodes labels in the list 
-    #In Order Traversal
+    # 리스트에 있는 모든 라벨들을 출력 
+    #In Order 순회
     def __str__(self):
         list = self.__InOrderTraversal(self.root)
         str = ""
@@ -197,7 +197,7 @@ def InPreOrder(curr_node):
 
 def testBinarySearchTree():
     '''
-    Example
+    예시
                   8
                  / \
                 3   10
@@ -208,7 +208,7 @@ def testBinarySearchTree():
     '''
 
     '''
-    Example After Deletion
+    삭제 후의 예시
                   7
                  / \
                 1   4
@@ -225,7 +225,7 @@ def testBinarySearchTree():
     t.insert(4)
     t.insert(7)
 
-    #Prints all the elements of the list in order traversal
+    #in order traversal 을 이용한 모든 리스트 원소 출력
     print(t.__str__())
 
     if(t.getNode(6) is not None):
@@ -249,8 +249,8 @@ def testBinarySearchTree():
     t.delete(6)
     t.delete(14)
 
-    #Gets all the elements of the tree In pre order
-    #And it prints them
+    # pre order을 이용한 트리 안에 있는 모든 원소들을 출력
+    # 그리고 출력
     list = t.traversalTree(InPreOrder, t.root)
     for x in list:
         print(x)
