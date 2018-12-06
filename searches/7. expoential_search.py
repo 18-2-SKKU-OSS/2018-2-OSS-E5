@@ -29,10 +29,10 @@ def exponential_search(arr, n, x):
     while (i < n and arr[i] <= x):
         i = i*2
   
-    return binarySearch(arr, i//2, min(i, n), x)
+    return binary_search(arr, i//2, min(i, n), x)
 
 #이진탐색
-def binarySearch(arr, l, r, x):
+def binary_search(arr, l, r, x):
     """
     :param arr : 탐색을 진행할 배열
     :param l : 탐색 범위의 시작
@@ -47,9 +47,9 @@ def binarySearch(arr, l, r, x):
             return mid
   
         if (arr[mid] > x) :
-            return binarySearch(arr, l, mid-1, x)
+            return binary_search(arr, l, mid-1, x)
 
-        return binarySearch(arr, mid+1, r, x)
+        return binary_search(arr, mid+1, r, x)
   
     return None
 
