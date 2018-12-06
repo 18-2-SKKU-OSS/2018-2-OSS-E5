@@ -18,7 +18,7 @@ __Properties__
 
 ###### View the algorithm in [action][selection-toptal]
 
-### Bubble Sort
+### 1.Bubble Sort
 ![bubble-sort-in-c](https://user-images.githubusercontent.com/37110949/49448033-534a8c00-f81b-11e8-8b6a-78c83907ef7d.jpg)
 
 From [Wikipedia][bubble-wiki]: **Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
@@ -30,7 +30,7 @@ __Properties__
 
 ###### View the algorithm in [action][bubble-toptal]
 
-### Insertion Sort
+### 2.Insertion Sort
 ![insertion-sort](https://user-images.githubusercontent.com/37110949/49484510-a99ae780-f87a-11e8-8681-981f5739e03d.png)
 
 From [Wikipedia](https://ko.wikipedia.org/wiki/%EC%82%BD%EC%9E%85_%EC%A0%95%EB%A0%AC): **Insertion sort** is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on *large* lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
@@ -41,6 +41,19 @@ __Properties__
 * Average case performance	O(n<sup>2</sup>)
 
 ###### View the algorithm in [action][insertion-toptal]
+
+### 3.Merge Sort
+![merge](https://user-images.githubusercontent.com/37110949/49570196-5e1b3300-f979-11e8-8a10-ac6e8da985cf.png)
+
+From [Wikipedia](https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC): **Merge sort** (also commonly spelled *mergesort*) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means the order of equal items is the same in the input and output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+
+__Properties__
+* Worst case performance	O(n log n)
+* Best case performance	O(n log n)
+* Average case performance	O(n log n)
+
+
+###### View the algorithm in [action][merge-toptal]
 
 ### Bucket Sort
 ![alt text][bucket-image-1]
@@ -64,20 +77,6 @@ __Properties__
 * Average case performance	O(n<sup>2</sup>)
 
 
-
-
-### Merge Sort
-![alt text][merge-image]
-
-From [Wikipedia][merge-wiki]: **Merge sort** (also commonly spelled *mergesort*) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means the order of equal items is the same in the input and output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
-
-__Properties__
-* Worst case performance	O(n log n)
-* Best case performance	O(n log n)
-* Average case performance	O(n log n)
-
-
-###### View the algorithm in [action][merge-toptal]
 
 ### Quick Sort
 ![alt text][quick-image]
