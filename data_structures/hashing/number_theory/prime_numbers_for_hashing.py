@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-    module to operations with prime numbers
+    해쉬 모델에 적용되는 모듈을 소수로 처리하기
 """
 
 
 def check_prime(number):
         """
-            it's not the best solution
+            이것은 최선의 해결책은 아닙니다.
         """
         special_non_primes = [0,1,2]
         if number in special_non_primes[:2]:
