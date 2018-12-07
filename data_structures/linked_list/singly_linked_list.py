@@ -41,16 +41,16 @@ class Linked_List:
     def delete_tail(self):  # delete from tail 꼬리로 부터 하나씩 제거
         tamp = self.Head
         if self.Head != None:
-            if(self.Head.next is None):    # if Head is the only Node in the Linked List
+            if(self.Head.next is None):    # if Head is the only Node in the Linked List 링크드리스트에서 헤드가 유일한 노드일경우
                 self.Head = None
             else:
-                while tamp.next.next is not None:  # find the 2nd last element
+                while tamp.next.next is not None:  # find the 2nd last element 두번째로 마지막인 원소를 찾는다.
                     tamp = tamp.next
-                tamp.next, tamp = None, tamp.next    #(2nd last element).next = None and tamp = last element 
+                tamp.next, tamp = None, tamp.next    #(2nd last element).next = None and tamp = last element 해당 노의 다음이 None이고 tamp가 마지막 일경우 
         return tamp
 
     def isEmpty(self):
-        return self.Head is None  # Return if Head is none
+        return self.Head is None  # Return if Head is none 헤드가 None인지아닌지 반환
 
     def reverse(self):
         prev = None
@@ -59,7 +59,7 @@ class Linked_List:
         while current:
             # Store the current node's next node.
             next_node = current.next
-            # Make the current node's next point backwards
+            # Make the current node's next point backwards 
             current.next = prev
             # Make the previous node be the current node
             prev = current
