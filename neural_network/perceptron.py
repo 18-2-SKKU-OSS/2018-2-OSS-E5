@@ -1,10 +1,10 @@
 '''
 
-	Perceptron
-	w = w + N * (d(k) - y) * x(k)
+	퍼셉트론
+	w = w + N * (d (k) - y) * x (k)
 
-	Using perceptron network for oil analysis,
-	with Measuring of 3 parameters that represent chemical characteristics we can classify the oil, in p1 or p2
+	오일 분석을 위해 퍼셉트론 네트워크를 사용하면,
+	화학적 특성을 나타내는 3 가지 매개 변수를 측정하여 오일을 p1 또는 p2로 분류 할 수 있습니다.
 	p1 = -1
 	p2 = 1
 
@@ -51,11 +51,11 @@ class Perceptron:
                     erro = True
             #print('Epoch: \n',epoch_count)
             epoch_count = epoch_count + 1
-            # if you want controle the epoch or just by erro
+            # 당신이 원할 경우 에포크 아니면 그냥 erro로
             if erro == False:
                 print(('\nEpoch:\n',epoch_count))
                 print('------------------------\n')
-            #if epoch_count > self.epoch_number or not erro:
+            #epoch count> self.epoch number 또는 오류가 아닌 경우 :
                 break
 
     def sort(self, sample):
