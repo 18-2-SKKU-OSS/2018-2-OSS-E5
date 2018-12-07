@@ -1,26 +1,24 @@
 """
-Demonstrates implementation of SHA1 Hash function in a Python class and gives utilities
-to find hash of string or hash of text from a file.
-Usage: python sha1.py --string "Hello World!!"
-       pyhton sha1.py --file "hello_world.txt"
-       When run without any arguments, it prints the hash of the string "Hello World!! Welcome to Cryptography"
-Also contains a Test class to verify that the generated Hash is same as that
-returned by the hashlib library
+Python 클래스에서 SHA1 해시 함수를 구현하고 파일에서 
+문자열의 해시 또는 텍스트의 해시를 찾는 유틸리티를 제공합니다.
+사용법 : python sha1.py --string "Hello World !!"
+       pyhton sha1.py - 파일 "hello_world.txt"
+       인수없이 실행하면 "Hello World !! Welcome to Cryptography"문자열의 해시를 인쇄합니다.
+또한 생성 된 해시가 hashlib 라이브러리에 의해 반환 된 해시와 
+동일한 지 확인하는 Test 클래스가 포함되어 있습니다.
 
-SHA1 hash or SHA1 sum of a string is a crytpographic function which means it is easy
-to calculate forwards but extemely difficult to calculate backwards. What this means
-is, you can easily calculate the hash of  a string, but it is extremely difficult to
-know the original string if you have its hash. This property is useful to communicate
-securely, send encrypted messages and is very useful in payment systems, blockchain
-and cryptocurrency etc.
-The Algorithm as described in the reference:
-First we start with a message. The message is padded and the length of the message
-is added to the end. It is then split into blocks of 512 bits or 64 bytes. The blocks
-are then processed one at a time. Each block must be expanded and compressed.
-The value after each compression is added to a 160bit buffer called the current hash
-state. After the last block is processed the current hash state is returned as
-the final hash.
-Reference: https://deadhacker.com/2006/02/21/sha-1-illustrated/
+문자열의 SHA1 해시 또는 SHA1 합은 crytpographic 함수이므로 
+전달을 계산하는 것이 쉽지만 역으로 계산하는 것은 어렵습니다. 
+이것이 의미하는 바는 문자열의 해시를 쉽게 계산할 수 있지만 
+해시가 있으면 원래 문자열을 아는 것은 매우 어렵습니다. 
+이 속성은 안전하게 통신하고, 암호화 된 메시지를 보내며, 지불 시스템, 블록 체인 및 암호 해독 등에 매우 유용합니다.
+참조로 설명 된 알고리즘 :
+먼저 메시지로 시작합니다. 메시지가 채워지고 메시지의 길이가 끝에 추가됩니다. 
+그런 다음 512 비트 또는 64 바이트 블록으로 분할됩니다. 
+그런 다음 블록은 한 번에 하나씩 처리됩니다. 각 블록은 확장 및 압축되어야합니다.
+각 압축 후 값은 현재 해시 상태라고하는 160 비트 버퍼에 추가됩니다. 
+마지막 블록이 처리 된 후 현재 해시 상태가 최종 해시로 반환됩니다.
+참조: https://deadhacker.com/2006/02/21/sha-1-illustrated/
 """
 
 import argparse
@@ -31,14 +29,13 @@ import unittest
 
 class SHA1Hash:
     """
-    Class to contain the entire pipeline for SHA1 Hashing Algorithm
+    SHA1 해싱 알고리즘의 전체 파이프 라인을 포함하는 클래스
     """
     def __init__(self, data):
         """
-        Inititates the variables data and h. h is a list of 5 8-digit Hexadecimal
-        numbers corresponding to (1732584193, 4023233417, 2562383102, 271733878, 3285377520)
-        respectively. We will start with this as a message digest. 0x is how you write
-        Hexadecimal numbers in Python
+        변수 data와 h를 시작합니다. h는 5 자리 8 자리 16 진수의 목록입니다.
+        (1732584193, 4023233417, 2562383102, 271733878, 3285377520)에 각각 대응하는 번호를 갖습니다. 
+        우리는 이것을 메시지 다이제스트로 시작할 것입니다. 0x는 파이썬에서 16 진수를 쓰는 방법입니다.
         """
         self.data = data
         self.h = [0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, 0xC3D2E1F0]
@@ -46,13 +43,13 @@ class SHA1Hash:
     @staticmethod
     def rotate(n, b):
         """
-        Static method to be used inside other methods. Left rotates n by b.
+        다른 메서드 내에서 사용되는 정적 메서드입니다. 왼쪽은 n을 b만큼 회전합니다.
         """
         return ((n << b) | (n >> (32 - b))) & 0xffffffff
 
     def padding(self):
         """
-        Pads the input message with zeros so that padded_data has 64 bytes or 512 bits
+        padded_data가 64 바이트 또는 512 비트가되도록 입력 메시지에 0을 덧붙입니다.
         """
         padding = b'\x80' + b'\x00'*(63 - (len(self.data) + 8) % 64)
         padded_data = self.data + padding + struct.pack('>Q', 8 * len(self.data))
@@ -60,15 +57,14 @@ class SHA1Hash:
 
     def split_blocks(self):
         """
-        Returns a list of bytestrings each of length 64
+        각 길이가 64 인 바이트의 목록을 반환합니다.
         """
         return [self.padded_data[i:i+64] for i in range(0, len(self.padded_data), 64)]
 
     # @staticmethod
     def expand_block(self, block):
         """
-        Takes a bytestring-block of length 64, unpacks it to a list of integers and returns a
-        list of 80 integers pafter some bit operations
+        길이 64의 바이트 블록을 가져 와서 정수 목록에 압축을 푼 다음 비트 연산 후 80 개의 정수 목록을 반환합니다.
         """
         w = list(struct.unpack('>16L', block)) + [0] * 64
         for i in range(16, 80):
@@ -77,12 +73,12 @@ class SHA1Hash:
 
     def final_hash(self):
         """
-        Calls all the other methods to process the input. Pads the data, then splits into
-        blocks and then does a series of operations for each block (including expansion).
-        For each block, the variable h that was initialized is copied to a,b,c,d,e
-        and these 5 variables a,b,c,d,e undergo several changes. After all the blocks are
-        processed, these 5 variables are pairwise added to h ie a to h[0], b to h[1] and so on.
-        This h becomes our final hash which is returned.
+        다른 모든 메소드를 호출하여 입력을 처리합니다. 데이터를 패딩 한 다음 블록으로 분할 한 다음 
+        각 블록 (확장 포함)에 대해 일련의 작업을 수행합니다.
+        각 블록에 대해 초기화 된 변수 h가 a, b, c, d, e에 복사되고 
+        이러한 5 개의 변수 a, b, c, d, e는 여러 변경 사항을 거칩니다. 
+        모든 블록이 처리 된 후,이 5 개의 변수는 h ie a에서 h [0], b에서 h [1] 등과 같이 쌍으로 추가됩니다.
+        이 h는 반환되는 최종 해시가됩니다.
         """
         self.padded_data = self.padding()
         self.blocks = self.split_blocks()
@@ -114,7 +110,7 @@ class SHA1Hash:
 
 class SHA1HashTest(unittest.TestCase):
     """
-    Test class for the SHA1Hash class. Inherits the TestCase class from unittest
+    SHA1Hash 클래스의 테스트 클래스. unittest에서 TestCase 클래스를 상속받습니다.
     """
     def testMatchHashes(self):
         msg = bytes('Test String', 'utf-8')
@@ -123,9 +119,9 @@ class SHA1HashTest(unittest.TestCase):
 
 def main():
     """
-    Provides option 'string' or 'file' to take input and prints the calculated SHA1 hash.
-    unittest.main() has been commented because we probably dont want to run
-    the test each time.
+    'string'또는 'file'옵션을 제공하여 입력을 가져오고 계산 된 SHA1 해시를 인쇄합니다.
+     unittest.main ()이 주석 처리되었습니다. 우리가 실행하고 싶지 않기 때문입니다.
+     매번 시험.
     """
     # unittest.main()
     parser = argparse.ArgumentParser(description='Process some strings or files')
