@@ -1,5 +1,13 @@
-# Tree_sort algorithm
-# Build a BST and in order traverse.
+"""
+파이썬으로 Tree Sort를 구현한 코드입니다.
+정확히 말하자면 Binary Search Tree를 구현하였습니다.
+Binary Search Tree는 
+    각 노드에 값이 있다.
+    Root 노드가 존재한다.
+    노드의 왼쪽 서브트리에는 그 노드의 값보다 작은 값들을 지닌 노드들로 이루어져있다.
+    노드의 오른쪽 서브트리에는 그 노드의 값과 같거나 큰 값들을 지닌 노드들로 이루어져있다.
+    좌우 하위 트리는 각각이 다시 Binary Search Tree 이어야 합니다.
+"""
 
 from __future__ import print_function
 
