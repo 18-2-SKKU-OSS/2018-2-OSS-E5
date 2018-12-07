@@ -5,7 +5,9 @@
     2.정렬되지 않은 리스트를 절반으로 잘라 비슷한 크기의 두 부분 리스트로 나눕니다.
     3.각 부분 리스트를 재귀적으로 합병 정렬을 이용해 정렬합니다.
     4.두 부분 리스트를 다시 하나의 정렬된 리스트로 합병합니다.
-'''
+"""
+from __future__ import print_function
+
 def merge_sort(LIST):
     start = []
     end = []
@@ -19,3 +21,14 @@ def merge_sort(LIST):
     if LIST: start.append(LIST[0])
     end.reverse()
     return (start + end)
+
+
+if __name__ == '__main__':
+    try:
+        raw_input          # Python 2
+    except NameError:
+        raw_input = input  # Python 3
+
+    user_input = raw_input('Enter numbers separated by a comma:\n').strip()
+    unsorted = [int(item) for item in user_input.split(',')]
+    print(merge_sort(unsorted))
