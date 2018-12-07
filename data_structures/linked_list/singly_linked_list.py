@@ -31,14 +31,14 @@ class Linked_List:
             print(tamp.data)
             tamp = tamp.next
 
-    def delete_head(self):  # delete from head
+    def delete_head(self):  # delete from head 헤드로 부터 하나씩 제거
         temp = self.Head
         if self.Head != None:
             self.Head = self.Head.next
             temp.next = None
         return temp
         
-    def delete_tail(self):  # delete from tail
+    def delete_tail(self):  # delete from tail 꼬리로 부터 하나씩 제거
         tamp = self.Head
         if self.Head != None:
             if(self.Head.next is None):    # if Head is the only Node in the Linked List
