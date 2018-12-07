@@ -57,6 +57,7 @@ class Stack(object):
 
     def size(self):
         """ Return the size of the stack."""
+        # 스택의 사이즈를
         return len(self.stack)
 
 
