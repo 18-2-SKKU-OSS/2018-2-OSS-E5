@@ -16,7 +16,7 @@ __Properties__
 * Best case performance	O(n<sup>2</sup>)
 * Average case performance	O(n<sup>2</sup>)
 
-###### View the algorithm in [action][selection-toptal]
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/selection-sort)
 
 ### 1.Bubble Sort
 ![bubble-sort-in-c](https://user-images.githubusercontent.com/37110949/49448033-534a8c00-f81b-11e8-8b6a-78c83907ef7d.jpg)
@@ -28,7 +28,7 @@ __Properties__
 * Best case performance	O(n)
 * Average case performance	O(n<sup>2</sup>)
 
-###### View the algorithm in [action][bubble-toptal]
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
 
 ### 2.Insertion Sort
 ![insertion-sort](https://user-images.githubusercontent.com/37110949/49484510-a99ae780-f87a-11e8-8681-981f5739e03d.png)
@@ -40,7 +40,7 @@ __Properties__
 * Best case performance	O(n)
 * Average case performance	O(n<sup>2</sup>)
 
-###### View the algorithm in [action][insertion-toptal]
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/insertion-sort)
 
 ### 3.Merge Sort
 ![how merge sort algorithm works in java](https://user-images.githubusercontent.com/37110949/49570490-19dc6280-f97a-11e8-9d26-10540d5dcd88.png)
@@ -53,7 +53,7 @@ __Properties__
 * Average case performance	O(n log n)
 
 
-###### View the algorithm in [action][merge-toptal]
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/merge-sort)
 
 ### Bucket Sort
 ![alt text][bucket-image-1]
