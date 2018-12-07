@@ -2,17 +2,17 @@ from __future__ import print_function
 import math
 
 def rearrange(bitString32):
-	"""[summary]
-	Regroups the given binary string.
-	
-	Arguments:
-		bitString32 {[string]} -- [32 bit binary]
-	
-	Raises:
-		ValueError -- [if the given string not are 32 bit binary string]
-	
-	Returns:
-		[string] -- [32 bit binary string]
+	"""[요약]
+	주어진 2 진 문자열을 다시 그룹화합니다.
+
+	인수 :
+	bitString32 {[string]} - [32 비트 바이너리]
+
+	제기 :
+	ValueError - [주어진 문자열이 32 비트 이진 문자열이 아닌 경우]
+
+	보고:
+	[문자열] - [32 비트 바이너리 문자열]
 	"""
 
 	if len(bitString32) != 32:
@@ -24,10 +24,10 @@ def rearrange(bitString32):
 
 def reformatHex(i):
 	"""[summary]
-	Converts the given integer into 8-digit hex number.
+	주어진 정수를 8 자리 16 진수로 변환합니다.
 
-	Arguments:
-		i {[int]} -- [integer]
+	인수 :
+	i {[int]} - [정수]
 	"""
 
 	hexrep = format(i,'08x')
@@ -38,13 +38,13 @@ def reformatHex(i):
 
 def pad(bitString):
 	"""[summary]
-	Fills up the binary string to a 512 bit binary string
+	이진 문자열을 512 비트 이진 문자열로 채 웁니다.
 
-	Arguments:
-		bitString {[string]} -- [binary string]
-	
-	Returns:
-		[string] -- [binary string]
+	인수 :
+	bitString {[string]} - [바이너리 문자열]
+
+	보고:
+	[문자열] - [바이너리 문자열]
 	"""
 
 	startLength = len(bitString)
@@ -57,12 +57,12 @@ def pad(bitString):
 
 def getBlock(bitString):
 	"""[summary]
-	Iterator:
-		Returns by each call a list of length 16 with the 32 bit
-		integer blocks. 
+	반복자 :
+	각 호출에 의해 길이가 16 인 목록을 32 비트로 반환합니다.
+	정수 블록.
 
-	Arguments:
-		bitString {[string]} -- [binary string >= 512]
+	인수 :
+	bitString {[string]} - [binary string> = 512]
 	"""
 
 	currPos = 0
@@ -89,10 +89,10 @@ def leftrot32(i,s):
 
 def md5me(testString):
 	"""[summary]
-	Returns a 32-bit hash code of the string 'testString'
+	'testString'문자열의 32 비트 해시 코드를 반환합니다.
 
-	Arguments:
-		testString {[string]} -- [message]
+	인수 :
+	testString {[문자열]} - [메시지]
 	"""
 
 	bs =''
@@ -147,7 +147,7 @@ def md5me(testString):
 
 def test():
 	assert md5me("") == "d41d8cd98f00b204e9800998ecf8427e"	
-	assert md5me("The quick brown fox jumps over the lazy dog") == "9e107d9d372bb6826bd81d3542a419d6"
+	assert md5me("빠른 갈색 여우는 게으른 개를 뛰어 넘습니다.") == "9e107d9d372bb6826bd81d3542a419d6"
 	print("Success.")
 
 
