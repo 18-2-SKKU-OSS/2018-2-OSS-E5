@@ -38,6 +38,7 @@ class Stack(object):
 
     def pop(self):
         """ Pop an element off of the top of the stack."""
+        #스택의 top에서 pop하여 원소를 제거한다.
         if self.stack:
             return self.stack.pop()
         else:
@@ -45,6 +46,7 @@ class Stack(object):
 
     def peek(self):
         """ Peek at the top-most element of the stack."""
+        
         if self.stack:
             return self.stack[-1]
 
