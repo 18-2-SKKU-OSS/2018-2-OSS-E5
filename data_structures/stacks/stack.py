@@ -11,6 +11,13 @@ class Stack(object):
 
     https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
     """
+    '''스택은 추상 데이터 유형으로 컬렉션의 역할을합니다.
+     두 가지 기본 연산  push ()와 pop ()이있습니다. push ()는
+     요소를 스택 맨 위로 가져오고, pop ()은 맨 위에서 요소를 제거합니다
+     스택의. 요소가 스택에서 벗어나는 순서는 다음과 같습니다.
+     라스트 인 퍼스트 아웃 (LIFO).
+     https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+     '''
 
     def __init__(self, limit=10):
         self.stack = []
