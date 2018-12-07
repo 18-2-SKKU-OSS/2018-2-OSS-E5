@@ -46,7 +46,7 @@ class Stack(object):
 
     def peek(self):
         """ Peek at the top-most element of the stack."""
-        
+        #최상위 원소를 읽어온다.
         if self.stack:
             return self.stack[-1]
 
