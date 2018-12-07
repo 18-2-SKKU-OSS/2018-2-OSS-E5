@@ -22,7 +22,7 @@ def merge_sort(collection):
     [-45, -5, -2]
     """
     length = len(collection)
-    if length > 1:
+    if length > 1:  
         midpoint = length // 2
         left_half = merge_sort(collection[:midpoint])
         right_half = merge_sort(collection[midpoint:])
