@@ -1,24 +1,16 @@
 """
-This is a pure python implementation of the merge sort algorithm
-
-For doctests run following command:
-python -m doctest -v merge_sort.py
-or
-python3 -m doctest -v merge_sort.py
-
-For manual testing run:
-python merge_sort.py
+이 코드는 파이썬으로 Merge Sort를 구현한 코드입니다.
+병합 정렬이라고도 부르며 다음과 같이 작동합니다.
+    1.리스트의 길이가 0또는 1이면 이미 정렬된 것으로 봅니다. 그렇지 않은 경우에는
+    2.정렬되지 않은 리스트를 절반으로 잘라 비슷한 크기의 두 부분 리스트로 나눕니다.
+    3.각 부분 리스트를 재귀적으로 합병 정렬을 이용해 정렬합니다.
+    4.두 부분 리스트를 다시 하나의 정렬된 리스트로 합병합니다.
 """
 from __future__ import print_function
 
 
 def merge_sort(collection):
-    """Pure implementation of the merge sort algorithm in Python
-
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-
+    """
     Examples:
     >>> merge_sort([0, 5, 3, 2, 2])
     [0, 2, 2, 3, 5]
