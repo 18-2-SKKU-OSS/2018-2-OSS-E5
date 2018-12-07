@@ -52,6 +52,7 @@ class Stack(object):
 
     def is_empty(self):
         """ Check if a stack is empty."""
+        #스택이 비어있는지 아닌지 
         return not bool(self.stack)
 
     def size(self):
