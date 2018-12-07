@@ -25,7 +25,7 @@ class Linked_List:
             newNod.next = self.Head     # link newNode to head # 새로운 노드를 헤드에 연결
         self.Head = newNod    # make NewNode as Head # 새로운노드를 헤드로 
 
-    def printList(self):  # print every node data
+    def printList(self):  # print every node data 모든 노드의 데이터를 
         tamp = self.Head
         while tamp is not None:
             print(tamp.data)
