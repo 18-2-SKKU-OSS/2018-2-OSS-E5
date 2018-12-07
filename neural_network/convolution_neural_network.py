@@ -2,14 +2,14 @@
 
 '''
      - - - - - -- - - - - - - - - - - - - - - - - - - - - - -
-    Name - - CNN - Convolution Neural Network For Photo Recognizing
-    Goal - - Recognize Handing Writting Word Photo
-    Detail：Total 5 layers neural network
-            * Convolution layer
-            * Pooling layer
-            * Input layer layer of BP
-            * Hiden layer of BP
-            * Output layer of BP
+    이름 - CNN - 사진 인식을위한 회선 신경망
+     목표 - - 손으로 쓰기 Word Photo 작성하기
+     Detail : 총 5 개의 레이어 신경 네트워크
+             * 컨볼 루션 계층
+             * 풀링 레이어
+             * BP의 입력 레이어 레이어
+             BP의 숨겨진 층
+             * BP의 출력 레이어
     Author: Stephen Lee
     Github: 245885195@qq.com
     Date: 2017.9.20
@@ -24,13 +24,13 @@ class CNN():
 
     def __init__(self,conv1_get,size_p1,bp_num1,bp_num2,bp_num3,rate_w=0.2,rate_t=0.2):
         '''
-        :param conv1_get: [a,c,d]，size, number, step of convolution kernel
-        :param size_p1: pooling size
-        :param bp_num1: units number of flatten layer
-        :param bp_num2: units number of hidden layer
-        :param bp_num3: units number of output layer
-        :param rate_w: rate of weight learning
-        :param rate_t: rate of threshold learning
+         : param conv1_get : [a, c, d], 크기, 수, 회선 커널 단계
+         : param size_p1 : 풀링 크기
+         : param bp_num1 : 평평한 레이어의 단위 수
+         : 매개 변수 bp_num2 : 숨겨진 레이어의 단위 수
+         : param bp_num3 : 출력 레이어의 단위 수
+         : param rate_w : 가중치 학습의 비율
+         : param rate_t : 임계 값 학습 속도
         '''
         self.num_bp1 = bp_num1
         self.num_bp2 = bp_num2
@@ -49,7 +49,7 @@ class CNN():
 
 
     def save_model(self,save_path):
-        #save model dict with pickle
+        # 피클로 모델 사전 저장
         import pickle
         model_dic = {'num_bp1':self.num_bp1,
                     'num_bp2':self.num_bp2,
@@ -72,7 +72,7 @@ class CNN():
 
     @classmethod
     def ReadModel(cls,model_path):
-        #read saved model
+        #저장된 모델 읽기
         import pickle
         with open(model_path, 'rb') as f:
             model_dic = pickle.load(f)
@@ -85,9 +85,9 @@ class CNN():
         bp3 = model_dic.get('num_bp3')
         r_w = model_dic.get('rate_weight')
         r_t = model_dic.get('rate_thre')
-        #create model instance
+        # 모델 인스턴스 생성
         conv_ins = CNN(conv_get,size_p1,bp1,bp2,bp3,r_w,r_t)
-        #modify model parameter
+        # 모델 매개 변수 수정
         conv_ins.w_conv1 = model_dic.get('w_conv1')
         conv_ins.wkj = model_dic.get('wkj')
         conv_ins.vji = model_dic.get('vji')
@@ -104,17 +104,17 @@ class CNN():
         return round(x, 3)
 
     def convolute(self,data,convs,w_convs,thre_convs,conv_step):
-        #convolution process
+        #컨벌루션 프로세스
         size_conv = convs[0]
         num_conv =convs[1]
         size_data = np.shape(data)[0]
-        #get the data slice of original image data, data_focus
+        #원본 이미지 데이터의 데이터 조각을 가져온다. data_focus
         data_focus = []
         for i_focus in range(0, size_data - size_conv + 1, conv_step):
             for j_focus in range(0, size_data - size_conv + 1, conv_step):
                 focus = data[i_focus:i_focus + size_conv, j_focus:j_focus + size_conv]
                 data_focus.append(focus)
-        #caculate the feature map of every single kernel, and saved as list of matrix
+        #모든 단일 커널의 특성지도를 계산하고 매트릭스 목록으로 저장
         data_featuremap = []
         Size_FeatureMap = int((size_data - size_conv) / conv_step + 1)
         for i_map in range(num_conv):
@@ -125,7 +125,7 @@ class CNN():
             featuremap = np.asmatrix(featuremap).reshape(Size_FeatureMap, Size_FeatureMap)
             data_featuremap.append(featuremap)
 
-        #expanding the data slice to One dimenssion
+        #데이터 슬라이스를 One 차원으로 확장
         focus1_list = []
         for each_focus in data_focus:
             focus1_list.extend(self.Expand_Mat(each_focus))
@@ -133,7 +133,7 @@ class CNN():
         return focus_list,data_featuremap
 
     def pooling(self,featuremaps,size_pooling,type='average_pool'):
-        #pooling process
+        #풀링 프로세스
         size_map = len(featuremaps[0])
         size_pooled = int(size_map/size_pooling)
         featuremap_pooled = []
@@ -144,17 +144,17 @@ class CNN():
                 for j_focus in range(0, size_map, size_pooling):
                     focus = map[i_focus:i_focus + size_pooling, j_focus:j_focus + size_pooling]
                     if type == 'average_pool':
-                        #average pooling
+                        #평균 풀링
                         map_pooled.append(np.average(focus))
                     elif type == 'max_pooling':
-                        #max pooling
+                        #풀링 맥시멈
                         map_pooled.append(np.max(focus))
             map_pooled = np.asmatrix(map_pooled).reshape(size_pooled,size_pooled)
             featuremap_pooled.append(map_pooled)
         return featuremap_pooled
 
     def _expand(self,datas):
-        #expanding three dimension data to one dimension list
+        #3 차원 데이터를 하나의 차원 목록으로 확장
         data_expanded = []
         for i in range(len(datas)):
             shapes = np.shape(datas[i])
@@ -165,7 +165,7 @@ class CNN():
         return data_expanded
 
     def _expand_mat(self,data_mat):
-        #expanding matrix to one dimension list
+        #행렬을 하나의 차원 목록으로 확장
         data_mat = np.asarray(data_mat)
         shapes = np.shape(data_mat)
         data_expanded = data_mat.reshape(1,shapes[0]*shapes[1])
@@ -173,10 +173,10 @@ class CNN():
 
     def _calculate_gradient_from_pool(self,out_map,pd_pool,num_map,size_map,size_pooling):
         '''
-        calcluate the gradient from the data slice of pool layer
-        pd_pool: list of matrix
-        out_map: the shape of data slice(size_map*size_map)
-        return: pd_all: list of matrix, [num, size_map, size_map]
+         풀 레이어의 데이터 슬라이스에서 그래디언트 계산
+         pd_pool : 행렬의리스트
+         out_map : 데이터 슬라이스의 모양 (size_map * size_map)
+         반환 : pd_all : 매트릭스 목록, [num, size_map, size_map]
         '''
         pd_all = []
         i_pool = 0
@@ -191,7 +191,7 @@ class CNN():
         return pd_all
 
     def trian(self,patterns,datas_train, datas_teach, n_repeat, error_accuracy,draw_e = bool):
-        #model traning
+        # 모델 training
         print('----------------------Start Training-------------------------')
         print((' - - Shape: Train_Data  ',np.shape(datas_train)))
         print((' - - Shape: Teach_Data  ',np.shape(datas_teach)))
@@ -222,8 +222,8 @@ class CNN():
                 bp_net_k = np.dot(bp_out2 ,self.wkj.T) - self.thre_bp3
                 bp_out3 = self.sig(bp_net_k)
 
-                #--------------Model Leaning ------------------------
-                # calcluate error and gradient---------------
+                #--------------모델 learning ------------------------
+                #--------------오류 및 기울기 계산---------------
                 pd_k_all = np.multiply((data_teach - bp_out3), np.multiply(bp_out3, (1 - bp_out3)))
                 pd_j_all = np.multiply(np.dot(pd_k_all,self.wkj), np.multiply(bp_out2, (1 - bp_out2)))
                 pd_i_all = np.dot(pd_j_all,self.vji)
@@ -232,8 +232,8 @@ class CNN():
                 pd_conv1_pooled = pd_conv1_pooled.T.getA().tolist()
                 pd_conv1_all = self._calculate_gradient_from_pool(data_conved1,pd_conv1_pooled,shape_featuremap1[0],
                                                     shape_featuremap1[1],self.size_pooling1)
-                #weight and threshold learning process---------
-                #convolution layer
+                #가중치 및 임계 값 학습 과정---------
+                #회선 층------------------------
                 for k_conv in range(self.conv1[1]):
                     pd_conv_list = self._expand_mat(pd_conv1_all[k_conv])
                     delta_w = self.rate_weight * np.dot(pd_conv_list,data_focus1)
@@ -241,12 +241,12 @@ class CNN():
                     self.w_conv1[k_conv] = self.w_conv1[k_conv] + delta_w.reshape((self.conv1[0],self.conv1[0]))
 
                     self.thre_conv1[k_conv] = self.thre_conv1[k_conv] - np.sum(pd_conv1_all[k_conv]) * self.rate_thre
-                #all connected layer
+                # 모든 연결된 층
                 self.wkj = self.wkj + pd_k_all.T * bp_out2 * self.rate_weight
                 self.vji = self.vji + pd_j_all.T * bp_out1 * self.rate_weight
                 self.thre_bp3 = self.thre_bp3 - pd_k_all * self.rate_thre
                 self.thre_bp2 = self.thre_bp2 - pd_j_all * self.rate_thre
-                # calculate the sum error of all single image
+                # 모든 단일 이미지의 합계 오차를 계산한다.
                 errors = np.sum(abs((data_teach - bp_out3)))
                 alle = alle + errors
                 #print('   ----Teach      ',data_teach)
@@ -290,7 +290,7 @@ class CNN():
         return np.asarray(res)
 
     def convolution(self,data):
-        #return the data of image after convoluting process so we can check it out
+        # 체크 아웃 할 수 있도록 프로세스를 뒤얽힌 후 이미지의 데이터를 반환
         data_test = np.asmatrix(data)
         data_focus1, data_conved1 = self.convolute(data_test, self.conv1, self.w_conv1,
                                                      self.thre_conv1, conv_step=self.step_conv1)
@@ -302,5 +302,5 @@ class CNN():
 if __name__ == '__main__':
     pass
     '''
-    I will put the example on other file
+    put the example on other file
     '''
