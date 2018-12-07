@@ -55,6 +55,15 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/merge-sort)
 
+### 4.Tree Sort
+![binary-search-tree-insertion-animation](https://user-images.githubusercontent.com/37110949/49629485-1229c600-fa2d-11e8-808a-875b37eba6af.gif)
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Tree_sort): **Tree sort** A tree sort is a sort algorithm that builds a binary search tree from the elements to be sorted, and then traverses the tree (in-order) so that the elements come out in sorted order. Its typical use is sorting elements online: after each insertion, the set of elements seen so far is available in sorted order.
+__Properties__
+* Worst case performance	O(n<sup>2</sup>)(unblanced), O(n log n)(blanced)
+* Best case performance	O(n log n)
+* Average case performance	O(n log n)
+
 ### Bucket Sort
 ![alt text][bucket-image-1]
 ![alt text][bucket-image-2]
