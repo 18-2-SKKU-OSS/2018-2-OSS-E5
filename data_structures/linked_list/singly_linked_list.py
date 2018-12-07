@@ -20,10 +20,10 @@ class Linked_List:
             temp.next = Node(data)    #create node & link to tail # 새로운 노드를 만들고 꼬리에 연결
 
     def insert_head(self, data):
-        newNod = Node(data)    # create a new node
+        newNod = Node(data)    # create a new node # 새로운 노드 만들기
         if self.Head != None:
-            newNod.next = self.Head     # link newNode to head
-        self.Head = newNod    # make NewNode as Head
+            newNod.next = self.Head     # link newNode to head # 새로운 노드를 헤드에 연결
+        self.Head = newNod    # make NewNode as Head # 새로운노드를 헤드로 
 
     def printList(self):  # print every node data
         tamp = self.Head
