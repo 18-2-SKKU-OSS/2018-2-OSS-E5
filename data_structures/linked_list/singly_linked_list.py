@@ -57,15 +57,15 @@ class Linked_List:
         current = self.Head
 
         while current:
-            # Store the current node's next node.
+            # Store the current node's next node. 현재 노드의 다음 노드를 저장
             next_node = current.next
-            # Make the current node's next point backwards 
+            # Make the current node's next point backwards 현재 노드의 다음을 뒤로 바꾼다.
             current.next = prev
-            # Make the previous node be the current node
+            # Make the previous node be the current node  이전 노드가 현재 노드가 되도록한다.
             prev = current
-            # Make the current node the next node (to progress iteration)
+            # Make the current node the next node (to progress iteration) 현재노드가 그 다음 노드가 되도록 한다.
             current = next_node
-        # Return prev in order to put the head at the end
+        # Return prev in order to put the head at the end 헤드를 끝으로 하기위해서 prev를 반환한다.
         self.Head = prev
 
 def main():
