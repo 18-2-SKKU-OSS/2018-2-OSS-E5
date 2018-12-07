@@ -2,16 +2,15 @@
 # encoding=utf8
 
 '''
+역 전파 신경망 (BP) 모델의 구조
 
-A Framework of Back Propagation Neural Network（BP） model
-
-Easy to use:
-    * add many layers as you want ！！！
-    * clearly see how the loss decreasing
-Easy to expand:
-    * more activation functions
-    * more loss functions
-    * more optimization method
+사용하기 쉬운:
+     * 원하는대로 많은 레이어를 추가하십시오!
+     * 분명히 손실이 감소하는 것을 볼 수 있습니다.
+쉽게 확장 할 수 있습니다.
+     * 더 많은 정품 인증 기능
+     * 더 많은 손실 함수
+     * 더 많은 최적화 방법
 
 Author: Stephen Lee
 Github : https://github.com/RiptideBo
@@ -28,15 +27,15 @@ def sigmoid(x):
 
 class DenseLayer():
     '''
-    Layers of BP neural network
+    BP 신경 네트워크의 레이어
     '''
     def __init__(self,units,activation=None,learning_rate=None,is_input_layer=False):
         '''
-        common connected layer of bp network
-        :param units: numbers of neural units
-        :param activation: activation function
-        :param learning_rate: learning rate for paras
-        :param is_input_layer: whether it is input layer or not
+        BP 네트워크의 공통 연결 레이어
+         : param units : 신경 단위 수
+         : param 활성화 : 활성화 함수
+         : param learning_rate : paras 학습 속도
+         : param is_input_layer : 입력 레이어인지 여부
         '''
         self.units = units
         self.weight = None
@@ -85,8 +84,8 @@ class DenseLayer():
         self.gradient_weight = np.dot(gradient.T,self._gradient_weight.T)
         self.gradient_bias = gradient * self._gradient_bias
         self.gradient = np.dot(gradient,self._gradient_x).T
-        # ----------------------upgrade
-        # -----------the Negative gradient direction --------
+        # ----------------------업그레이드
+        # ----------- 음수 그래디언트 방향 --------
         self.weight = self.weight - self.learn_rate * self.gradient_weight
         self.bias = self.bias - self.learn_rate * self.gradient_bias.T
 
@@ -95,7 +94,7 @@ class DenseLayer():
 
 class BPNN():
     '''
-    Back Propagation Neural Network model
+    역 전파 신경망 모델
     '''
     def __init__(self):
         self.layers = []
@@ -132,15 +131,15 @@ class BPNN():
                 _xdata = np.asmatrix(xdata[row,:]).T
                 _ydata = np.asmatrix(ydata[row,:]).T
 
-                # forward propagation
+                # forward propagation --전방 전파
                 for layer in self.layers:
                     _xdata = layer.forward_propagation(_xdata)
 
                 loss, gradient = self.cal_loss(_ydata, _xdata)
                 all_loss = all_loss + loss
 
-                # back propagation
-                # the input_layer does not upgrade
+                # back propagation -- 후방 전파
+                # the input_layer does not upgrade -- input_layer가 업그레이드되지 않습니다.
                 for layer in self.layers[:0:-1]:
                     gradient = layer.back_propagation(gradient)
 
@@ -156,7 +155,7 @@ class BPNN():
     def cal_loss(self,ydata,ydata_):
         self.loss = np.sum(np.power((ydata - ydata_),2))
         self.loss_gradient = 2 * (ydata_ - ydata)
-        # vector (shape is the same as _ydata.shape)
+        # vector (shape is the same as _ydata.shape) -- 벡터 (모양은 _ydata.shape와 동일 함)
         return self.loss,self.loss_gradient
 
     def plot_loss(self):
