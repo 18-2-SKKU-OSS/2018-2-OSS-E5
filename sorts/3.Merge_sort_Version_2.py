@@ -8,6 +8,8 @@
 """
 from __future__ import print_function
 
+# Merge Sort를 다른 방식으로 구현 하였으며 앞선 Merge_Sort 보다 좀더 빠르게 돌아가는 코드입니다.
+
 def merge_sort(LIST):
     start = []
     end = []
