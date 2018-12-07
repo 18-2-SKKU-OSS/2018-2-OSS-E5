@@ -31,6 +31,7 @@ class Stack(object):
 
     def push(self, data):
         """ Push an element to the top of the stack."""
+        #스택의 top에 원소를 push한다.
         if len(self.stack) >= self.limit:
             raise StackOverflowError
         self.stack.append(data)
