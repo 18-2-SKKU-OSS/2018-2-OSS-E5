@@ -1,13 +1,13 @@
 # Program to find the HCF of two Numbers
 def find_hcf(num_1, num_2):
-    if num_1 == 0:
+    if num_1 == 0: #exception case
         return num_2
-    if num_2 == 0:
+    if num_2 == 0: #exception case
         return num_1
     # Base Case
-    if num_1 == num_2:
+    if num_1 == num_2: #if two numbers are equal
         return num_1
-    if num_1 > num_2:
+    if num_1 > num_2: #if num1 is larger than num2, recursively function call
         return find_hcf(num_1 - num_2, num_2)
     return find_hcf(num_1, num_2 - num_1)
 
