@@ -5,8 +5,9 @@ def gcd(a, b):
 
 def main():
     try:
-        nums = input("Enter two Integers separated by comma (,): ").split(',')
-        num1 = int(nums[0]); num2 = int(nums[1])
+        num1 = int(input("input first number: "))
+	num2 = int(input("input second number: "))
+	
     except (IndexError, UnboundLocalError, ValueError): #consider exception
         print("Wrong Input")
     print("GCD: ")
