@@ -70,12 +70,15 @@ __Properties__
 
  ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
  
-## 7. Exponential Search
- **exponential search** (also called doubling search or galloping search or Struzik search) is an algorithm, created by Jon Bentley and Andrew Chi-Chih Yao in 1976, for searching sorted, unbounded/infinite lists. There are numerous ways to implement this with the most common being to determine a range that the search key resides in and performing a binary search within that range. 
- The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater. Once we find an index i (after repeated doubling of i), we know that the element must be present between i/2 and i (Why i/2? because we could not find a greater value in previous iteration)
+## 7. 지수 탐색
+
+**피보나치 탐색**은 정렬되 있고 바인딩되지 않은/무한 목록을 검색하기 위해 1976년 존 벤틀리와 앤드류 치치 야오가 고안한 알고리즘이다. 검색 키가 있는 범위를 결정하고 해당 범위 내에서 이진 검색을 수행하는 것이 가장 일반적인 방법이며 이것을 구현하는 방법은 다양하다. 
+아이디어는 부분 리스트의 크기를 1로 시작하고 마지막 요소를 x와 비교한 후 부분 리스트의 마지막 요소가 더 크지 않을 때까지 사이즈 2를 시도해 보는 것이다. 색인 i를 찾으면, 우리가 찾으려고 하는 값이 i/2와 i 사이에 있어야 한다는 것을 알 수 있다.
+ 
  __Properties__
-* Worst case performance	O(log n)
-* Average case performance	O(log n)
+* 최악의 경우	O(log n)
+* 평균적인 경우	O(log n)
+
  ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Exponential_search)
  
 ## 8. Ternary Search
