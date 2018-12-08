@@ -16,7 +16,7 @@ __Properties__
 ### 2. 이진 탐색
 ![2 binary_search](https://user-images.githubusercontent.com/38908132/49684281-54c6cd80-fb15-11e8-8d9a-d3928cea5afa.png)
 
-**Binary search**, 반 간격 검색 또는 로그 검색이라고도 하는 이진 검색은 정렬된 배열 내에서 대상 값의 위치를 찾는 탐색 알고리즘입니다. 목표 값을 배열의 중간 요소와 비교하여 동일하지 않으면, 절반을 배제한 상태로 다시 성공할 때까지 나머지 절반의 탐색을 진행합니다.
+**이진 탐색**은 반 간격 검색 또는 로그 검색이라고도 하는 이진 검색은 정렬된 배열 내에서 대상 값의 위치를 찾는 탐색 알고리즘입니다. 목표 값을 배열의 중간 요소와 비교하여 동일하지 않으면, 절반을 배제한 상태로 다시 성공할 때까지 나머지 절반의 탐색을 진행합니다.
 
 __Properties__
 * 최악의 경우	O(log n)
@@ -26,14 +26,15 @@ __Properties__
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 
-## 3. Interpolation
-**Interpolation search** is an algorithm for searching for a key in an array that has been ordered by numerical values assigned to the keys (key values). It was first described by W. W. Peterson in 1957. Interpolation search resembles the method by which people search a telephone directory for a name (the key value by which the book's entries are ordered): in each step the algorithm calculates where in the remaining search space the sought item might be, based on the key values at the bounds of the search space and the value of the sought key, usually via a linear interpolation. The key value actually found at this estimated position is then compared to the key value being sought. If it is not equal, then depending on the comparison, the remaining search space is reduced to the part before or after the estimated position. This method will only work if calculations on the size of differences between key values are sensible.
+## 3. 보간 탐색
 
-By comparison, binary search always chooses the middle of the remaining search space, discarding one half or the other, depending on the comparison between the key found at the estimated position and the key sought — it does not require numerical values for the keys, just a total order on them. The remaining search space is reduced to the part before or after the estimated position. The linear search uses equality only as it compares elements one-by-one from the start, ignoring any sorting.
+**보간 탐색**는 배열에서 키에 할당된 숫자 값(키 값)으로 정렬된 키를 검색하는 알고리즘이다. 이 알고리즘은 1957년에 W. W. Peterson에 의해 처음 묘사되었다. 보간 탐색은 사람들이 전화 디렉토리에서 이름을 검색하는 방법(책의 항목을 정렬하는 키 값)과 유사하다: 각 단계에서 알고리즘은 검색 공간의 경계에 있는 키 값과 원하는 키의 값에 기초하여 검색된 항목이 있을 수 있는 나머지 검색 공간의 위치를 선형 보간법을 통해 계산한다. 이 추정된 위치에서 실제로 발견된 키 값을 찾고 있는 키 값과 비교한다. 동일하지 않으면 비교에 따라 나머지 검색 공간은 추정 위치 이전 또는 이후 부품으로 축소된다. 이 방법은 키 값 사이의 차이 크기에 대한 계산이 합리적인 경우에만 작동한다.
+
+이에 비해 이진 탐색은 항상 남은 검색 공간의 중간을 선택하고, 추정된 위치에서 찾은 키와 탐색한 키 간의 비교에 따라 한 쪽 또는 다른 쪽 검색 공간을 버린다. 키에 대한 숫자 값은 필요 없고, 전체 순서만 필요하다. 나머지 검색 공간은 추정 위치 이전 또는 이후 부품으로 축소된다. 선형 탐색은 정렬을 무시하면서 시작부터 요소를 하나씩 비교하는 경우에만 평등을 사용한다.
 
 __Properties__
-* Worst case performance	O(n)
-* Average case performance	O(log log n)
+* 최악의 경우	O(n)
+* 평균적인 경우	O(log log n)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Interpolation_search)
 
