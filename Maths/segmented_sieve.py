@@ -44,5 +44,5 @@ def sieve(n):
             
     return prime
 
-number = int(input("input: " ))    
-print(sieve(number))
+#number = int(input("input: " ))    
+print(sieve(10**6))
