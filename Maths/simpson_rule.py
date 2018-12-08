@@ -15,10 +15,10 @@ def method_2(boundary, steps):
 # "Simpson Rule"
 # int(f) = delta_x/2 * (b-a)/3*(f1 + 4f2 + 2f_3 + ... + fn)
 	h = (boundary[1] - boundary[0]) / steps
-	a = boundary[0]
-	b = boundary[1]
-	x_i = makePoints(a,b,h)
-	y = 0.0
+	a = boundary[0]#front
+	b = boundary[1]#rear
+	x_i = makePoints(a,b,h)#front + increment
+	y = 0.0 #define as float type
 	y += (h/3.0)*f(a)
 	cnt = 2
 	for i in x_i:
