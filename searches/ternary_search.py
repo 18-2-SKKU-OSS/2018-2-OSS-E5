@@ -1,10 +1,7 @@
 '''
-This is a type of divide and conquer algorithm which divides the search space into
-3 parts and finds the target value based on the property of the array or list 
-(usually monotonic property).
-
-Time Complexity  : O(log3 N)
-Space Complexity : O(1)
+삼분 검색 (Ternary Search)
+함수의 최대나 최소점을 찾는 알고리즘으로 이진 탐색과 그 동작방법이 비슷합니다. 배열을 세 개의
+부분으로 나눠 분할 정복 방법으로 탐색을 진행하게 됩니다.
 '''
 from __future__ import print_function
 
@@ -15,17 +12,16 @@ try:
 except NameError:
     raw_input = input  # Python 3
 
-# This is the precision for this function which can be altered.
-# It is recommended for users to keep this number greater than or equal to 10.
+# precision 값보다 작아지면 선형 탐색을 시작합니다.
 precision = 10
 
-# This is the linear search that will occur after the search space has become smaller.
+# 탐색 배열이 충분이 작아지면 선형탐색을 실시하게 됩니다.
 def lin_search(left, right, A, target):
     for i in range(left, right+1):
         if(A[i] == target):
             return i
 
-# This is the iterative method of the ternary search algorithm.
+# 반복문을 이용한 삼분탐색
 def ite_ternary_search(A, target):
     left = 0
     right = len(A) - 1;
@@ -54,7 +50,7 @@ def ite_ternary_search(A, target):
         else:
             return None
 
-# This is the recursive method of the ternary search algorithm.
+# 재귀를 이용한 삼분탐색
 def rec_ternary_search(left, right, A, target):
     if(left<right):
         
@@ -79,7 +75,7 @@ def rec_ternary_search(left, right, A, target):
     else:
         return None
 
-# This function is to check if the array is sorted.
+#입력값이 정렬이 됬는지 확인 해주는 함수
 def __assert_sorted(collection):
     if collection != sorted(collection):
         raise ValueError('Collection must be sorted')
