@@ -22,7 +22,7 @@ def method_2(boundary, steps):
 	y += (h/3.0)*f(a) #define y
 	cnt = 2
 	for i in x_i: #iteration
-		y += (h/3)*(4-2*(cnt%2))*f(i)	
+		y += (h/3)*(4-2*(cnt%2))*f(i) #update y valuable	
 		cnt += 1
 	y += (h/3.0)*f(b)
 	return y
