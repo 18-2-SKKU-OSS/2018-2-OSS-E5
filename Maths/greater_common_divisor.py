@@ -7,7 +7,7 @@ def main():
     try:
         nums = input("Enter two Integers separated by comma (,): ").split(',')
         num1 = int(nums[0]); num2 = int(nums[1])
-    except (IndexError, UnboundLocalError, ValueError):
+    except (IndexError, UnboundLocalError, ValueError): #consider exception
         print("Wrong Input")
     print(f"gcd({num1}, {num2}) = {gcd(num1, num2)}")
 
