@@ -1,5 +1,9 @@
 """
-This is a pure Python implementation of Dynamic Programming solution to the fibonacci sequence problem.
+이것은 피보나치 시퀀스 문제에 대한 다이나믹 프로그래밍 솔루션의 순수한 파이썬 구현입니다.
+코드를 보면 알 수 있듯이, 동적계획법 (DP)을 사용하여 구현한 이 알고리즘은
+재귀로 구현한 알고리즘에 비해 bottom-up 방식으로 값을 채워나간다는 점에서 차이가 있으며
+실제로 같은 값을 여러번 계산하지 않아도 되기 때문에 불필요한 반복계산을 줄이는 효과가 있습니다.
+순환식을 계산할때 사용이 되며 DP을 이용하면 오버헤드를 수반하지 않는 장점이 있습니다.
 """
 from __future__ import print_function
 
