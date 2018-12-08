@@ -1,7 +1,7 @@
 ## Search Algorithms
 
 ### 1. Linear Search
-![alt text][linear-image]
+![1 linear_search](https://user-images.githubusercontent.com/38908132/49684284-54c6cd80-fb15-11e8-946a-290519ac5588.gif)
 
 **Linear search** or *sequential search* is a method for finding an element in a list. It sequentially checks each element of the list until a match is found or all the elements have been searched.
 
@@ -14,7 +14,7 @@ __Properties__
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Linear_search)
 
 ### 2. Binary Search
-![alt text][binary-image]
+![2 binary_search](https://user-images.githubusercontent.com/38908132/49684281-54c6cd80-fb15-11e8-8d9a-d3928cea5afa.png)
 
 **Binary search**, also known as *half-interval search* or *logarithmic search*, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
 
@@ -39,7 +39,7 @@ __Properties__
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Interpolation_search)
 
 ## 4. Jump Search
-![alt text][JumpSearch-image]
+![4 jump_search](https://user-images.githubusercontent.com/38908132/49684282-54c6cd80-fb15-11e8-98b3-e3a9108ddf83.jpg)
 
 **Jump search** or block search refers to a search algorithm for ordered lists. It works by first checking all items L<sub>km</sub>, where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/2a5bc4b7383031ba693b7433198ead7170954c1d)  and *m* is the block size, until an item is found that is larger than the search key. To find the exact position of the search key in the list a linear search is performed on the sublist L<sub>[(k-1)m, km]</sub>.
 
@@ -56,13 +56,15 @@ __Properties__
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Jump_search)
 
 ## 5. Quick Select Search
-![alt text][QuickSelect-image]
+![5 quick_search](https://user-images.githubusercontent.com/38908132/49684283-54c6cd80-fb15-11e8-802f-257c4f85c5fb.gif)
 
 **Quickselect** is a selection algorithm to find the kth smallest element in an unordered list. It is related to the quicksort sorting algorithm. Like quicksort, it was developed by Tony Hoare, and thus is also known as Hoare's selection algorithm. Like quicksort, it is efficient in practice and has good average-case performance, but has poor worst-case performance. Quickselect and its variants are the selection algorithms most often used in efficient real-world implementations.
 
-Quickselect uses the same overall approach as quicksort, choosing one element as a pivot and partitioning the data in two based on the pivot, accordingly as less than or greater than the pivot. However, instead of recursing into both sides, as in quicksort, quickselect only recurses into one side – the side with the element it is searching for. This reduces the average complexity from O(n log n) to O(n), with a worst case of O(n<sup>2</sup>).
-
 As with quicksort, quickselect is generally implemented as an in-place algorithm, and beyond selecting the k'th element, it also partially sorts the data. See selection algorithm for further discussion of the connection with sorting.
+
+__Properties__
+* Worst case performance	O(n)
+* Average case performance	O(log n)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Quickselect)
 
@@ -70,7 +72,11 @@ As with quicksort, quickselect is generally implemented as an in-place algorithm
 ![fibsearch31-660x578](https://user-images.githubusercontent.com/38908132/49605746-b7648000-f9d4-11e8-8d08-6879863aa30b.png)
  
  **Fibonacci search** technique is a method of searching a sorted array using a divide and conquer algorithm that narrows down possible locations with the aid of Fibonacci numbers.[1] Compared to binary search where the sorted array is divided into two equal-sized parts, one of which is examined further, Fibonacci search divides the array into two parts that have sizes that are consecutive Fibonacci numbers.
- @@ -74,7 +77,7 @@ __Properties__
+
+__Properties__
+* Worst case performance	O(log n)
+* Average case performance	O(log n)
+
  ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
  
 ## 7. Exponential Search
