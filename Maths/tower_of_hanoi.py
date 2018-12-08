@@ -22,7 +22,7 @@ def moveDisk(fp,tp):
     print(('moving disk from', fp, 'to', tp))
 
 def main():
-    height = int(input('Height of hanoi: '))
+    height = int(input('Height of hanoi: ')) #user input the height of hanoi tower to calculate
     moveTower(height, 'A', 'B', 'C')
 
 if __name__ == '__main__':
