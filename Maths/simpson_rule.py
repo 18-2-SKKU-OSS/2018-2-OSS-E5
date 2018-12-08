@@ -24,7 +24,7 @@ def method_2(boundary, steps):
 	for i in x_i: #iteration
 		y += (h/3)*(4-2*(cnt%2))*f(i) #update y valuable	
 		cnt += 1
-	y += (h/3.0)*f(b)
+	y += (h/3.0)*f(b) #update y valuable
 	return y
 
 def makePoints(a,b,h):
