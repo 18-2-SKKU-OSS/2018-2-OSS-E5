@@ -1,3 +1,5 @@
+#find least common multiple
+
 def find_lcm(num_1, num_2):
     max = num_1 if num_1 > num_2 else num_2
     while (True):
