@@ -31,7 +31,7 @@ def makePoints(a,b,h):
 	x = a + h
 	while x < (b-h):
 		yield x
-		x = x + h
+		x = x + h #update x valuable by adding x
 
 def f(x): #enter your function here
 	y = (x-0)*(x-0)
