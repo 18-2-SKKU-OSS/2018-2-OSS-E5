@@ -10,7 +10,7 @@ def main():
 	
     except (IndexError, UnboundLocalError, ValueError): #consider exception
         print("Wrong Input")
-    print('GCD: '+ str(gcd(num1, num2)))
+    print('GCD: '+ str(gcd(num1, num2))) #format: GCD: (number)
 
 if __name__ == '__main__':
     main()
