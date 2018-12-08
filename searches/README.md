@@ -59,14 +59,14 @@ __Properties__
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Quickselect)
 
-## 6. Fibonacci Search
+## 6. 피보나치 탐색
 ![fibsearch31-660x578](https://user-images.githubusercontent.com/38908132/49605746-b7648000-f9d4-11e8-8d08-6879863aa30b.png)
  
- **Fibonacci search** technique is a method of searching a sorted array using a divide and conquer algorithm that narrows down possible locations with the aid of Fibonacci numbers.[1] Compared to binary search where the sorted array is divided into two equal-sized parts, one of which is examined further, Fibonacci search divides the array into two parts that have sizes that are consecutive Fibonacci numbers.
+ **피보나치 탐색** 은 피보나치 수열을 이용하여 가능한 위치를 좁히는 분할 및 정복 알고리즘을 사용하여 정렬된 배열을 검색하는 방법이다. 이진 탐색의 경우 정렬된 배열을 동일한 크기의 두 부분으로 나누는 반면, 피보나치 탐색은 배열을 연속적인 피보나치 수만큼의 두 부분으로 나눈다.
 
 __Properties__
-* Worst case performance	O(log n)
-* Average case performance	O(log n)
+* 최악의 경우	O(log n)
+* 평균적인 경우 O(log n)
 
  ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Fibonacci_search_technique)
  
