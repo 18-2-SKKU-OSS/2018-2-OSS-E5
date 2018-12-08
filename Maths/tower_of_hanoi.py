@@ -1,6 +1,7 @@
 #recursively implemented hanoi tower problem
 
 from __future__ import print_function
+
 def moveTower(height, fromPole, toPole, withPole):  
     '''
     >>> moveTower(3, 'A', 'B', 'C')
@@ -13,9 +14,9 @@ def moveTower(height, fromPole, toPole, withPole):
     moving disk from A to B
     '''
     if height >= 1:
-        moveTower(height-1, fromPole, withPole, toPole)
+        moveTower(height-1, fromPole, withPole, toPole) #recursive function call
         moveDisk(fromPole, toPole)
-        moveTower(height-1, withPole, toPole, fromPole)
+        moveTower(height-1, withPole, toPole, fromPole) #recursive function call
 
 def moveDisk(fp,tp):
     print(('moving disk from', fp, 'to', tp))
