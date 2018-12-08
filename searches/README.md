@@ -81,18 +81,16 @@ __Properties__
 
  ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Exponential_search)
  
-## 8. Ternary Search
- **Ternary Search** algorithm is a technique in computer science for finding the minimum or maximum of a unimodal function. A ternary search determines either that the minimum or maximum cannot be in the first third of the domain or that it cannot be in the last third of the domain, then repeats on the remaining third. A ternary search is an example of a divide and conquer algorithm (see search algorithm).
- Assume we are looking for a maximum of f(x) and that we know the maximum lies somewhere between A and B. For the algorithm to be applicable, there must be some value x such that
- for all a,b with A ≤ a < b ≤ x, we have f(a) < f(b), and
- for all a,b with x ≤ a < b ≤ B, we have f(a) > f(b).
+## 8. 삼분 탐색
+
+**삼분 탐색** 알고리즘은 단측색 함수의 최소 또는 최대값을 찾기 위한 컴퓨터 과학 기술이다. 삼분 탐색은 최소 또는 최대값이 도메인의 첫 번째 3분의 1에 속할 수 없거나 도메인의 마지막 3분의 1에 속할 수 없다고 판단한 다음 남은 리스트에서 이를 반복한다. 3차 검색은 분할 및 정복 알고리즘의 예다.
+
+우리가 최대 f(x)를 찾고 있고 우리가 A와 B 사이의 어딘가에 최대값을 알고 있다고 가정하자. 알고리즘이 적용되려면 다음과 같은 일부 값 x가 있어야 한다.
+A ≤ a < b ≤ x, 를 만족하는 모든 a,b에 대해 f(a) < f(b)이고
+x ≤ a < b ≤ B,를 만족하는 모든 a,b에 대해 f(a) > f(b) 이다.
+
  __Properties__
-* Average case performance	O(log 3n)
-* Space Complexity O(1)
+* 평균적인 경우	O(log 3n)
+
  ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Ternary_search)
  
-## Tabu Search
-Tabu search uses a local or neighborhood search procedure to iteratively move from one potential solution ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) to an improved solution ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/0ac74959896052e160a5953102e4bc3850fe93b2) in the neighborhood of ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4), until some stopping criterion has been satisfied (generally, an attempt limit or a score threshold). Local search procedures often become stuck in poor-scoring areas or areas where scores plateau. In order to avoid these pitfalls and explore regions of the search space that would be left unexplored by other local search procedures, tabu search carefully explores the neighborhood of each solution as the search progresses. The solutions admitted to the new neighborhood, ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45), are determined through the use of memory structures. Using these memory structures, the search progresses by iteratively moving from the current solution ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) to an improved solution ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/0ac74959896052e160a5953102e4bc3850fe93b2) in ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45).
-
-These memory structures form what is known as the tabu list, a set of rules and banned solutions used to filter which solutions will be admitted to the neighborhood ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/4db1b4a2cfa6f356afe0738e999f0af2bed27f45) to be explored by the search. In its simplest form, a tabu list is a short-term set of the solutions that have been visited in the recent past (less than ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b) iterations ago, where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b) is the number of previous solutions to be stored — is also called the tabu tenure). More commonly, a tabu list consists of solutions that have changed by the process of moving from one solution to another. It is convenient, for ease of description, to understand a “solution” to be coded and represented by such attributes.
-###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Tabu_search)
