@@ -1,9 +1,4 @@
-"""
-세 개의 말뚝(L, R, C)과 지름이 서로 다른 임의의 개수의 원판이 주어진다. 
-지름이 큰 원판은 항상 작은 원판보다 아래에 오도록 하며, 말뚝의 상위에 있는 한 개의 원판만을 이동시킬 수 있다. 
-이와 같은 조건하에서 말뚝 L에서 말뚝 C를 이용하여 말뚝 R로 원판을 이동시키는 문제로, 문제 해결에서 수단 목표 분석의 한 예가 된다.
-하노이 탑 [Hanoi tower]
-"""
+#recursively implemented hanoi tower problem
 
 from __future__ import print_function
 def moveTower(height, fromPole, toPole, withPole):  
