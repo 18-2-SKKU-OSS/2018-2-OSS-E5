@@ -9,7 +9,6 @@ __Properties__
 * 최악의 경우	O(n)
 * 최선의 경우	O(1)
 * 평균적인 경우	O(n)
-* 최악의 경우(공간)	O(1)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Linear_search)
 
@@ -22,7 +21,6 @@ __Properties__
 * 최악의 경우	O(log n)
 * 최선의 경우	O(1)
 * 평균적인 경우	O(log n)
-* 최악의 경우(공간)	O(1)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 
@@ -38,20 +36,15 @@ __Properties__
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Interpolation_search)
 
-## 4. Jump Search
+## 4. 점프 탐색
 ![4 jump_search](https://user-images.githubusercontent.com/38908132/49684282-54c6cd80-fb15-11e8-98b3-e3a9108ddf83.jpg)
 
-**Jump search** or block search refers to a search algorithm for ordered lists. It works by first checking all items L<sub>km</sub>, where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/2a5bc4b7383031ba693b7433198ead7170954c1d)  and *m* is the block size, until an item is found that is larger than the search key. To find the exact position of the search key in the list a linear search is performed on the sublist L<sub>[(k-1)m, km]</sub>.
-
-The optimal value of m is √n, where n is the length of the list L. Because both steps of the algorithm look at, at most, √n items the algorithm runs in O(√n) time. This is better than a linear search, but worse than a binary search. The advantage over the latter is that a jump search only needs to jump backwards once, while a binary can jump backwards up to log n times. This can be important if a jumping backwards takes significantly more time than jumping forward.
-
-The algorithm can be modified by performing multiple levels of jump search on the sublists, before finally performing the linear search. For an k-level jump search the optimum block size m<sub>l</sub> for the l<sup>th</sup> level (counting from 1) is n<sup>(k-l)/k</sup>. The modified algorithm will perform *k* backward jumps and runs in O(kn<sup>1/(k+1)</sup>) time.
+**점프 탐색** 또는 블록 탐색은 정렬된 리스트에 대한 검색 알고리즘이다. 검색 키보다 큰 항목이 발견될 때까지 모든 L<sub>km</sub>항목을 확인한다. (m은 블록 사이즈) 목록에서 검색 키의 정확한 위치를 찾기 위해 하위 목록 L<sub>[(k-1)m, km]</sub>.에서는 선형 탐색이 수행된다.
 
 __Properties__
-* Worst case performance	O(sqrt n)
-* Best case performance	O(1)
-* Average case performance	O(sqrt n)
-* Space complexity O(1)
+* 최악의 경우	O(sqrt n)
+* 최선의 경우	O(1)
+* 평균적인 경우	O(sqrt n)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Jump_search)
 
