@@ -63,10 +63,11 @@ def eulerPhi(n):
     return s   
 
 def main():
-    print(primeFactors(100))
-    print(numberOfDivisors(100))
-    print(sumOfDivisors(100))
-    print(eulerPhi(100))
+    input_number = int(input("input: "))
+    print(primeFactors(input_number))
+    print(numberOfDivisors(input_number))
+    print(sumOfDivisors(input_number))
+    print(eulerPhi(input_number))
     
 if __name__ == '__main__':
     main()
