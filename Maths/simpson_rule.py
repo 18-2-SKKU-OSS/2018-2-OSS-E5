@@ -19,7 +19,7 @@ def method_2(boundary, steps):
 	b = boundary[1]#rear
 	x_i = makePoints(a,b,h)#front + increment
 	y = 0.0 #define as float type
-	y += (h/3.0)*f(a)
+	y += (h/3.0)*f(a) #define y
 	cnt = 2
 	for i in x_i:
 		y += (h/3)*(4-2*(cnt%2))*f(i)	
