@@ -1,3 +1,4 @@
+#calculate seive
 import math
 
 def sieve(n):
