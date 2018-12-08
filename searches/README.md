@@ -3,7 +3,7 @@
 ### 1. 선형 탐색
 ![1 linear_search](https://user-images.githubusercontent.com/38908132/49684284-54c6cd80-fb15-11e8-946a-290519ac5588.gif)
 
-선형 탐색 또는 순차 탐색은 목록 내의 대상을 찾는 방법입니다. 찾는 값과 요소의 값이 일치하거나 모든 요소가 검색 될 때까지 목록의 요소 값에 대해 순차적으로 탐색합니다. 선형 검색은 최악의 시간복잡도 내에서 움직이며 최대 n 개의 비교를 수행합니다. 여기서 n은 목록의 길이입니다.
+**선형 탐색** 또는 순차 탐색은 목록 내의 대상을 찾는 방법입니다. 찾는 값과 요소의 값이 일치하거나 모든 요소가 검색 될 때까지 목록의 요소 값에 대해 순차적으로 탐색합니다. 선형 검색은 최악의 시간복잡도 내에서 움직이며 최대 n 개의 비교를 수행합니다. 여기서 n은 목록의 길이입니다.
 
 __Properties__
 * 최악의 경우	O(n)
@@ -13,17 +13,16 @@ __Properties__
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Linear_search)
 
-### 2. Binary Search
+### 2. 이진 탐색
 ![2 binary_search](https://user-images.githubusercontent.com/38908132/49684281-54c6cd80-fb15-11e8-8d9a-d3928cea5afa.png)
 
-**Binary search**, also known as *half-interval search* or *logarithmic search*, is a search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful.
+**Binary search**, 반 간격 검색 또는 로그 검색이라고도 하는 이진 검색은 정렬된 배열 내에서 대상 값의 위치를 찾는 탐색 알고리즘입니다. 목표 값을 배열의 중간 요소와 비교하여 동일하지 않으면, 절반을 배제한 상태로 다시 성공할 때까지 나머지 절반의 탐색을 진행합니다.
 
 __Properties__
-* Worst case performance	O(log n)
-* Best case performance	O(1)
-* Average case performance	O(log n)
-* Worst case space complexity	O(1)
-
+* 최악의 경우	O(log n)
+* 최선의 경우	O(1)
+* 평균적인 경우	O(log n)
+* 최악의 경우(공간)	O(1)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 
