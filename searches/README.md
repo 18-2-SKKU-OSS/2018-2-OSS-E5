@@ -48,16 +48,14 @@ __Properties__
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Jump_search)
 
-## 5. Quick Select Search
+## 5. 퀵 셀렉트 탐색
 ![5 quick_search](https://user-images.githubusercontent.com/38908132/49684283-54c6cd80-fb15-11e8-802f-257c4f85c5fb.gif)
 
-**Quickselect** is a selection algorithm to find the kth smallest element in an unordered list. It is related to the quicksort sorting algorithm. Like quicksort, it was developed by Tony Hoare, and thus is also known as Hoare's selection algorithm. Like quicksort, it is efficient in practice and has good average-case performance, but has poor worst-case performance. Quickselect and its variants are the selection algorithms most often used in efficient real-world implementations.
-
-As with quicksort, quickselect is generally implemented as an in-place algorithm, and beyond selecting the k'th element, it also partially sorts the data. See selection algorithm for further discussion of the connection with sorting.
+**퀵 셀렉트 탐색**은 정렬되지 않은 목록에서 k번째 가장 작은 요소를 찾는 선택 알고리즘이다. 이것은 퀵소트 정렬 알고리즘과 관련이 있다. Tony Hoare에 의해 개발되었으며 Hoare의 선택 알고리즘으로도 알려져 있다. 퀵소트처럼 평균적인 성능은 좋지만, 최악의 경우에는 성능이 매우 나쁘다. 퀵 셀렉트 탐색과 그것의 변형은 실제 세계에서 자주 사용되는 선택 알고리즘이다.
 
 __Properties__
-* Worst case performance	O(n)
-* Average case performance	O(log n)
+* 최악의 경우 O(n)
+* 평균적인 경우	O(log n)
 
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/Quickselect)
 
