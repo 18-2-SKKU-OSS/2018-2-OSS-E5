@@ -21,7 +21,7 @@ def method_2(boundary, steps):
 	y = 0.0 #define as float type
 	y += (h/3.0)*f(a) #define y
 	cnt = 2
-	for i in x_i:
+	for i in x_i: #iteration
 		y += (h/3)*(4-2*(cnt%2))*f(i)	
 		cnt += 1
 	y += (h/3.0)*f(b)
