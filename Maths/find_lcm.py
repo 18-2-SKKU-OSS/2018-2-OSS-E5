@@ -11,8 +11,8 @@ def find_lcm(num_1, num_2):
 
 
 def main():
-    num_1 = 12
-    num_2 = 76
+    num_1 = int(input("input number 1: "))
+    num_2 = int(input("input number 2: "))
     print(find_lcm(num_1, num_2))
 
 
