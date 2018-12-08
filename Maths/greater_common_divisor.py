@@ -1,4 +1,5 @@
 # Greater Common Divisor - https://en.wikipedia.org/wiki/Greatest_common_divisor
+# use Euclid method to calculate GCD
 def gcd(a, b):
     return b if a == 0 else gcd(b % a, a)
 
