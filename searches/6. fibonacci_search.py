@@ -4,7 +4,6 @@
 피보나치 탐색은 피보나치 수열을 이용하여 탐색 구간을 정하게 된다.
 """
 from __future__ import print_function
-import bisect
 
 try:
     raw_input          # Python 2

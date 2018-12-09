@@ -1,21 +1,15 @@
 """
-This is pure python implementation of counting sort algorithm
-For doctests run following command:
-python -m doctest -v counting_sort.py
-or
-python3 -m doctest -v counting_sort.py
-For manual testing run:
-python counting_sort.py
+이 코드는 Counting Sort를 파이썬으로 구현한 코드입니다.
+    이름 그대로 숫자의 등장횟수를 세어줍니다.
+    그 후 등장횟수+ 숫자의 누적합으로 정렬을 해줍니다.
+    보시면 아시다시비 누적합 배열에 대한 접근을 달성하기 위해 엄청난 메모리를 낭비하게 됩니다.
 """
 
 from __future__ import print_function
 
 
 def counting_sort(collection):
-    """Pure implementation of counting sort algorithm in Python
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
+    """
     Examples:
     >>> counting_sort([0, 5, 3, 2, 2])
     [0, 2, 2, 3, 5]
@@ -24,33 +18,32 @@ def counting_sort(collection):
     >>> counting_sort([-2, -5, -45])
     [-45, -5, -2]
     """
-    # if the collection is empty, returns empty
+    # 배열이 비어있다면 반환해줍니다.
     if collection == []:
         return []
 
-    # get some information about the collection
+    # 입력받은 배열에 대한 정보를 얻어옵니다.
     coll_len = len(collection)
     coll_max = max(collection)
     coll_min = min(collection)
 
-    # create the counting array
+    # 수를 세는 새로운 배열을 만듭니다.
     counting_arr_length = coll_max + 1 - coll_min
     counting_arr = [0] * counting_arr_length
 
-    # count how much a number appears in the collection
+    # 입력에서 각자의 숫자가 얼마나 나타났는지 셈을 합니다.
     for number in collection:
         counting_arr[number - coll_min] += 1
 
-    # sum each position with it's predecessors. now, counting_arr[i] tells
-    # us how many elements <= i has in the collection
+    # 각 위치의 합은 그 과정동안의 합을 말해줍니다. 
+    # 이제, counting_arr[i] 은 얼마나 많은 요소들은 i보다 작은 배열에 들어가 있는지 알수있습니다.
     for i in range(1, counting_arr_length):
         counting_arr[i] = counting_arr[i] + counting_arr[i-1]
 
-    # create the output collection
+    # 출력을 위한 배열을 만듭니다.
     ordered = [0] * coll_len
 
-    # place the elements in the output, respecting the original order (stable
-    # sort) from end to begin, updating counting_arr
+    # 이 과정에서 정렬이 됩니다.
     for i in reversed(range(0, coll_len)):
         ordered[counting_arr[collection[i] - coll_min]-1] = collection[i]
         counting_arr[collection[i] - coll_min] -= 1
@@ -62,7 +55,7 @@ def counting_sort_string(string):
 
 
 if __name__ == '__main__':
-    # Test string sort
+    # sordt_string 을 테스트 해보기 위한 코드입니다.
     assert "eghhiiinrsssttt" == counting_sort_string("thisisthestring")
 
     try:

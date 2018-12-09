@@ -64,6 +64,17 @@ __Properties__
 * Best case performance	O(n log n)
 * Average case performance	O(n log n)
 
+### 5.Counting Sort
+![99279e365ab11c4934](https://user-images.githubusercontent.com/37110949/49685622-bee96d80-fb29-11e8-897f-66d459228ab7.png)
+
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Counting_sort): **Counting sort** In computer science, counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value, and using arithmetic on those counts to determine the positions of each key value in the output sequence. Its running time is linear in the number of items and the difference between the maximum and minimum key values, so it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items. However, it is often used as a subroutine in another sorting algorithm, radix sort, that can handle larger keys more efficiently
+
+__Properties__
+* Worst case performance, Best case performance	-> O(n+k) depending on k value
+* Average case performance	O(n+k)
+
+
 ### Bucket Sort
 ![alt text][bucket-image-1]
 ![alt text][bucket-image-2]

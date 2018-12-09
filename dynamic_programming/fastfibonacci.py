@@ -2,8 +2,12 @@
 # encoding=utf8
 
 """
-This program calculates the nth Fibonacci number in O(log(n)).
-It's possible to calculate F(1000000) in less than a second.
+이 프로그램은 O (log (n))에서 n 번째 피보나치 수를 계산합니다.
+1 초 이내에 F (1000000)를 계산할 수 있습니다.
+이 알고리즘은이 무고한 정체성 (수학적 유도로 입증 될 수 있음)을 기반으로합니다.
+이러한 ID는 행렬 지수 알고리즘에서 추출 할 수 있습니다. 어떤 의미에서 이 알고리즘은 
+중복 계산이 제거 된 행렬 지수 알고리즘입니다. 그것은 매트릭스 지수보다 
+더 빠른 상수 인자가되어야하지만, 점근 적 시간 복잡성은 여전히 동일합니다.
 """
 from __future__ import print_function
 import sys

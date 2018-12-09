@@ -5,7 +5,6 @@
 와 같이 지수 함수로 늘려 가면서 찾는다.
 """
 from __future__ import print_function
-import bisect
 
 try:
     raw_input          # Python 2

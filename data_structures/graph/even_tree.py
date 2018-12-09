@@ -1,16 +1,12 @@
 """
-You are given a tree(a simple connected graph with no cycles). The tree has N
-nodes numbered from 1 to N and is rooted at node 1.
+트피 (주기가없는 간단한 연결 그래프)가 주어집니다. 트리는 1에서 N까지 번호가 매겨진 N 개의 노드를 가지며 노드 1을 루팅합니다.
 
-Find the maximum number of edges you can remove from the tree to get a forest
-such that each connected component of the forest contains an even number of
-nodes.
+포리스트의 연결된 각 구성 요소에 짝수 개의 노드가 포함되도록 포리스트를 얻기 위해 트리에서 제거 할 수있는 최대 edge 수를 찾습니다.
 
-Constraints
+제약 조건
 2 <= 2 <= 100
 
-Note: The tree input will be such that it can always be decomposed into
-components containing an even number of nodes.
+주 : 트리 입력은 항상 짝수 개의 노드를 포함하는 구성 요소로 분해 될 수 있습니다.
 """
 from __future__ import print_function
 # pylint: disable=invalid-name
@@ -41,7 +37,7 @@ def even_tree():
     8 6
     9 8
     10 8
-    On removing edges (1,3) and (1,6), we can get the desired result 2.
+    edge (1,3) 및 (1,6)을 제거하면 원하는 결과인 2를 얻을 수 있습니다 
     """
     dfs(1)
 
