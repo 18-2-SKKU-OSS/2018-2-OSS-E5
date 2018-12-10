@@ -10,12 +10,12 @@ These implementations are for demonstration purposes. They are less efficient th
 ### Factorial
 ![number-factorial-calculation](https://user-images.githubusercontent.com/37097363/49742832-bdac7200-fcdc-11e8-92c8-3f368761127b.jpg)
 
-From [Wikipedia][bubble-wiki]: **Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
+From [Wikipedia][bubble-wiki]: **Factorial**, In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to n. The factorial operation is encountered in many areas of mathematics, notably in combinatorics, algebra, and mathematical analysis. Its most basic occurrence is the fact that there are n! ways to arrange n distinct objects into a sequence. These arrangements are called the permutations of the set of objects. The definition of the factorial function can also be extended to non-integer arguments, while retaining its most important properties; this involves more advanced mathematics, notably techniques from mathematical analysis.
 
 __Properties__
-* Worst case performance	O(n<sup>2</sup>)
+* Worst case performance	On)
 * Best case performance	O(n)
-* Average case performance	O(n<sup>2</sup>)
+* Average case performance	O(n)
 
 ###### View the algorithm in [action][bubble-toptal]
 
@@ -249,7 +249,7 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 ###### Source: [Wikipedia](https://en.wikipedia.org/wiki/XOR_cipher)
 
 [bubble-toptal]: https://www.toptal.com/developers/sorting-algorithms/bubble-sort
-[bubble-wiki]: https://en.wikipedia.org/wiki/Bubble_sort
+[bubble-wiki]: https://en.wikipedia.org/wiki/Factorial
 [bubble-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/220px-Bubblesort-edited-color.svg.png "Bubble Sort"
 
 [bucket-wiki]: https://en.wikipedia.org/wiki/Bucket_sort
