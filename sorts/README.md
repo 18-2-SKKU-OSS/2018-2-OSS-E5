@@ -74,6 +74,18 @@ __Properties__
 * Worst case performance, Best case performance	-> O(n+k) depending on k value
 * Average case performance	O(n+k)
 
+### 6.Quick Sort
+![220px-sorting_quicksort_anim](https://user-images.githubusercontent.com/37110949/49715048-8f09a980-fc92-11e8-8c5b-ffe9aaf51a33.gif)
+
+From [Wikipedia][quick-wiki]: **Quicksort** (sometimes called *partition-exchange sort*) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.
+
+__Properties__
+* Worst case performance	O(n<sup>2</sup>)
+* Best case performance	O(*n* log *n*) or O(n) with three-way partition
+* Average case performance	O(*n* log *n*)
+
+###### View the algorithm in [action][quick-toptal]
+
 
 ### Bucket Sort
 ![alt text][bucket-image-1]
@@ -99,7 +111,7 @@ __Properties__
 
 
 ### Quick Sort
-![alt text][quick-image]
+![220px-sorting_quicksort_anim](https://user-images.githubusercontent.com/37110949/49715048-8f09a980-fc92-11e8-8c5b-ffe9aaf51a33.gif)
 
 From [Wikipedia][quick-wiki]: **Quicksort** (sometimes called *partition-exchange sort*) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.
 
