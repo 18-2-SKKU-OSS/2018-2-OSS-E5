@@ -53,15 +53,14 @@ __Properties__
 ### Merge Sort
 ![alt text][merge-image]
 
-From [Wikipedia][merge-wiki]: **Merge sort** (also commonly spelled *mergesort*) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means the order of equal items is the same in the input and output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+From [Wikipedia][merge-wiki]: **Merge sort**Modular exponentiation is a type of exponentiation performed over a modulus. It is useful in computer science, especially in the field of public-key cryptography. The operation of modular exponentiation calculates the remainder when an integer b (the base) raised to the eth power (the exponent), be, is divided by a positive integer m (the modulus). In symbols, given base b, exponent e, and modulus m, the modular exponentiation c is: c = be mod m. From the definition of c, it follows that 0 ≤ c < m. For example, given b = 5, e = 3 and m = 13, the solution c = 8 is the remainder of dividing 53 = 125 by 13.
+Modular exponentiation can be performed with a negative exponent e by finding the modular multiplicative inverse d of b modulo m using the extended Euclidean algorithm. That is: c = be mod m = d−e mod m, where e < 0 and b ⋅ d ≡ 1 (mod m). Modular exponentiation similar to the one described above is considered easy to compute, even when the integers involved are enormous. On the other hand, computing the modular discrete logarithm – that is, the task of finding the exponent e when given b, c, and m – is believed to be difficult. This one-way function behavior makes modular exponentiation a candidate for use in cryptographic algorithms.
 
 __Properties__
-* Worst case performance	O(n log n)
-* Best case performance	O(n log n)
-* Average case performance	O(n log n)
+* Worst case performance	O(M(n) k))
+* Best case performance	O(M(n) k)
+* Average case performance	O(M(n) k)
 
-
-###### View the algorithm in [action][merge-toptal]
 
 ### Quick Sort
 ![alt text][quick-image]
