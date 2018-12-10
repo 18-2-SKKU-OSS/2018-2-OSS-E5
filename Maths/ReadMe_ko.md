@@ -17,7 +17,7 @@ __시간 복잡도__
 
 From [Wikipedia][bucket-wiki]: 수학에서, 피보나치 수(영어: Fibonacci numbers)는 첫째 및 둘째 항이 1이며 그 뒤의 모든 항은 바로 앞 두 항의 합인 수열이다. 처음 여섯 항은 각각 1, 1, 2, 3, 5, 8이다. 편의상 0번째 항을 0으로 두기도 한다.
 
-__시간 __
+__시간 복잡도__
 * 최악의 경우	O(2<sup>n</sup>)
 * 최선의 경우 O(2<sup>n</sup>)
 * 평균의 경우	O(2<sup>n</sup>)
@@ -53,23 +53,23 @@ From [Wikipedia][merge-wiki]: **모듈러 거듭제곱**는 계수 위에 수행
 __시간 복잡도__
 * 최악의 경우	O(M(n) k))
 * 최선의 경우	O(M(n) k)
-* 평균의 	O(M(n) k)
+* 평균의 경우 	O(M(n) k)
 
 
-### Tower of Hanoi
+### 하노이의 탑
 ![alt text][quick-image]
 
-From [Wikipedia][quick-wiki]: **The Tower of Hanoi**(also called the Tower of Brahma or Lucas' Tower and sometimes pluralized) is a mathematical game or puzzle. It consists of three rods and a number of disks of different sizes, which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
-The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:
->1. Only one disk can be moved at a time.
->2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.
->3. No larger disk may be placed on top of a smaller disk.
-With 3 disks, the puzzle can be solved in 7 moves. The minimal number of moves required to solve a Tower of Hanoi puzzle is 2n − 1, where n is the number of disks.
+From [Wikipedia][quick-wiki]: **하노이의 탑**(Tower of Hanoi)은 퍼즐의 일종이다. 세 개의 기둥과 이 기둥에 꽂을 수 있는 크기가 다양한 원판들이 있고, 퍼즐을 시작하기 전에는 한 기둥에 원판들이 작은 것이 위에 있도록 순서대로 쌓여 있다. 게임의 목적은 다음 두 가지 조건을 만족시키면서, 한 기둥에 꽂힌 원판들을 그 순서 그대로 다른 기둥으로 옮겨서 다시 쌓는 것이다.
 
-__Properties__
-* Worst case performance	O(2<sup>n</sup>)
-* Best case performance O(2<sup>n</sup>)
-* Average case performance	O(2<sup>n</sup>)
+>1. 한 번에 하나의 원판만 옮길 수 있다.
+>2. 큰 원판이 작은 원판 위에 있어서는 안 된다.
+
+하노이의 탑 문제는 재귀 호출을 이용하여 풀 수 있는 가장 유명한 예제 중의 하나이다. 그렇기 때문에 프로그래밍 수업에서 알고리즘 예제로 많이 사용한다. 일반적으로 원판이 n개 일 때, 2n -1번의 이동으로 원판을 모두 옮길 수 있다(2n − 1는 메르센 수라고 부른다). 참고로 64개의 원판을 옮기는 데 약 18446744073709551615번을 움직여야 하고, 한번 옮길 때 시간을 1초로 가정했을 때 64개의 원판을 옮기는 데 5849억 4241만 7355년이 걸린다.
+
+__시간 복잡도__
+* 최악의 경우	O(2<sup>n</sup>)
+* 최선의 경우  O(2<sup>n</sup>)
+* 평균의 경우	O(2<sup>n</sup>)
 
 
 
