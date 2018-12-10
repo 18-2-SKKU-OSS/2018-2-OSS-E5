@@ -28,15 +28,15 @@ __Properties__
 * Best case performance O(2<sup>n</sup>)
 * Average case performance	O(2<sup>n</sup>)
 
-### Cocktail shaker
+### Find Highest Common Factor
 ![alt text][cocktail-shaker-image]
 
-From [Wikipedia][cocktail-shaker-wiki]: Cocktail shaker sort, also known as bidirectional bubble sort, cocktail sort, shaker sort (which can also refer to a variant of selection sort), ripple sort, shuffle sort, or shuttle sort, is a variation of bubble sort that is both a stable sorting algorithm and a comparison sort. The algorithm differs from a bubble sort in that it sorts in both directions on each pass through the list.
+From [Wikipedia][cocktail-shaker-wiki]: In mathematics, the greatest common divisor (gcd) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers. For example, the gcd of 8 and 12 is 4. This notion can be extended to polynomials (see Polynomial greatest common divisor) and other commutative rings.
 
 __Properties__
-* Worst case performance	O(n<sup>2</sup>)
-* Best case performance	O(n)
-* Average case performance	O(n<sup>2</sup>)
+* Worst case performance	O(log n)
+* Best case performance	O(log n)
+* Average case performance	O(log n)
 
 
 ### Insertion Sort
@@ -254,8 +254,8 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 [bucket-image-1]: https://upload.wikimedia.org/wikipedia/commons/d/db/34%2A21-FibonacciBlocks.png
 [bucket-image-2]: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Bucket_sort_2.svg/311px-Bucket_sort_2.svg.png "Bucket Sort"
 
-[cocktail-shaker-wiki]: https://en.wikipedia.org/wiki/Cocktail_shaker_sort
-[cocktail-shaker-image]: https://upload.wikimedia.org/wikipedia/commons/e/ef/Sorting_shaker_sort_anim.gif "Cocktail Shaker Sort"
+[cocktail-shaker-wiki]: https://en.wikipedia.org/wiki/Greatest_common_divisor
+[cocktail-shaker-image]: https://image.slidesharecdn.com/saikat-20roy-20-20me-20software-20engg-20-2026-140402183023-phpapp02/95/gcd-of-n-numbers-3-638.jpg?cb=1396463613
 
 [insertion-toptal]: https://www.toptal.com/developers/sorting-algorithms/insertion-sort
 [insertion-wiki]: https://en.wikipedia.org/wiki/Insertion_sort
