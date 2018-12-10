@@ -1,8 +1,8 @@
 def main():
 	n = int(input("Enter the number: ")) #input size of iteration
-	for i in range(1, n + 1):
+	for i in range(1, n + 1): #iteration
 		b = checkarmstrong(i)
-		if b:
+		if b: #if isArmstorng, print each number
 			print(str(i) + " is an armstrong number")
 
 def checkarmstrong(n):
