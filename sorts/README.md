@@ -12,3 +12,14 @@ __시간 복잡도__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/selection-sort)
 
+### 1. Bubble Sort
+![bubble-sort-in-c](https://user-images.githubusercontent.com/37110949/49448033-534a8c00-f81b-11e8-8b6a-78c83907ef7d.jpg)
+
+**거품 정렬**은 목록을 반복적으로 통과하여 인접 쌍을 비교해 가면서 정렬하는 알고리즘이다. 목록의 통과는 스왑이 필요하지 않을 때까지 반복되며, 이는 목록이 정렬되었음을 나타낸다.
+
+__시간 복잡도__
+* 최악의 경우	O(n<sup>2</sup>)
+* 최선의 경우	O(n)
+* 평균적인 경우	O(n<sup>2</sup>)
+
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
