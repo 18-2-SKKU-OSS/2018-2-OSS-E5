@@ -13,7 +13,7 @@ def checkarmstrong(n):
 		sum_num = sum_num + (r * r * r) #armstrong number rule
 		t = t//10
 
-	if sum_num == n:
+	if sum_num == n: #check whether the result and original input number are equal
 		return True
 	else:
 		return False
