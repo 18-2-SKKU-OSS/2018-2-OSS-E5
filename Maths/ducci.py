@@ -13,5 +13,6 @@ def ducci(*ns):
 			break
 			
 		known.add(ns)
+	return len(known) + 1
 
 
