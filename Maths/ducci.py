@@ -8,5 +8,5 @@ def ducci_sequence(*ns):
 def ducci(*ns):
 	known = set()
 	for ns in ducci_sequence(*ns):
-
+		print(ns)
 
