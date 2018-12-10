@@ -73,15 +73,15 @@ __시간 복잡도__
 
 
 
-### Simpson's Rule
+### 심프슨 공식
 ![alt text][simpson-rule]
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_rule): In numerical analysis, **Simpson's rule** is a method for numerical integration, the numerical approximation of definite integrals. Specifically, it is the following approximation for n equally spaced subdivisions (where n is even): (General Form)
+From [Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_rule): **심프슨 공식**(영어: Simpson's rule)은 수치 해석에서 뉴턴-코츠 법칙의 한 경우로, 토머스 심프슨이 만든 적분법이다. 이 법칙은 다음과 같은 적분식의 근사값을 구하는 데 쓰인다.
 
-__Properties__
-* Worst case performance	O(n)
-* Best case performance	O(n)
-* Average case performance	O(n)
+__시간 복잡도__
+* 최악의 경우	O(n)
+* 최선의 경우	O(n)
+* 평균의 경우	O(n)
 
 [bubble-toptal]: https://www.toptal.com/developers/sorting-algorithms/bubble-sort
 [bubble-wiki]: https://en.wikipedia.org/wiki/Factorial
