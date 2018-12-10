@@ -9,17 +9,17 @@ From [Wikipedia][bubble-wiki]: **Factorial**, 수학에서, 자연수의 계승(
 __시간 복잡도__
 * 최악의 경우	O(n)
 * 최선의 경우	O(n)
-* Average case performance	O(n)
+* 평균의 경우	O(n)
 
 
 ### Fibonacci Sequence
 ![alt text][bucket-image-1]
 
-From [Wikipedia][bucket-wiki]: In mathematics, the Fibonacci numbers, commonly denoted Fn form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1.
+From [Wikipedia][bucket-wiki]: 수학에서, 피보나치 수(영어: Fibonacci numbers)는 첫째 및 둘째 항이 1이며 그 뒤의 모든 항은 바로 앞 두 항의 합인 수열이다. 처음 여섯 항은 각각 1, 1, 2, 3, 5, 8이다. 편의상 0번째 항을 0으로 두기도 한다.
 
 __Properties__
-* Worst case performance	O(2<sup>n</sup>)
-* Best case performance O(2<sup>n</sup>)
+* 최악의 경우	O(2<sup>n</sup>)
+* 최선의 경우 O(2<sup>n</sup>)
 * Average case performance	O(2<sup>n</sup>)
 
 ### Find Highest Common Factor
