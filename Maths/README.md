@@ -79,9 +79,10 @@ __Properties__
 
 
 
-### Heap
+### Simpson's Rule
+![alt text][simpson-rule]
 
-From [Wikipedia](https://en.wikipedia.org/wiki/Heapsort): Heapsort is a comparison-based sorting algorithm. It can be thought of as an improved selection sort. It divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region
+From [Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_rule): In numerical analysis, **Simpson's rule** is a method for numerical integration, the numerical approximation of definite integrals. Specifically, it is the following approximation for n equally spaced subdivisions (where n is even): (General Form)
 
 __Properties__
 * Worst case performance	O(*n* log *n*)
@@ -275,6 +276,8 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 [selection-toptal]: https://www.toptal.com/developers/sorting-algorithms/selection-sort
 [selection-wiki]: https://en.wikipedia.org/wiki/Selection_sort
 [selection-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Selection_sort_animation.gif/250px-Selection_sort_animation.gif "Selection Sort Sort"
+
+[simpson-rule]: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Simpsons_method_illustration.svg/330px-Simpsons_method_illustration.svg.png
 
 [shell-toptal]: https://www.toptal.com/developers/sorting-algorithms/shell-sort
 [shell-wiki]: https://en.wikipedia.org/wiki/Shellsort
