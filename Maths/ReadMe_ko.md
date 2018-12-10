@@ -17,7 +17,7 @@ __시간 복잡도__
 
 From [Wikipedia][bucket-wiki]: 수학에서, 피보나치 수(영어: Fibonacci numbers)는 첫째 및 둘째 항이 1이며 그 뒤의 모든 항은 바로 앞 두 항의 합인 수열이다. 처음 여섯 항은 각각 1, 1, 2, 3, 5, 8이다. 편의상 0번째 항을 0으로 두기도 한다.
 
-__Properties__
+__시간 __
 * 최악의 경우	O(2<sup>n</sup>)
 * 최선의 경우 O(2<sup>n</sup>)
 * 평균의 경우	O(2<sup>n</sup>)
@@ -27,21 +27,21 @@ __Properties__
 
 From [Wikipedia][cocktail-shaker-wiki]: 수론에서, 정수들의 공약수(公約數, 영어: common divisor)는 동시에 그들 모두의 약수인 정수다. 적어도 하나가 0이 아닌 정수들의 최대공약수(最大公約數, 문화어: 련속나눔셈; 영어: greatest common divisor, 약자 GCD)는 공약수 가운데 가장 큰 하나다. 다항식이나 환의 원소에 대해서도 정의할 수 있다.
 
-__Properties__
+__시간 복잡도__
 * 최악의 경우	O(log n)
 * 최선의 경우	O(log n)
 * 평균의 경우	O(log n)
 
 
-### Find Least Common Multiple
+### 최소공배수 찾기
 ![alt text][insertion-image]
 
-From [Wikipedia][insertion-wiki]: In arithmetic and number theory, **Least common multiple**, lowest common multiple, or smallest common multiple of two integers a and b, usually denoted by LCM(a, b), is the smallest positive integer that is divisible by both a and b.[1] Since division of integers by zero is undefined, this definition has meaning only if a and b are both different from zero.[2] However, some authors define LCM (a,0) as 0 for all a, which is the result of taking the LCM to be the least upper bound in the lattice of divisibility. The LCM is the "lowest common denominator" (LCD) that can be used before fractions can be added, subtracted or compared. The LCM of more than two integers is also well-defined: it is the smallest positive integer that is divisible by each of them.
+From [Wikipedia][insertion-wiki]: 수론에서, 여러 개의 정수/다항식/환의 원소의 공배수(公倍數, 영어: common multiple)는 그들 모두의 배수가 되는 정수/다항식/환의 원소이다. 최소공배수(最小公倍數, 영어: least common multiple/ lowest common multiple, 약자 LCM)는 양의 공배수 가운데 가장 작은 하나이다. 유클리드 정역에서 0으로 나누기를 정의하지 않으므로, 이 정의는 오직 다루고자 하는 정수들이 0이 아닐 때 의미가 있다. 그러나 일부 저자는 {\displaystyle \operatorname {lcm} \{a,0\}} {\displaystyle \operatorname {lcm} \{a,0\}}을 모든 a에 대해 0으로 정의하며, 이는 나눗셈의 격자에서 최소공배수를 최소 상한으로 간주한 것이다.
 
-__Properties__
-* Worst case performance	O(n)
-* Best case performance	O(n)
-* Average case performance	O(n)
+__시간 복잡도__
+* 최악의 경우	O(n)
+* 최선의 경우	O(n)
+* 평균의 경우	O(n)
 
 
 ### Modular exponentiation
