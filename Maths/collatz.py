@@ -5,4 +5,5 @@
 def collatz(n):
 	"""Sequence generation."""
 	l = []
+	while n > 1:
 		
