@@ -89,9 +89,6 @@ __Properties__
 * Best case performance	O(n)
 * Average case performance	O(n)
 
-
-###### Source: [Wikipedia](https://en.wikipedia.org/wiki/XOR_cipher)
-
 [bubble-toptal]: https://www.toptal.com/developers/sorting-algorithms/bubble-sort
 [bubble-wiki]: https://en.wikipedia.org/wiki/Factorial
 [bubble-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/220px-Bubblesort-edited-color.svg.png "Bubble Sort"
