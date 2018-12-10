@@ -4,11 +4,11 @@
 
 These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
 
-## Sorting Algorithms
+## Math Algorithms
 
 
-### Bubble Sort
-![alt text][bubble-image]
+### Factorial
+![factorial][bubble_image]
 
 From [Wikipedia][bubble-wiki]: **Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
 
