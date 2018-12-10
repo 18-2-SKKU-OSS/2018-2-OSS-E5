@@ -7,7 +7,7 @@
 From [Wikipedia][bubble-wiki]: **Factorial**, In mathematics, the factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to n. The factorial operation is encountered in many areas of mathematics, notably in combinatorics, algebra, and mathematical analysis. Its most basic occurrence is the fact that there are n! ways to arrange n distinct objects into a sequence. These arrangements are called the permutations of the set of objects. The definition of the factorial function can also be extended to non-integer arguments, while retaining its most important properties; this involves more advanced mathematics, notably techniques from mathematical analysis.
 
 __Properties__
-* Worst case performance	On)
+* Worst case performance	O(n)
 * Best case performance	O(n)
 * Average case performance	O(n)
 
