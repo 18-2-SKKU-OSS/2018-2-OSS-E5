@@ -14,3 +14,4 @@ def factorial(n):
 
 n = int(input("Enter an integer n to compute its factorial: "))
 
+print(str(n)+"! = "+str(factorial(n)))
