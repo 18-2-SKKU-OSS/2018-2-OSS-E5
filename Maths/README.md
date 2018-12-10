@@ -17,13 +17,11 @@ __Properties__
 * Best case performance	O(n)
 * Average case performance	O(n)
 
-###### View the algorithm in [action][bubble-toptal]
 
-### Bucket Sort
+### Fibonacci Sequence
 ![alt text][bucket-image-1]
-![alt text][bucket-image-2]
 
-From [Wikipedia][bucket-wiki]: Bucket sort, or bin sort, is a sorting algorithm that distributes elements of an array into a number of buckets. Each bucket is then sorted individually, either using a different sorting algorithm, or by recursively applying the bucket sorting algorithm.
+From [Wikipedia][bucket-wiki]: In mathematics, the Fibonacci numbers, commonly denoted Fn form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1.
 
 __Properties__
 * Worst case performance	O(n<sup>2</sup>)
@@ -252,8 +250,8 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 [bubble-wiki]: https://en.wikipedia.org/wiki/Factorial
 [bubble-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bubblesort-edited-color.svg/220px-Bubblesort-edited-color.svg.png "Bubble Sort"
 
-[bucket-wiki]: https://en.wikipedia.org/wiki/Bucket_sort
-[bucket-image-1]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bucket_sort_1.svg/311px-Bucket_sort_1.svg.png "Bucket Sort"
+[bucket-wiki]: https://en.wikipedia.org/wiki/Fibonacci_number
+[bucket-image-1]: https://upload.wikimedia.org/wikipedia/commons/d/db/34%2A21-FibonacciBlocks.png
 [bucket-image-2]: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Bucket_sort_2.svg/311px-Bucket_sort_2.svg.png "Bucket Sort"
 
 [cocktail-shaker-wiki]: https://en.wikipedia.org/wiki/Cocktail_shaker_sort
