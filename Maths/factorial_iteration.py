@@ -9,6 +9,7 @@ def factorial(n):
 
 		r = r * n
 		n--
-
+		
+	return r
 
 
