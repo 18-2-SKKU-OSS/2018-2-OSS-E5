@@ -11,6 +11,10 @@ print("Please enter the number for which you would want a magic sqaure to be pri
 
 N  = int(input())
 
+# create a matrix with values 0 using numpy. The datatype is int for the elements in the matrix
+magic_square = np.zeros((N,N), dtype=int)
+
+
 
 
 
