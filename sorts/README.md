@@ -10,7 +10,7 @@ __시간 복잡도__
 * 최선의 경우 O(n<sup>2</sup>)
 * 평균적인 경우	O(n<sup>2</sup>)
 
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/selection-sort)
+###### 알고리즘 [보기](https://www.toptal.com/developers/sorting-algorithms/selection-sort)
 
 ### 1. Bubble Sort
 ![bubble-sort-in-c](https://user-images.githubusercontent.com/37110949/49448033-534a8c00-f81b-11e8-8b6a-78c83907ef7d.jpg)
@@ -22,7 +22,7 @@ __시간 복잡도__
 * 최선의 경우 O(n)
 * 평균적인 경우	O(n<sup>2</sup>)
 
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
+###### 알고리즘 [보기](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
 
 ### 2. 삽입 정렬
 ![insertion-sort](https://user-images.githubusercontent.com/37110949/49484510-a99ae780-f87a-11e8-8681-981f5739e03d.png)
@@ -34,7 +34,7 @@ __시간 복잡도__
 * 최선의 경우 O(n)
 * 평균적인 경우	O(n<sup>2</sup>)
 
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/insertion-sort)
+###### 알고리즘 [보기](https://www.toptal.com/developers/sorting-algorithms/insertion-sort)
 
 ### 3. 합병 정렬
 ![how merge sort algorithm works in java](https://user-images.githubusercontent.com/37110949/49570490-19dc6280-f97a-11e8-9d26-10540d5dcd88.png)
@@ -46,7 +46,7 @@ __시간 복잡도__
 * 최선의 경우 O(n log n)
 * 평균적인 경우 O(n log n)
 
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/merge-sort)
+###### 알고리즘 [보기](https://www.toptal.com/developers/sorting-algorithms/merge-sort)
 
 ### 4. 트리 정렬
 ![binary-search-tree-insertion-animation](https://user-images.githubusercontent.com/37110949/49629485-1229c600-fa2d-11e8-808a-875b37eba6af.gif)
@@ -73,8 +73,8 @@ __시간 복잡도__
 **퀵 정렬**(때로는 *파티션 교환 정렬*이라고도 함)는 효율적인 정렬 알고리즘으로, 배열 요소를 순서대로 정렬하는 체계적인 방법 역할을 한다.
 
 __시간 복잡도__
-* 최악의 경우 ㅊO(n<sup>2</sup>)
+* 최악의 경우 O(n<sup>2</sup>)
 * 최선의 경우 O(*n* log *n*) or O(n) with three-way partition
 * 평균적인 경우 O(*n* log *n*)
 
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/quick-sort)
+###### 알고리즘 [보기](https://www.toptal.com/developers/sorting-algorithms/quick-sort)
