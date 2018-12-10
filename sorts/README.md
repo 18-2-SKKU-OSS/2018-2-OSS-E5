@@ -66,3 +66,15 @@ __시간 복잡도__
 __시간 복잡도__
 * 최악의 경우, 최선의 경우 O(n+k) k값에 의해 좌우
 * 평균적인 경우	O(n+k)
+
+### 6. 퀵 정렬
+![220px-sorting_quicksort_anim](https://user-images.githubusercontent.com/37110949/49715048-8f09a980-fc92-11e8-8c5b-ffe9aaf51a33.gif)
+
+**퀵 정렬**(때로는 *파티션 교환 정렬*이라고도 함)는 효율적인 정렬 알고리즘으로, 배열 요소를 순서대로 정렬하는 체계적인 방법 역할을 한다.
+
+__시간 복잡도__
+* 최악의 경우 ㅊO(n<sup>2</sup>)
+* 최선의 경우 O(*n* log *n*) or O(n) with three-way partition
+* 평균적인 경우 O(*n* log *n*)
+
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/quick-sort)
