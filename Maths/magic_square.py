@@ -37,4 +37,4 @@ while n <= N**2:
     else:
         i, j = new_i, new_j
 
-
+print(magic_square)
