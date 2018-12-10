@@ -5,3 +5,5 @@ def main():
 		if b:
 			print(str(i) + " is an armstrong number")
 
+def checkarmstrong(n):
+
