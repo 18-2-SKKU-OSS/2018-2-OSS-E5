@@ -38,6 +38,25 @@ __비용 함수__
 	![6](https://user-images.githubusercontent.com/38908132/49339154-fad78b00-f670-11e8-8aa4-bd5e2ff23b9a.gif)
 
 __경사 하강법__
-- 비용 함수의 미분값(gradient)는 θ와 동일한 길이의 벡터로서, θ의 j (j = 0,1,...,d)번째 요소는 다음과 같이 정의 됩니다:
+- 비용 함수의 구배(gradient)는 θ와 동일한 길이의 벡터로서, θ의 j (j = 0,1,...,d)번째 요소는 다음과 같이 정의 됩니다:
 
 	![7](https://user-images.githubusercontent.com/38908132/49339182-64f03000-f671-11e8-9309-95809ff07230.gif)
+
+### 3. 퍼셉트론
+이 파트에서는 퍼셉트론을 구현할 것입니다.
+
+__가설 모델__
+- 퍼셉트론은 다음과 같이 정의 됩니다:
+
+	![default](https://user-images.githubusercontent.com/38908132/49377601-f2a14d80-f74d-11e8-8228-5eb90681b0a7.PNG)
+
+__비용 함수__
+- 이제 퍼셉트론의 비용 함수와 업데이트 규칙을 구현할 것입니다. 우선 비용 함수는 다음과 같이 정의 됩니다: 
+
+	![codecogseqn](https://user-images.githubusercontent.com/38908132/49377749-54fa4e00-f74e-11e8-8338-e65da50baec6.gif)
+
+__경사 하강법__
+- 그리고 퍼셉트론의 구배는 θ와 동일한 길이의 벡터로서, θ의 j (j = 0,1,...,d)번째 요소는 다음과 같이 정의 됩니다:
+	![codecogseqn](https://user-images.githubusercontent.com/38908132/49377879-a1de2480-f74e-11e8-81d6-7af83c435bb5.gif)
+	
+- 이 구배는 선형 회귀 분석과 동일하게 보이지만 선형 및 로지스틱 회귀 분석에 대한 정의와는 다르기 때문에, 두 공식이 실제로 다르다는 점에 유의하십시오.
