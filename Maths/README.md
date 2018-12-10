@@ -85,13 +85,11 @@ __Properties__
 From [Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_rule): In numerical analysis, **Simpson's rule** is a method for numerical integration, the numerical approximation of definite integrals. Specifically, it is the following approximation for n equally spaced subdivisions (where n is even): (General Form)
 
 __Properties__
-* Worst case performance	O(*n* log *n*)
-* Best case performance	O(*n* log *n*)
-* Average case performance	O(*n* log *n*)
+* Worst case performance	O(n)
+* Best case performance	O(n)
+* Average case performance	O(n)
 
 
-
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/heap-sort)
 
 ### Radix
 
