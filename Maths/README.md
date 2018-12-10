@@ -266,8 +266,8 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 [radix-wiki]: https://en.wikipedia.org/wiki/Radix_sort
 
 [merge-toptal]: https://www.toptal.com/developers/sorting-algorithms/merge-sort
-[merge-wiki]: https://en.wikipedia.org/wiki/Merge_sort
-[merge-image]: https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif "Merge Sort"
+[merge-wiki]: https://en.wikipedia.org/wiki/Modular_exponentiation
+[merge-image]: https://i.stack.imgur.com/L5W3I.png
 
 [selection-toptal]: https://www.toptal.com/developers/sorting-algorithms/selection-sort
 [selection-wiki]: https://en.wikipedia.org/wiki/Selection_sort
