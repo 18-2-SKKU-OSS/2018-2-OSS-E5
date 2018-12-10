@@ -24,9 +24,9 @@ __Properties__
 From [Wikipedia][bucket-wiki]: In mathematics, the Fibonacci numbers, commonly denoted Fn form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1.
 
 __Properties__
-* Worst case performance	O(n<sup>2</sup>)
-* Best case performance	O(n+k)
-* Average case performance	O(n+k)
+* Worst case performance	O(2<sup>n</sup>)
+* Best case performance O(2<sup>n</sup>)
+* Average case performance	O(2<sup>n</sup>)
 
 ### Cocktail shaker
 ![alt text][cocktail-shaker-image]
