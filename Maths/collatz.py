@@ -13,3 +13,5 @@ def collatz(n):
 			n = (3 * n) + 1
 		
 	l.append(n)
+	return l
+
