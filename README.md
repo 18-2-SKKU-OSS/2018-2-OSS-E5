@@ -13,7 +13,8 @@
 The Project is about algorithms implemented by python (for education) 
 
 ## Activites
-## 김우경 (kwk2696)
+> 자세한 개별 활동은 [wiki activites](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/wiki/Activites)에 있습니다.
+### 김우경 (kwk2696)
 1. [Linear_Regression.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/1.%20Linear_Regression.py) 
 2. [Logistic_Regression.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/2.%20Logistic_Regression.py)
 3. [perceptron.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/3.%20perceptron.py)
@@ -31,7 +32,7 @@ The Project is about algorithms implemented by python (for education)
 15. [search_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README.md)
 16. [sort_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
 
-## 박관종 (parkgwanjong)
+### 박관종 (parkgwanjong)
 1. [decision_tree.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/decision_tree.py)
 2. [matrix_multiplication_addition.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/matrix/)
 3. [test.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/linear_algebra_python/tests.py)
@@ -40,6 +41,24 @@ The Project is about algorithms implemented by python (for education)
 6. [ftp_send_receive.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/networking/file_transfer_protocol/ftp_send_receive.py)
 7. [eurler_README.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/dead57b148dbe3051dc285c9e456629abce43cad/project_euler/README.md)
 
+### 서성윤 (parkgwanjong)
+1. [absMin.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/absMin.py)
+
+### 허종원 (HeoJongWon)
+1. [Selection_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/tree/master/sorts/0.Selection_sort.py)
+2. [sort_README.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
+3. [Bubble_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/tree/master/sorts/1.Bubble_sort.py)
+4. [Insertion_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/2.Insertion_sort.py)
+5. [Merge_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/3.Merge_sort.py)
+6. [Merge_sort_Version_2.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/3.Merge_sort_Version_2.py)
+7. [Tree_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/4.Tree_sort.py)
+8. [Counting_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/5.Counting_sort.py)
+9. [Quick_sort.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/6.Quick_sort.py)
+10. [Quick_sort_partition.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/6.Quick_sort_partition.py)
+11. [linear_algebra_README.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/linear_algebra_python/README.md)
+12. [cipers_README.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/ciphers/README.md) 
+
+## Contributors
 ### 김우경
 * Mail: mj9926@naver.com
 * ID: kwk2696
