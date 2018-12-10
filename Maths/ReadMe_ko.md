@@ -1,7 +1,7 @@
 ## Math Algorithms
 
 
-### Factorial
+### 팩토리얼
 ![number-factorial-calculation](https://user-images.githubusercontent.com/37097363/49742832-bdac7200-fcdc-11e8-92c8-3f368761127b.jpg)
 
 From [Wikipedia][bubble-wiki]: **Factorial**, 수학에서, 자연수의 계승(階乘, 문화어: 차례곱, 영어: factorial 팩토리얼)은 그 수보다 작거나 같은 모든 양의 정수의 곱이다. n이 하나의 자연수일 때, 1에서 n까지의 모든 자연수의 곱을 n에 상대하여 이르는 말이다. 기호는 을 쓰며 팩토리얼이라고 읽는다.
@@ -12,7 +12,7 @@ __시간 복잡도__
 * 평균의 경우	O(n)
 
 
-### Fibonacci Sequence
+### 피보나치 수열
 ![alt text][bucket-image-1]
 
 From [Wikipedia][bucket-wiki]: 수학에서, 피보나치 수(영어: Fibonacci numbers)는 첫째 및 둘째 항이 1이며 그 뒤의 모든 항은 바로 앞 두 항의 합인 수열이다. 처음 여섯 항은 각각 1, 1, 2, 3, 5, 8이다. 편의상 0번째 항을 0으로 두기도 한다.
@@ -20,17 +20,17 @@ From [Wikipedia][bucket-wiki]: 수학에서, 피보나치 수(영어: Fibonacci 
 __Properties__
 * 최악의 경우	O(2<sup>n</sup>)
 * 최선의 경우 O(2<sup>n</sup>)
-* Average case performance	O(2<sup>n</sup>)
+* 평균의 경우	O(2<sup>n</sup>)
 
-### Find Highest Common Factor
+### 최대공약수 찾기
 ![alt text][cocktail-shaker-image]
 
-From [Wikipedia][cocktail-shaker-wiki]: In mathematics, the greatest common divisor (gcd) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers. For example, the gcd of 8 and 12 is 4. This notion can be extended to polynomials (see Polynomial greatest common divisor) and other commutative rings.
+From [Wikipedia][cocktail-shaker-wiki]: 수론에서, 정수들의 공약수(公約數, 영어: common divisor)는 동시에 그들 모두의 약수인 정수다. 적어도 하나가 0이 아닌 정수들의 최대공약수(最大公約數, 문화어: 련속나눔셈; 영어: greatest common divisor, 약자 GCD)는 공약수 가운데 가장 큰 하나다. 다항식이나 환의 원소에 대해서도 정의할 수 있다.
 
 __Properties__
-* Worst case performance	O(log n)
-* Best case performance	O(log n)
-* Average case performance	O(log n)
+* 최악의 경우	O(log n)
+* 최선의 경우	O(log n)
+* 평균의 경우	O(log n)
 
 
 ### Find Least Common Multiple
