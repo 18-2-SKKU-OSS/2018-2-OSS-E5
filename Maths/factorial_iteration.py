@@ -12,4 +12,5 @@ def factorial(n):
 		
 	return r
 
+n = int(input("Enter an integer n to compute its factorial: "))
 
