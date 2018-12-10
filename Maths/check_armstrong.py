@@ -7,4 +7,4 @@ def main():
 
 def checkarmstrong(n):
 	t = n
-
+	sum_num = 0
