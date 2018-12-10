@@ -31,6 +31,10 @@ while n <= N**2:
 
     new_i, new_j = (i-1) % N, (j+1)% N
 
-
+    # if the cell is already filled with a number, move vertically down one space.
+    if magic_square[new_i, new_j]:
+        i += 1
+    else:
+        i, j = new_i, new_j
 
 
