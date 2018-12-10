@@ -17,7 +17,13 @@ magic_square = np.zeros((N,N), dtype=int)
 n = 1
 i, j = 0, N//2
 
+# n iterates from 1 to N**2. The loop exits when n is equal to N**2
+while n <= N**2:
 
+    # Start in the middle of the first row.
+    # (i = 0 and j = N//2 ) and the element at magic_square[i,j] is the middle in the first row.
+    # insert n = 1 to begin with at magic_square[i,j]
+    magic_square[i, j] = n
 
 
 
