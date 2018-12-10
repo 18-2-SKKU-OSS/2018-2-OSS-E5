@@ -8,7 +8,7 @@ These implementations are for demonstration purposes. They are less efficient th
 
 
 ### Factorial
-![factorial][bubble_image]
+![number-factorial-calculation](https://user-images.githubusercontent.com/37097363/49742832-bdac7200-fcdc-11e8-92c8-3f368761127b.jpg)
 
 From [Wikipedia][bubble-wiki]: **Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
 
