@@ -8,3 +8,4 @@ def collatz(n):
 	while n > 1: #iteration
 		l.append(n)	
 		if n % 2 == 0: # n is even
+			n = n / 2
