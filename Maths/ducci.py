@@ -15,4 +15,4 @@ def ducci(*ns):
 		known.add(ns)
 	return len(known) + 1
 
-print(str(ducci(0, 653, 1854, 4063)) + "steps")
+print(str(ducci(0, 653, 1854, 4063)) + " steps")
