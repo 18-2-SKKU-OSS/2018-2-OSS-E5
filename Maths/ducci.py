@@ -9,4 +9,8 @@ def ducci(*ns):
 	known = set()
 	for ns in ducci_sequence(*ns):
 		print(ns)
+		if ns in known or set(ns) == {0}:
+			break
+
+
 
