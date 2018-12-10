@@ -23,3 +23,15 @@ __시간 복잡도__
 * 평균적인 경우	O(n<sup>2</sup>)
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
+
+### 2. 삽입 정렬
+![insertion-sort](https://user-images.githubusercontent.com/37110949/49484510-a99ae780-f87a-11e8-8681-981f5739e03d.png)
+
+**삽입 정렬**은 최종 정렬된 배열을 한 번에 하나씩 구축하는 간단한 정렬 알고리즘이다. 이는 대규모 목록에서는 퀵 정렬, 힙 정렬 또는 병합 정렬과 같은 고급 알고리즘보다 훨씬 덜 효율적이다.
+
+__시간 복잡도__
+* 최악의 경우	O(n<sup>2</sup>)
+* 최선의 경우	O(n)
+* 평균적인 경우	O(n<sup>2</sup>)
+
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/insertion-sort)
