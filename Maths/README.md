@@ -1,9 +1,3 @@
-# Maths - Python <!-- [![Build Status](https://travis-ci.org/TheAlgorithms/Python.svg)](https://travis-ci.org/TheAlgorithms/Python) -->
-
-### All Math algorithms implemented in Python (for education)
-
-These implementations are for demonstration purposes. They are less efficient than the implementations in the Python standard library.
-
 ## Math Algorithms
 
 
