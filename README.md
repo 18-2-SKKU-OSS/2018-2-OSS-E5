@@ -13,6 +13,11 @@
 The Project is about algorithms implemented by python (for education) 
 
 ## Activites
+1. 한국어 번역
+2. .py파일 함수 및 코드 설명 
+3. 분산되어 있는 파일 정리
+4. README.md 파일 관리
+5. 새로운 알고리즘 코드 구현 및 추가
 > 자세한 개별 활동은 [wiki activites](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/wiki/Activites)에 있습니다.
 
 ### 김우경 (kwk2696)
