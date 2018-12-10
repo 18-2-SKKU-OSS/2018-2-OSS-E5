@@ -6,4 +6,5 @@ def main():
 			print(str(i) + " is an armstrong number")
 
 def checkarmstrong(n):
+	t = n
 
