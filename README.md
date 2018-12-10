@@ -14,6 +14,7 @@ The Project is about algorithms implemented by python (for education)
 
 ## Activites
 > 자세한 개별 활동은 [wiki activites](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/wiki/Activites)에 있습니다.
+
 ### 김우경 (kwk2696)
 1. [Linear_Regression.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/1.%20Linear_Regression.py) 
 2. [Logistic_Regression.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/2.%20Logistic_Regression.py)
@@ -31,6 +32,7 @@ The Project is about algorithms implemented by python (for education)
 14. [search_readme_eng.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README_eng.md)
 15. [search_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README.md)
 16. [sort_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
+17. [ML_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/README.md)
 
 ### 박관종 (parkgwanjong)
 1. [decision_tree.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/decision_tree.py)
