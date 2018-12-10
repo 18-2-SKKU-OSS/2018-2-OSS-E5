@@ -14,6 +14,10 @@ N  = int(input())
 # create a matrix with values 0 using numpy. The datatype is int for the elements in the matrix
 magic_square = np.zeros((N,N), dtype=int)
 
+n = 1
+i, j = 0, N//2
+
+
 
 
 
