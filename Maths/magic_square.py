@@ -24,7 +24,8 @@ while n <= N**2:
     # (i = 0 and j = N//2 ) and the element at magic_square[i,j] is the middle in the first row.
     # insert n = 1 to begin with at magic_square[i,j]
     magic_square[i, j] = n
-
+    # increment n by 1
+    n += 1
 
 
 
