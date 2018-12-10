@@ -39,17 +39,15 @@ __Properties__
 * Average case performance	O(log n)
 
 
-### Insertion Sort
+### Find Least Common Multiple
 ![alt text][insertion-image]
 
-From [Wikipedia][insertion-wiki]: **Insertion sort** is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on *large* lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
+From [Wikipedia][insertion-wiki]: In arithmetic and number theory, **Least common multiple**, lowest common multiple, or smallest common multiple of two integers a and b, usually denoted by LCM(a, b), is the smallest positive integer that is divisible by both a and b.[1] Since division of integers by zero is undefined, this definition has meaning only if a and b are both different from zero.[2] However, some authors define LCM (a,0) as 0 for all a, which is the result of taking the LCM to be the least upper bound in the lattice of divisibility. The LCM is the "lowest common denominator" (LCD) that can be used before fractions can be added, subtracted or compared. The LCM of more than two integers is also well-defined: it is the smallest positive integer that is divisible by each of them.
 
 __Properties__
-* Worst case performance	O(n<sup>2</sup>)
+* Worst case performance	O(n)
 * Best case performance	O(n)
-* Average case performance	O(n<sup>2</sup>)
-
-###### View the algorithm in [action][insertion-toptal]
+* Average case performance	O(n)
 
 
 ### Merge Sort
