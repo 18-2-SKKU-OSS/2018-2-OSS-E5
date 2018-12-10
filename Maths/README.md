@@ -258,8 +258,8 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 [cocktail-shaker-image]: https://image.slidesharecdn.com/saikat-20roy-20-20me-20software-20engg-20-2026-140402183023-phpapp02/95/gcd-of-n-numbers-3-638.jpg?cb=1396463613
 
 [insertion-toptal]: https://www.toptal.com/developers/sorting-algorithms/insertion-sort
-[insertion-wiki]: https://en.wikipedia.org/wiki/Insertion_sort
-[insertion-image]: https://upload.wikimedia.org/wikipedia/commons/7/7e/Insertionsort-edited.png "Insertion Sort"
+[insertion-wiki]: https://en.wikipedia.org/wiki/Least_common_multiple
+[insertion-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Least_common_multiple_chart.png/375px-Least_common_multiple_chart.png
 
 [quick-toptal]: https://www.toptal.com/developers/sorting-algorithms/quick-sort
 [quick-wiki]: https://en.wikipedia.org/wiki/Quicksort
