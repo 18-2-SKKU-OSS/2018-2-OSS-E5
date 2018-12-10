@@ -6,4 +6,5 @@ def collatz(n):
 	"""Sequence generation."""
 	l = []
 	while n > 1: #iteration
-		l.append(n)		
+		l.append(n)	
+		if n % 2 == 0:
