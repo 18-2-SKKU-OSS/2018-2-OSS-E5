@@ -13,4 +13,7 @@ def checkarmstrong(n):
 		sum_num = sum_num + (r * r * r)
 		t = t//10
 
-	
+	if sum_num == n:
+		return True
+	else:
+		return False
