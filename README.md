@@ -31,7 +31,15 @@ The Project is about algorithms implemented by python (for education)
 15. [search_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README.md)
 16. [sort_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
 
-## Contributors
+## 박관종 (parkgwanjong)
+1. [decision_tree.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/decision_tree.py)
+2. [matrix_multiplication_addition.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/matrix/)
+3. [test.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/linear_algebra_python/tests.py)
+4. [quine_mc_cluskey.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/boolean_algebra/quine_mc_cluskey.py)
+5. [ftp_client_server.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/networking/file_transfer_protocol/ftp_client_server.py)
+6. [ftp_send_receive.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/networking/file_transfer_protocol/ftp_send_receive.py)
+7. [eurler_README.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/dead57b148dbe3051dc285c9e456629abce43cad/project_euler/README.md)
+
 ### 김우경
 * Mail: mj9926@naver.com
 * ID: kwk2696
