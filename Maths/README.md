@@ -73,11 +73,10 @@ The objective of the puzzle is to move the entire stack to another rod, obeying 
 With 3 disks, the puzzle can be solved in 7 moves. The minimal number of moves required to solve a Tower of Hanoi puzzle is 2n − 1, where n is the number of disks.
 
 __Properties__
-* Worst case performance	O(n<sup>2</sup>)
-* Best case performance	O(*n* log *n*) or O(n) with three-way partition
-* Average case performance	O(*n* log *n*)
+* Worst case performance	O(2<sup>n</sup>)
+* Best case performance O(2<sup>n</sup>)
+* Average case performance	O(2<sup>n</sup>)
 
-###### View the algorithm in [action][quick-toptal]
 
 
 ### Heap
