@@ -1,24 +1,16 @@
 """
-This is a pure python implementation of the quick sort algorithm
-
-For doctests run following command:
-python -m doctest -v quick_sort.py
-or
-python3 -m doctest -v quick_sort.py
-
-For manual testing run:
-python quick_sort.py
+이 코드는 파이썬으로 Quick Sort를 구현한 코드입니다.
+퀵 정렬은 divide and conquer 방법을 통해 리스트를 정렬합니다.
+    1.리스트를 가운데서 하나의 원소를 고른다. 이렇게 고른 원소를 pivot이라고 한다.
+    2.pivot 앞에는 pivot 보다 값이 작은 모든 원소들이 오고, pivot 뒤에는 pivot 보다 값이 큰 모든 원소들이 오도록 pivot을 기준으로 리스트를 둘로
+    나눈다. 이렇게 리스트를 둘로 나누는 것을 partition이라고 한다. partition을 마친 뒤에 pivot이 더 이상 움직이지 않는다.
+    3.분할된 두 개의 작은 리스트에 대해 재귀적으로 이 과정을 반복한다. 재귀는 리스트의 크기가 0이나 1이 될 때까지 반복된다.
 """
 from __future__ import print_function
 
 
 def quick_sort(ARRAY):
-    """Pure implementation of quick sort algorithm in Python
-
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-
+    """
     Examples:
     >>> quick_sort([0, 5, 3, 2, 2])
     [0, 2, 2, 3, 5]
