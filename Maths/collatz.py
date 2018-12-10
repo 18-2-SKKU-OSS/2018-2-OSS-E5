@@ -3,4 +3,6 @@
 """
 
 def collatz(n):
-	"""Sequence generation.""
+	"""Sequence generation."""
+	l = []
+		
