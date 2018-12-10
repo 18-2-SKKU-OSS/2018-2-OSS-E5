@@ -7,5 +7,9 @@ import numpy as np
 print("Hi! Welcome to the magic square algorithm")
 print("Please enter the number for which you would want a magic sqaure to be printed. Please enter an odd number")
 
+# The odd number for which the magic square is created is stored in the variable N
+
+
+
 
 
