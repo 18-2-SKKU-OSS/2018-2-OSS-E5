@@ -1,6 +1,6 @@
 ## Sorting Algorithms
 
-### 0.Selection Sort
+### 0. Selection Sort
 ![3goa2af](https://user-images.githubusercontent.com/37110949/49509755-982cfc00-f8c9-11e8-83c1-050da5a03e43.png)
 
 From [Wikipedia](https://ko.wikipedia.org/wiki/%EC%84%A0%ED%83%9D_%EC%A0%95%EB%A0%AC): **Selection sort** is an algorithm that divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest (or largest, depending on sorting order) element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
@@ -12,7 +12,7 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/selection-sort)
 
-### 1.Bubble Sort
+### 1. Bubble Sort
 ![bubble-sort-in-c](https://user-images.githubusercontent.com/37110949/49448033-534a8c00-f81b-11e8-8b6a-78c83907ef7d.jpg)
 
 From [Wikipedia][bubble-wiki]: **Bubble sort**, sometimes referred to as *sinking sort*, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent pairs and swaps them if they are in the wrong order. The pass through the list is repeated until no swaps are needed, which indicates that the list is sorted.
@@ -24,7 +24,7 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/bubble-sort)
 
-### 2.Insertion Sort
+### 2. Insertion Sort
 ![insertion-sort](https://user-images.githubusercontent.com/37110949/49484510-a99ae780-f87a-11e8-8681-981f5739e03d.png)
 
 From [Wikipedia](https://ko.wikipedia.org/wiki/%EC%82%BD%EC%9E%85_%EC%A0%95%EB%A0%AC): **Insertion sort** is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on *large* lists than more advanced algorithms such as quicksort, heapsort, or merge sort.
@@ -36,7 +36,7 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/insertion-sort)
 
-### 3.Merge Sort
+### 3. Merge Sort
 ![how merge sort algorithm works in java](https://user-images.githubusercontent.com/37110949/49570490-19dc6280-f97a-11e8-9d26-10540d5dcd88.png)
 
 From [Wikipedia](https://ko.wikipedia.org/wiki/%ED%95%A9%EB%B3%91_%EC%A0%95%EB%A0%AC): **Merge sort** (also commonly spelled *mergesort*) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means the order of equal items is the same in the input and output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
@@ -49,7 +49,7 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/merge-sort)
 
-### 4.Tree Sort
+### 4. Tree Sort
 ![binary-search-tree-insertion-animation](https://user-images.githubusercontent.com/37110949/49629485-1229c600-fa2d-11e8-808a-875b37eba6af.gif)
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Tree_sort): **Tree sort** A tree sort is a sort algorithm that builds a binary search tree from the elements to be sorted, and then traverses the tree (in-order) so that the elements come out in sorted order. Its typical use is sorting elements online: after each insertion, the set of elements seen so far is available in sorted order.
@@ -58,7 +58,7 @@ __Properties__
 * Best case performance	O(n log n)
 * Average case performance	O(n log n)
 
-### 5.Counting Sort
+### 5. Counting Sort
 ![99279e365ab11c4934](https://user-images.githubusercontent.com/37110949/49685622-bee96d80-fb29-11e8-897f-66d459228ab7.png)
 
 
@@ -68,7 +68,7 @@ __Properties__
 * Worst case performance, Best case performance	-> O(n+k) depending on k value
 * Average case performance	O(n+k)
 
-### 6.Quick Sort
+### 6. Quick Sort
 ![220px-sorting_quicksort_anim](https://user-images.githubusercontent.com/37110949/49715048-8f09a980-fc92-11e8-8c5b-ffe9aaf51a33.gif)
 
 From [Wikipedia](https://ko.wikipedia.org/wiki/%ED%80%B5_%EC%A0%95%EB%A0%AC): **Quicksort** (sometimes called *partition-exchange sort*) is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order.
