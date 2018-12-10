@@ -26,10 +26,10 @@ The Project is about algorithms implemented by python (for education)
 10. [quick_select.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/5.%20quick_select.py)
 11. [fibonacci_search.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/6.%20fibonacci_search.py)
 12. [exponential_search.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/7.%20expoential_search.py)
-13. [ternary_search.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/8.%20ternary_search.py) 삼분 탐색 설명 추가.
-14. [search readme_eng.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README_eng.md)
-15. [search readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README.md)
-16. [sort readme.md] (https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
+13. [ternary_search.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/8.%20ternary_search.py)
+14. [search_readme_eng.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README_eng.md)
+15. [search_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README.md)
+16. [sort_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
 
 ## Contributors
 ### 김우경
