@@ -9,6 +9,8 @@ print("Please enter the number for which you would want a magic sqaure to be pri
 
 # The odd number for which the magic square is created is stored in the variable N
 
+N  = int(input())
+
 
 
 
