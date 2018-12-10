@@ -259,8 +259,8 @@ where ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/8b16e2bdaefee9
 [insertion-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Least_common_multiple_chart.png/375px-Least_common_multiple_chart.png
 
 [quick-toptal]: https://www.toptal.com/developers/sorting-algorithms/quick-sort
-[quick-wiki]: https://en.wikipedia.org/wiki/Quicksort
-[quick-image]: https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif "Quick Sort"
+[quick-wiki]: https://en.wikipedia.org/wiki/Tower_of_Hanoi
+[quick-image]: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tower_of_Hanoi.jpeg/450px-Tower_of_Hanoi.jpeg
 
 [radix-wiki]: https://en.wikipedia.org/wiki/Radix_sort
 
