@@ -1,14 +1,14 @@
 """Factorial of n (iterative implementation)."""
 
 def factorial(n):
-	 """Algorithm implementation."""
+	"""Algorithm implementation."""
 
 	r = 1
 
 	while n > 0:
 
 		r = r * n
-		n--
+		n = n - 1
 		
 	return r
 
