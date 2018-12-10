@@ -11,6 +11,7 @@ def ducci(*ns):
 		print(ns)
 		if ns in known or set(ns) == {0}:
 			break
-
+			
+		known.add(ns)
 
 
