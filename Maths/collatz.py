@@ -15,3 +15,6 @@ def collatz(n):
 	l.append(n)
 	return l
 
+n = int(input("input integer n to compute the Collatz sequence: "))
+
+print(collatz(n))
