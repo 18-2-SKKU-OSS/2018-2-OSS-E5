@@ -11,6 +11,8 @@ from __future__ import print_function
 
 def quick_sort(ARRAY):
     """
+    이 코드의 경우 partition 과정의 표현을 하지 않고 단순히 pivot 보다 큰 값들과
+    작은 값들을 찾아 ARRAY에 다시 넣어주는 과정을 통해 구현한 코드이다.
     Examples:
     >>> quick_sort([0, 5, 3, 2, 2])
     [0, 2, 2, 3, 5]
