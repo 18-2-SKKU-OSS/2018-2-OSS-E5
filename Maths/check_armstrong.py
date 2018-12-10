@@ -10,7 +10,7 @@ def checkarmstrong(n):
 	sum_num = 0
 	while t != 0:
 		r = t % 10
-		sum_num = sum_num + (r * r * r)
+		sum_num = sum_num + (r * r * r) #armstrong number rule
 		t = t//10
 
 	if sum_num == n:
