@@ -44,16 +44,16 @@ __시간 복잡도__
 * 평균의 경우	O(n)
 
 
-### Modular exponentiation
+### 모듈러 거듭제곱
 ![alt text][merge-image]
 
-From [Wikipedia][merge-wiki]: **Modular exponentiation** is a type of exponentiation performed over a modulus. It is useful in computer science, especially in the field of public-key cryptography. The operation of modular exponentiation calculates the remainder when an integer b (the base) raised to the eth power (the exponent), be, is divided by a positive integer m (the modulus). In symbols, given base b, exponent e, and modulus m, the modular exponentiation c is: c = be mod m. From the definition of c, it follows that 0 ≤ c < m. For example, given b = 5, e = 3 and m = 13, the solution c = 8 is the remainder of dividing 53 = 125 by 13.
-Modular exponentiation can be performed with a negative exponent e by finding the modular multiplicative inverse d of b modulo m using the extended Euclidean algorithm. That is: c = be mod m = d−e mod m, where e < 0 and b ⋅ d ≡ 1 (mod m). Modular exponentiation similar to the one described above is considered easy to compute, even when the integers involved are enormous. On the other hand, computing the modular discrete logarithm – that is, the task of finding the exponent e when given b, c, and m – is believed to be difficult. This one-way function behavior makes modular exponentiation a candidate for use in cryptographic algorithms.
+From [Wikipedia][merge-wiki]: **모듈러 거듭제곱**는 계수 위에 수행되는 성분의 한 유형이다. 그것은 컴퓨터 과학, 특히 공중키 암호학 분야에서 유용하다. 모듈형 지수의 운영은 윤리력(지수)으로 상승한 정수 b가 양의 정수 m(계수)로 분할될 때 나머지를 계산한다. 기호, 주어진 b, 지수 e 및 계수 m에서 모듈식 지수 c는 다음과 같다. c = mod m. c의 정의에서 0 ≤ c < m. 예를 들어, b = 5, e = 3 및 m = 13이 주어진 경우, 솔루션 c = 8은 53 = 125를 13으로 나눈 나머지 값이다.
+모듈 형성은 확장 유클리드 알고리즘을 사용해 b modulo m의 모듈형 곱셈 역 d를 찾아 음수 지수 e로 수행할 수 있다. 즉, c = mod m = d-e m, 여기서 e < 0 및 b ⋅ d ≡ 1 (mod m)이다. 위에 설명한 것과 유사한 모듈식 표현은 관련된 정수가 엄청나더라도 계산하기 쉬운 것으로 간주된다. 반면에 모듈식 이산 로그(즉, b, c, m)를 계산할 때 지수 e를 찾는 일은 어려운 것으로 간주된다. 이러한 단방향 기능 행동은 모듈식 설명을 암호화 알고리즘에 사용할 수 있는 후보로 만든다.
 
-__Properties__
-* Worst case performance	O(M(n) k))
-* Best case performance	O(M(n) k)
-* Average case performance	O(M(n) k)
+__시간 복잡도__
+* 최악의 경우	O(M(n) k))
+* 최선의 경우	O(M(n) k)
+* 평균의 	O(M(n) k)
 
 
 ### Tower of Hanoi
