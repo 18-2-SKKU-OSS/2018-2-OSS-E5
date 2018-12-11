@@ -82,6 +82,9 @@ __Properties__
 
 ### 7. Heap Sort
 
+![heap-property](https://user-images.githubusercontent.com/37110949/49774103-f711cb80-fd36-11e8-99fe-c661338216fc.png)
+
+
 From [Wikipedia](https://ko.wikipedia.org/wiki/%ED%9E%99_%EC%A0%95%EB%A0%AC): Heapsort is a comparison-based sorting algorithm. It can be thought of as an improved selection sort. It divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region
 
 __Properties__
