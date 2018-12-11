@@ -80,6 +80,15 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/quick-sort)
 
+### 7. Heap Sort
+
+From [Wikipedia](https://ko.wikipedia.org/wiki/%ED%9E%99_%EC%A0%95%EB%A0%AC): Heapsort is a comparison-based sorting algorithm. It can be thought of as an improved selection sort. It divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region
+
+__Properties__
+* Worst case performance	O(*n* log *n*)
+* Best case performance	O(*n* log *n*)
+* Average case performance	O(*n* log *n*)
+
 
 ### Bucket Sort
 ![alt text][bucket-image-1]
@@ -116,15 +125,6 @@ __Properties__
 
 ###### View the algorithm in [action][quick-toptal]
 
-
-### Heap
-
-From [Wikipedia](https://en.wikipedia.org/wiki/Heapsort): Heapsort is a comparison-based sorting algorithm. It can be thought of as an improved selection sort. It divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region
-
-__Properties__
-* Worst case performance	O(*n* log *n*)
-* Best case performance	O(*n* log *n*)
-* Average case performance	O(*n* log *n*)
 
 
 
