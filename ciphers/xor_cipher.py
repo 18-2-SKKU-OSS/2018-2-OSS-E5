@@ -3,18 +3,18 @@
 	date: 21.12.2017
 	class: XORCipher
 
-	This class implements the XOR-cipher algorithm and provides
-	some useful methods for encrypting and decrypting strings and
-	files.
+	이 클래스는 XOR-cipher 알고리즘을 구현해,
+	문자열을 암호화하고 해독하는 유용한 방법
+	파일.
 
-	Overview about methods
+	메소드 개요
 
-	- encrypt : list of char
-	- decrypt : list of char
+	- 암호화 : char의 목록
+	- decrypt : char의 목록
 	- encrypt_string : str
 	- decrypt_string : str
-	- encrypt_file : boolean
-	- decrypt_file : boolean
+	- 암호화 파일 : 부울
+	- decrypt_file : 부울
 """
 class XORCipher(object):
 
@@ -29,10 +29,10 @@ class XORCipher(object):
 
 	def encrypt(self, content, key):
 		"""
-			input: 'content' of type string and 'key' of type int
-			output: encrypted string 'content' as a list of chars
-			if key not passed the method uses the key by the constructor.
-			otherwise key = 1
+			입력 : 문자열 유형의 'content'및 유형 유형의 'key'
+			출력 : 암호화 된 문자열 'content'를 문자 목록으로 사용
+			키가 건네받지 않은 경우, 메서드는 생성자에 의해 키를 사용합니다.
+			그렇지 않으면 key = 1
 		"""
 
 		# precondition
@@ -54,10 +54,10 @@ class XORCipher(object):
 
 	def decrypt(self,content,key):
 		"""
-			input: 'content' of type list and 'key' of type int
-			output: decrypted string 'content' as a list of chars
-			if key not passed the method uses the key by the constructor.
-			otherwise key = 1
+			입력 : 유형 목록의 'content'및 유형 'int'의 'key'
+			출력 : 문자의 목록으로 해독 된 문자열 'content'
+			키가 건네받지 않은 경우, 메서드는 생성자에 의해 키를 사용합니다.
+			그렇지 않으면 key = 1
 		"""
 
 		# precondition
