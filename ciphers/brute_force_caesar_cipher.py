@@ -1,3 +1,8 @@
+"""
+만약 우리에게 Caesar cipher 에 의해서 암호화된 단어 khoor이 주어졌고, 이를 풀어내야 한다.
+하지만 우리는 key를 모른다. 따라서 암호를 해독하는데 가능한 가장 무식하고 쉬운 방법은 key로 
+가능한 모든 수를 고려하여 암호를 해독해 보는 것이다. 이와같이 모든 경우의 수를 고려하는 것을 Brute force라 한다.
+"""
 from __future__ import print_function
 def decrypt(message):
     """
