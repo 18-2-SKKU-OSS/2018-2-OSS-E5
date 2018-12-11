@@ -39,6 +39,8 @@ The Project is about algorithms implemented by python (for education)
 15. [search_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/searches/README.md)
 16. [sort_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
 17. [ML_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/README.md)
+18. [k_means_clust.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/4.%20k_means_clust.py)
+19. [decision_tree.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/5.%20decision_tree.py)
 
 #### 박관종 (Pleiadex)
 1. [decision_tree.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/decision_tree.py)
