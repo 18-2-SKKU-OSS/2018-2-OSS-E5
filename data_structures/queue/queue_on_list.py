@@ -36,10 +36,10 @@ class Queue():
             self.put(self.get())
 
     """Enqueues {@code item}
-    @return item at front of self.entries"""
+    @return item at front of self.entries 앞에 있는걸 """
     def front(self):
         return self.entries[0]
 
-    """Returns the length of this.entries 큐의 길이를 """
+    """Returns the length of this.entries 큐의 길이를 반환 """
     def size(self):
         return self.length
