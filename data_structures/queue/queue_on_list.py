@@ -20,7 +20,7 @@ class Queue():
     """Dequeues {@code item}
     @requirement: |self.length| > 0
     @return dequeued
-        item that was dequeued 큐에서 아이템을 """
+        item that was dequeued 큐에서 아이템을 제거"""
     def get(self):
         self.length = self.length - 1
         dequeued = self.entries[self.front]
@@ -30,7 +30,7 @@ class Queue():
 
     """Rotates the queue {@code rotation} times
     @param rotation
-        number of times to rotate queue"""
+        number of times to rotate queue 큐를 rotate하는 횟수"""
     def rotate(self, rotation):
         for i in range(rotation):
             self.put(self.get())
