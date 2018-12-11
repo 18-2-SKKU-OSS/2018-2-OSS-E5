@@ -40,7 +40,7 @@ The Project is about algorithms implemented by python (for education)
 16. [sort_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/sorts/README.md)
 17. [ML_readme.md](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/README.md)
 
-#### 박관종 (parkgwanjong)
+#### 박관종 (Pleiadex)
 1. [decision_tree.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/machine_learning/decision_tree.py)
 2. [matrix_multiplication_addition.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/matrix/)
 3. [test.py](https://github.com/18-2-SKKU-OSS/2018-2-OSS-E5/blob/master/Maths/linear_algebra_python/tests.py)
