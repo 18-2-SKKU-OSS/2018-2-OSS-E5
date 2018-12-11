@@ -80,10 +80,10 @@ class XORCipher(object):
 
 	def encrypt_string(self,content, key = 0):
 		"""
-			input: 'content' of type string and 'key' of type int
-			output: encrypted string 'content'
-			if key not passed the method uses the key by the constructor.
-			otherwise key = 1
+			입력 : 문자열 유형의 'content'및 유형 유형의 'key'
+			출력 : 암호화 된 문자열 'content'
+			키가 건네받지 않은 경우, 메서드는 생성자에 의해 키를 사용합니다.
+			그렇지 않으면 key = 1
 		"""
 
 		# precondition
@@ -105,10 +105,10 @@ class XORCipher(object):
 
 	def decrypt_string(self,content,key = 0):
 		"""
-			input: 'content' of type string and 'key' of type int
-			output: decrypted string 'content'
-			if key not passed the method uses the key by the constructor.
-			otherwise key = 1
+			입력 : 문자열 유형의 'content'및 유형 유형의 'key'
+			출력 : 해독 된 문자열 'content'
+			키가 건네받지 않은 경우, 메서드는 생성자에 의해 키를 사용합니다.
+			그렇지 않으면 key = 1
 		"""
 
 		# precondition
@@ -131,11 +131,11 @@ class XORCipher(object):
 
 	def encrypt_file(self, file, key = 0):
 		"""
-			input: filename (str) and a key (int)
-			output: returns true if encrypt process was
-			successful otherwise false
-			if key not passed the method uses the key by the constructor.
-			otherwise key = 1
+			입력 : 파일 이름 (str)과 키 (int)
+			output : 암호화 프로세스가 true이면 true를 반환합니다.
+			성공 그렇지 않으면 거짓
+			키가 건네받지 않은 경우, 메서드는 생성자에 의해 키를 사용합니다.
+			그렇지 않으면 key = 1
 		"""
 
 		#precondition
@@ -157,11 +157,11 @@ class XORCipher(object):
 
 	def decrypt_file(self,file, key):
 		"""
-			input: filename (str) and a key (int)
-			output: returns true if decrypt process was
-			successful otherwise false
-			if key not passed the method uses the key by the constructor.
-			otherwise key = 1
+			입력 : 파일 이름 (str)과 키 (int)
+			output : 프로세스의 암호를 해독 한 경우 true를 반환합니다.
+			성공 그렇지 않으면 거짓
+			키가 건네받지 않은 경우, 메서드는 생성자에 의해 키를 사용합니다.
+			그렇지 않으면 key = 1
 		"""
 
 		#precondition
