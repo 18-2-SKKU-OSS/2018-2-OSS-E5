@@ -1,4 +1,4 @@
-## Math Algorithms
+## 수학 알고리즘
 
 
 ### 팩토리얼
