@@ -9,7 +9,7 @@ time making it an optimal approach when space is not an issue.
 
 class TrieNode:
     def __init__(self):
-        self.nodes = dict()  # Mapping from char to TrieNode
+        self.nodes = dict()  # Mapping from char to TrieNode#char에서 TrieNode로 
         self.is_leaf = False
 
     def insert_many(self, words: [str]):  # noqa: E999 This syntax is Python 3 only
