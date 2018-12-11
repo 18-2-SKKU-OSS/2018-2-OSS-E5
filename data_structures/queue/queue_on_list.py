@@ -40,6 +40,6 @@ class Queue():
     def front(self):
         return self.entries[0]
 
-    """Returns the length of this.entries"""
+    """Returns the length of this.entries 큐의 길이를 """
     def size(self):
         return self.length
