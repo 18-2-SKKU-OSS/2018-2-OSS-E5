@@ -1,3 +1,15 @@
+"""
+치환 암호(Substitution Cipher)는 특정 글자를 다른 글자로 치환함으로서 암호를 생성하는 방법이다. 
+예를 들어 알파벳 A를 임의로 H로 지정하듯이 특정 문자를 다른 문자로 치환하면 된다. 
+치환 암호에는 크게 두 가지 방법이 있는데, 단일 문자 치환(Monoalphabetic Cipher)과
+다중 문자 치환(Polyalphabetic Cipher)가 있다. Monoalphabetic은 항상 한 문자에 대해서는 
+같은 문자로 치환 되는 것이다. 예를 들어, 앞서 A를 H로 치환했다면, 하나의 key를 통해 암호화 된 
+문서에서 나타나는 모든 H는 Plaintext의 A가 된다. 반면에 Polyalphabetic에서는 
+하나의 문자가 여러 다른 문자로 바뀔 수 있다. 즉 Plaintext의 A가 H가 될 수도, Y가 될 수도 있다는 말이다.
+이 말은 일반적으로 Polyalphabetic이 Monoalphabetic 방법보다 더욱 알아내기 어렵다고 생각할 수 있다.
+
+출처: http://ieatt.tistory.com/21?category=623923 [IeatT]
+"""
 from __future__ import print_function
 import sys, random
 
