@@ -71,7 +71,7 @@ The Project is about algorithms implemented by python (for education)
 * Mail: mj9926@naver.com
 * ID: kwk2696
 * SID: 2017312637
-* Role: 팀장, 위키관리, Machine Learning
+* Role: 팀장, 위키관리, Machine Learning, search
 ***
 ### 박관종
 * Mail: dbfltkfkd01@naver.com
