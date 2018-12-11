@@ -11,7 +11,7 @@ class AdjacencyList(object):
         self.List = {}
 
     def addEdge(self, fromVertex, toVertex):
-        # check if vertex is already present
+        # check if vertex is already present 이미 존재하는 vertex지 확인
         if fromVertex in self.List.keys():
             self.List[fromVertex].append(toVertex)
         else:
