@@ -1,3 +1,5 @@
+#배열의 최솟값을 찾는 알고리즘
+
 def findMin(nums):
     min = nums[0]  #처음 원소부터 마지막 원소까지 비교
     for x in nums: 
