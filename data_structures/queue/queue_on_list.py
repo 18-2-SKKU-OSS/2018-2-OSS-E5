@@ -11,7 +11,7 @@ class Queue():
 
     """Enqueues {@code item}
     @param item
-        item to enqueue"""
+        item to enqueue 큐에 item을 """
     def put(self, item):
         self.entries.append(item)
         self.length = self.length + 1
