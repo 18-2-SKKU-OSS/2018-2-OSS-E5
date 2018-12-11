@@ -1,10 +1,9 @@
-#2018-12-5 
-#this fuction provide you a max value in array
+#배열의 최대값을 찾는 알고리즘
 
 def find_max(nums):
-    max = nums[0]  #compare from the first element to the last element
+    max = nums[0]  #처음 원소부터 마지막 원소까지 비교
     for x in nums: 
-      if x > max: #if the max is smaller than nums[x], max is changed to num[x]
+      if x > max: #만약 max가 nums[x]보다 작을 경우, max를 num[x]로 변경
         max = x
     return max 
 
