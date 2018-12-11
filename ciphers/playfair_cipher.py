@@ -1,4 +1,40 @@
-import string
+"""
+Playfair Cipher는 Substitution cipher(대처법)중 하나로
+대처법이란 '해당 글자를 다른 글자로 대체하여 암호화하는 방법'이다.
+​1854년 찰스 휘트스톤(Charles Wheatstone)이라는 사람이 맨처음 만들었는데 
+맨처음 나왔을 당시 사용이 너무 어렵다는 이유로 사용이 되지 않다가
+라이언 플레이페어(Lyon Playfair)라는 사람을 통해 널리 알려졌다고 한다.
+[출처] Playfair Cipher|작성자 훔친거
+암호화 하는 방법
+먼저 5 X 5 대형으로 
+
+A-Z까지 쓰고
+
+I와 J는 같은 곳에 놓이며
+
+제시어를 맨 앞에 적는다
+
+복호화 하는 방법
+Keyword가 = 'playfair example'로 주어졌다
+그러면 위에 설명과 같이 일단 playfair example을 적는다
+연속되는 절자가 없으므로 그냥 일단 적는다 5 X 5 대형으로
+P L A Y F
+
+I R E X M
+이때 여기서 중복되는 철자는 적지 않는다.
+그리고 A-Z중 쓰지 않은 철자를 적으면 된다.
+
+P L A Y F
+
+I R E X M
+
+B C D G H
+
+K N O Q S
+
+T U V W Z
+가 되는 것 이다.
+"""import string
 import itertools
 
 def chunker(seq, size):
