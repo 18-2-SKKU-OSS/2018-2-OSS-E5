@@ -8,7 +8,7 @@ def find_max(nums):
     return max 
 
 def main():
-  print(find_max([2, 4, 9, 7, 19, 94, 5]))
+  print(find_max([2, 4, 9, 7, 19, 94, 5])) #max = 94
 
 if __name__ == '__main__':
   main()
