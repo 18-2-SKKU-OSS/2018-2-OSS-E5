@@ -96,7 +96,7 @@ The Project is about algorithms implemented by python (for education)
 * Mail: dbfltkfkd01@naver.com
 * ID: parkgwanjong
 * SID: 2017312108
-* Role: Machine Learning
+* Role: network, others
 ***
 ### 서성윤
 * Mail: rudobco0825@gmail.com
