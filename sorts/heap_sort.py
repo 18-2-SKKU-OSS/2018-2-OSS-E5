@@ -1,13 +1,13 @@
 '''
-This is a pure python implementation of the heap sort algorithm.
-
-For doctests run following command:
-python -m doctest -v heap_sort.py
-or
-python3 -m doctest -v heap_sort.py
-
-For manual testing run:
-python heap_sort.py
+이 코드는 파이썬으로 heap sort를 구현한 코드입니다.
+힙 정렬이란 최대 힙 트리나 최소 힙 트리를  구성해 정렬을 하는 방법으로서,
+내림차순 정렬을 위해서는 최대 힙을 구성하고 오름차순 정렬을 위해서는 최소 힙을 구성하면 된다.
+최대 힙을 구성하여 정렬하는 방법은 아래와 같다.
+    1.n개의 노드에 대한 완전 이진트리를 구성한다. 이때 루트노드부터 부노드, 왼쪽 자노드, 오른쪽 자노드순으로 구성한다.
+    2.최대 힙을 구성한다. 최대 힙이란 부노드가 자노드보다 큰 트리를 말하는데, 
+    단말 노드를 자노드로 가진 부노드부터 구성하며 아래부터 루트까지 올라오며 순차적으로 만들어 갈 수 있다.
+    3.가장 큰 수(루트에 위치)를 가장 작은 수와 교환한다.
+    4. 2와 3을 반복한다.
 '''
 
 from __future__ import print_function
@@ -30,11 +30,6 @@ def heapify(unsorted, index, heap_size):
 
 def heap_sort(unsorted):
     '''
-    Pure implementation of the heap sort algorithm in Python
-    :param collection: some mutable ordered collection with heterogeneous
-    comparable items inside
-    :return: the same collection ordered by ascending
-
     Examples:
     >>> heap_sort([0, 5, 3, 2, 2])
     [0, 2, 2, 3, 5]
