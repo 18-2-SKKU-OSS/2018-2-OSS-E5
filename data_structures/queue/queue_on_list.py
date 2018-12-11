@@ -1,4 +1,4 @@
-"""Queue represented by a python list"""
+"""Queue represented by a python list 파이썬의 리스트로 구현한 """
 class Queue():
     def __init__(self):
         self.entries = []
