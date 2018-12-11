@@ -11,7 +11,7 @@ class Queue():
 
     """Enqueues {@code item}
     @param item
-        item to enqueue 큐에 item을 """
+        item to enqueue 큐에 item을 삽입 """
     def put(self, item):
         self.entries.append(item)
         self.length = self.length + 1
@@ -20,7 +20,7 @@ class Queue():
     """Dequeues {@code item}
     @requirement: |self.length| > 0
     @return dequeued
-        item that was dequeued"""
+        item that was dequeued 큐에서 아이템을 """
     def get(self):
         self.length = self.length - 1
         dequeued = self.entries[self.front]
