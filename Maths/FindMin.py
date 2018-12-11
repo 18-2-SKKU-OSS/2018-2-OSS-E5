@@ -1,18 +1,12 @@
-def main():
-    def findMin(x):
-<<<<<<< HEAD
-        minNum = x[0] #compare from the first element
-        for i in x: #iterate i which travels 0 ~ max index
-            if minNum > i: #if minNum is larger than x[i], swap them
-=======
-        minNum = x[0]
-        for i in x:
-            if minNum > i: #comparison 
->>>>>>> 5feb71f821f90c271d7bbfc20c1cef6d65ef49c3
-                minNum = i
-        return minNum
+def findMin(nums):
+    min = nums[0]  #처음 원소부터 마지막 원소까지 비교
+    for x in nums: 
+      if x < min: #만약 max가 nums[x]보다 클 경우, max를 num[x]로 변경
+        min = x
+    return min 
 
-    print(findMin([0,1,2,3,4,5,-3,24,-56])) # = -56
+def main(): 
+    print(findMin([0,1,2,3,4,5,-3,24,-56])) # min = -56
 
 if __name__ == '__main__':
     main()
